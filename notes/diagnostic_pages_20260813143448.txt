@@ -1,0 +1,233 @@
+=== GitHub Pages Diagnostic — 2026-08-13T14:34:48Z ===
+
+--- Git remote ---
+https://github.com/swipswaps/local-ops-hub.git
+
+--- Repository info ---
+OWNER_REPO=swipswaps/local-ops-hub
+
+--- GitHub Actions latest run status ---
+{"conclusion":"success","created_at":"2026-08-13T13:28:48Z","id":31705101558,"status":"completed","updated_at":"2026-08-13T13:29:35Z"}
+
+--- Pages site info ---
+{"url":"https://api.github.com/repos/swipswaps/local-ops-hub/pages","status":null,"cname":null,"custom_404":false,"html_url":"https://swipswaps.github.io/local-ops-hub/","build_type":"workflow","source":{"branch":"main","path":"/"},"public":true,"protected_domain_state":null,"pending_domain_unverified_at":null,"https_enforced":true}
+--- Pages build history (last 3) ---
+[]
+
+--- DNS resolution of swipswaps.github.io ---
+Server:		192.168.1.254
+Address:	192.168.1.254#53
+
+Non-authoritative answer:
+Name:	swipswaps.github.io
+Address: 185.199.109.153
+Name:	swipswaps.github.io
+Address: 185.199.110.153
+Name:	swipswaps.github.io
+Address: 185.199.108.153
+Name:	swipswaps.github.io
+Address: 185.199.111.153
+Name:	swipswaps.github.io
+Address: 2606:50c0:8000::153
+Name:	swipswaps.github.io
+Address: 2606:50c0:8001::153
+Name:	swipswaps.github.io
+Address: 2606:50c0:8003::153
+Name:	swipswaps.github.io
+Address: 2606:50c0:8002::153
+
+
+--- curl -v to pages URL ---
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host swipswaps.github.io:443 was resolved.
+* IPv6: 2606:50c0:8002::153, 2606:50c0:8000::153, 2606:50c0:8001::153, 2606:50c0:8003::153
+* IPv4: 185.199.110.153, 185.199.108.153, 185.199.111.153, 185.199.109.153
+*   Trying [2606:50c0:8002::153]:443...
+* ALPN: curl offers h2,http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [1578 bytes data]
+*  CAfile: /etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+*  CApath: none
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [1210 bytes data]
+* TLSv1.3 (IN), TLS change cipher, Change cipher spec (1):
+{ [1 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [19 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [4152 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [264 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [36 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [36 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / X25519MLKEM768 / RSASSA-PSS
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.github.io
+*  start date: Aug  2 23:38:02 2026 GMT
+*  expire date: Oct 31 23:38:01 2026 GMT
+*  subjectAltName: host "swipswaps.github.io" matched cert's "*.github.io"
+*  issuer: C=US; O=Let's Encrypt; CN=YR1
+*  SSL certificate verify ok.
+*   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+*   Certificate level 1: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+*   Certificate level 2: Public key type RSA (4096/152 Bits/secBits), signed using sha256WithRSAEncryption
+*   Certificate level 3: Public key type RSA (4096/152 Bits/secBits), signed using sha256WithRSAEncryption
+* Connected to swipswaps.github.io (2606:50c0:8002::153) port 443
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://swipswaps.github.io/local-ops-hub/
+* [HTTP/2] [1] [:method: GET]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: swipswaps.github.io]
+* [HTTP/2] [1] [:path: /local-ops-hub/]
+* [HTTP/2] [1] [user-agent: curl/8.15.0]
+* [HTTP/2] [1] [accept: */*]
+} [5 bytes data]
+> GET /local-ops-hub/ HTTP/2
+> Host: swipswaps.github.io
+> User-Agent: curl/8.15.0
+> Accept: */*
+> 
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [193 bytes data]
+* Request completely sent off
+{ [5 bytes data]
+< HTTP/2 404 
+< server: GitHub.com
+< content-type: text/html; charset=utf-8
+< etag: "6a7cf63b-239b"
+< content-security-policy: default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'
+< x-github-request-id: 2368:25D55:1BFA4B:1E5FC9:6A7DD592
+< x-github-edge-region: iad
+< accept-ranges: bytes
+< date: Thu, 13 Aug 2026 14:34:50 GMT
+< via: 1.1 varnish
+< age: 119
+< x-served-by: cache-jax2030026-JAX
+< x-cache: HIT
+< x-cache-hits: 3
+< x-timer: S1786631691.627523,VS0,VE0
+< vary: Accept-Encoding
+< x-fastly-request-id: 2b4215947301ecabc8175350decd92a24e3cd056
+< content-length: 9115
+< 
+{ [5 bytes data]
+100  9115  100  9115    0     0   140k      0 --:--:-- --:--:-- --:--:--  141k
+* Connection #0 to host swipswaps.github.io left intact
+
+HTTP Status: 404
+
+--- curl HEAD with verbose ---
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Host swipswaps.github.io:443 was resolved.
+* IPv6: 2606:50c0:8002::153, 2606:50c0:8000::153, 2606:50c0:8001::153, 2606:50c0:8003::153
+* IPv4: 185.199.109.153, 185.199.110.153, 185.199.108.153, 185.199.111.153
+*   Trying [2606:50c0:8002::153]:443...
+* ALPN: curl offers h2,http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [1578 bytes data]
+*  CAfile: /etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+*  CApath: none
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [1210 bytes data]
+* TLSv1.3 (IN), TLS change cipher, Change cipher spec (1):
+{ [1 bytes data]
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+{ [19 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [4152 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [264 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [36 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [36 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / X25519MLKEM768 / RSASSA-PSS
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.github.io
+*  start date: Aug  2 23:38:02 2026 GMT
+*  expire date: Oct 31 23:38:01 2026 GMT
+*  subjectAltName: host "swipswaps.github.io" matched cert's "*.github.io"
+*  issuer: C=US; O=Let's Encrypt; CN=YR1
+*  SSL certificate verify ok.
+*   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+*   Certificate level 1: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+*   Certificate level 2: Public key type RSA (4096/152 Bits/secBits), signed using sha256WithRSAEncryption
+*   Certificate level 3: Public key type RSA (4096/152 Bits/secBits), signed using sha256WithRSAEncryption
+* Connected to swipswaps.github.io (2606:50c0:8002::153) port 443
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://swipswaps.github.io/local-ops-hub/
+* [HTTP/2] [1] [:method: HEAD]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: swipswaps.github.io]
+* [HTTP/2] [1] [:path: /local-ops-hub/]
+* [HTTP/2] [1] [user-agent: curl/8.15.0]
+* [HTTP/2] [1] [accept: */*]
+} [5 bytes data]
+> HEAD /local-ops-hub/ HTTP/2
+> Host: swipswaps.github.io
+> User-Agent: curl/8.15.0
+> Accept: */*
+> 
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [193 bytes data]
+* Request completely sent off
+{ [5 bytes data]
+< HTTP/2 404 
+< server: GitHub.com
+< content-type: text/html; charset=utf-8
+< etag: "6a7cf63b-239b"
+< content-security-policy: default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'
+< x-github-request-id: 2368:25D55:1BFA4B:1E5FC9:6A7DD592
+< x-github-edge-region: iad
+< accept-ranges: bytes
+< date: Thu, 13 Aug 2026 14:34:50 GMT
+< via: 1.1 varnish
+< age: 119
+< x-served-by: cache-jax2030039-JAX
+< x-cache: HIT
+< x-cache-hits: 2
+< x-timer: S1786631691.699002,VS0,VE0
+< vary: Accept-Encoding
+< x-fastly-request-id: 832be5e2b344587cc618da3cfac2259298f63c03
+< content-length: 9115
+< 
+} [5 bytes data]
+  0  9115    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+* Connection #0 to host swipswaps.github.io left intact
+HTTP/2 404 
+server: GitHub.com
+content-type: text/html; charset=utf-8
+etag: "6a7cf63b-239b"
+content-security-policy: default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'
+x-github-request-id: 2368:25D55:1BFA4B:1E5FC9:6A7DD592
+x-github-edge-region: iad
+accept-ranges: bytes
+date: Thu, 13 Aug 2026 14:34:50 GMT
+via: 1.1 varnish
+age: 119
+x-served-by: cache-jax2030039-JAX
+x-cache: HIT
+x-cache-hits: 2
+x-timer: S1786631691.699002,VS0,VE0
+vary: Accept-Encoding
+x-fastly-request-id: 832be5e2b344587cc618da3cfac2259298f63c03
+content-length: 9115
+
+
+=== End diagnostic ===
