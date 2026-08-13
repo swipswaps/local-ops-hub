@@ -59,7 +59,7 @@ python3 local_ops_installer.py
         </div>
         <div className="flex items-center gap-2 bg-slate-900 border border-slate-800 px-4 py-2 rounded-lg text-sm">
           <ShieldCheck className="text-emerald-400" />
-          <span>Rules-Compliant (#1–#56)</span>
+          <span>README</span>
         </div>
       </header>
 
