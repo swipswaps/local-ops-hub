@@ -1,0 +1,29 @@
+=== Workflow Failure Logs ===
+Run ID: 31714771484
+Timestamp: 2026-08-13T15:21:51Z
+
+--- Full failed logs ---
+deploy	Setup Node	﻿2026-08-13T15:19:34.3475321Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+deploy	Setup Node	2026-08-13T15:19:34.3476873Z ##[group]Run actions/setup-node@v4
+deploy	Setup Node	2026-08-13T15:19:34.3477241Z with:
+deploy	Setup Node	2026-08-13T15:19:34.3477550Z   node-version: 20
+deploy	Setup Node	2026-08-13T15:19:34.3477862Z   cache: npm
+deploy	Setup Node	2026-08-13T15:19:34.3478144Z   always-auth: false
+deploy	Setup Node	2026-08-13T15:19:34.3478476Z   check-latest: false
+deploy	Setup Node	2026-08-13T15:19:34.3481026Z   token: ***
+deploy	Setup Node	2026-08-13T15:19:34.3481340Z ##[endgroup]
+deploy	Setup Node	2026-08-13T15:19:34.5224038Z Attempting to download 20...
+deploy	Setup Node	2026-08-13T15:19:34.5369379Z (node:2098) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+deploy	Setup Node	2026-08-13T15:19:34.5370293Z (Use `node --trace-deprecation ...` to show where the warning was created)
+deploy	Setup Node	2026-08-13T15:19:35.6349948Z Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+deploy	Setup Node	2026-08-13T15:19:36.1769248Z Extracting ...
+deploy	Setup Node	2026-08-13T15:19:36.1867829Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/ad9d947a-2e4b-4c5d-b274-75fe186d12d1 -f /home/runner/work/_temp/9bd9a219-2b24-4268-947a-c035e3bee545
+deploy	Setup Node	2026-08-13T15:19:37.2869884Z Adding to the cache ...
+deploy	Setup Node	2026-08-13T15:19:38.9514727Z ##[group]Environment details
+deploy	Setup Node	2026-08-13T15:19:39.1609610Z node: v20.20.2
+deploy	Setup Node	2026-08-13T15:19:39.1610189Z npm: 10.8.2
+deploy	Setup Node	2026-08-13T15:19:39.1610478Z yarn: 1.22.22
+deploy	Setup Node	2026-08-13T15:19:39.1611127Z ##[endgroup]
+deploy	Setup Node	2026-08-13T15:19:39.1626870Z [command]/opt/hostedtoolcache/node/20.20.2/x64/bin/npm config get cache
+deploy	Setup Node	2026-08-13T15:19:39.2581272Z /home/runner/.npm
+deploy	Setup Node	2026-08-13T15:19:39.2660982Z ##[error]Dependencies lock file is not found in /home/runner/work/local-ops-hub/local-ops-hub. Supported file patterns: package-lock.json,npm-shrinkwrap.json,yarn.lock
