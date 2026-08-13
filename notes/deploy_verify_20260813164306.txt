@@ -1,0 +1,18 @@
+=== Deployment Verification Report ===
+Timestamp: 2026-08-13T16:43:06Z
+
+--- Latest successful workflow run ---
+[{"createdAt":"2026-08-13T16:32:30Z","databaseId":31721195700,"displayTitle":"Deploy to GitHub Pages","headSha":"afe83f7f53ed601ffe7ca00d08317d4f01b95678"}]
+
+--- Pages deployment status ---
+{"url":"https://api.github.com/repos/swipswaps/local-ops-hub/pages","status":null,"cname":null,"custom_404":false,"html_url":"https://swipswaps.github.io/local-ops-hub/","build_type":"workflow","source":{"branch":"main","path":"/"},"public":true,"protected_domain_state":null,"pending_domain_unverified_at":null,"https_enforced":true}
+--- Latest Pages build ---
+
+
+--- Live site check (cache-busting) ---
+Text found: none
+
+⚠️ Site still shows old text. Forcing a fresh deployment.
+Triggering workflow on the commit that changed src/App.jsx...
+Commit SHA: c6f6ab1ffc3b4b835e29988f1b68335c0a484ae1
+Workflow triggered. Wait for completion, then check again.
