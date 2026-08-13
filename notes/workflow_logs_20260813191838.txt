@@ -1,0 +1,291 @@
+deploy	Set up job	﻿2026-08-13T19:14:23.8383348Z Current runner version: '2.336.0'
+deploy	Set up job	2026-08-13T19:14:23.8408946Z ##[group]Runner Image Provisioner
+deploy	Set up job	2026-08-13T19:14:23.8409877Z Hosted Compute Agent
+deploy	Set up job	2026-08-13T19:14:23.8410488Z Version: 20260707.563
+deploy	Set up job	2026-08-13T19:14:23.8411212Z Commit: 02667638d2b423fbc733a8e32a88b44996a3ba6e
+deploy	Set up job	2026-08-13T19:14:23.8411926Z Build Date: 2026-07-07T19:33:50Z
+deploy	Set up job	2026-08-13T19:14:23.8412636Z Worker ID: {c2fce235-171d-4e29-b54c-43b960abe0ae}
+deploy	Set up job	2026-08-13T19:14:23.8413403Z Azure Region: westus3
+deploy	Set up job	2026-08-13T19:14:23.8413995Z ##[endgroup]
+deploy	Set up job	2026-08-13T19:14:23.8415571Z ##[group]Operating System
+deploy	Set up job	2026-08-13T19:14:23.8416213Z Ubuntu
+deploy	Set up job	2026-08-13T19:14:23.8416720Z 24.04.4
+deploy	Set up job	2026-08-13T19:14:23.8417314Z LTS
+deploy	Set up job	2026-08-13T19:14:23.8417864Z ##[endgroup]
+deploy	Set up job	2026-08-13T19:14:23.8418680Z ##[group]Runner Image
+deploy	Set up job	2026-08-13T19:14:23.8419334Z Image: ubuntu-24.04
+deploy	Set up job	2026-08-13T19:14:23.8419890Z Version: 20260720.247.2
+deploy	Set up job	2026-08-13T19:14:23.8420989Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260720.247/images/ubuntu/Ubuntu2404-Readme.md
+deploy	Set up job	2026-08-13T19:14:23.8422712Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260720.247
+deploy	Set up job	2026-08-13T19:14:23.8423661Z ##[endgroup]
+deploy	Set up job	2026-08-13T19:14:23.8424865Z ##[group]GITHUB_TOKEN Permissions
+deploy	Set up job	2026-08-13T19:14:23.8426701Z Contents: read
+deploy	Set up job	2026-08-13T19:14:23.8427347Z Metadata: read
+deploy	Set up job	2026-08-13T19:14:23.8428548Z Pages: write
+deploy	Set up job	2026-08-13T19:14:23.8429141Z ##[endgroup]
+deploy	Set up job	2026-08-13T19:14:23.8431262Z Secret source: Actions
+deploy	Set up job	2026-08-13T19:14:23.8432434Z Prepare workflow directory
+deploy	Set up job	2026-08-13T19:14:23.8784112Z Prepare all required actions
+deploy	Set up job	2026-08-13T19:14:23.8832182Z Getting action download info
+deploy	Set up job	2026-08-13T19:14:24.2094979Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+deploy	Set up job	2026-08-13T19:14:24.8888241Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+deploy	Set up job	2026-08-13T19:14:25.0169629Z Download action repository 'actions/configure-pages@v4' (SHA:1f0c5cde4bc74cd7e1254d0cb4de8d49e9068c7d)
+deploy	Set up job	2026-08-13T19:14:25.5570977Z Download action repository 'actions/upload-pages-artifact@v3' (SHA:56afc609e74202658d3ffba0e8f6dda462b719fa)
+deploy	Set up job	2026-08-13T19:14:25.7914673Z Download action repository 'actions/deploy-pages@v4' (SHA:d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e)
+deploy	Set up job	2026-08-13T19:14:26.8147944Z Getting action download info
+deploy	Set up job	2026-08-13T19:14:26.9259111Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+deploy	Set up job	2026-08-13T19:14:27.0685218Z Complete job name: deploy
+deploy	Checkout	﻿2026-08-13T19:14:27.1382214Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+deploy	Checkout	2026-08-13T19:14:27.1390306Z ##[group]Run actions/checkout@v4
+deploy	Checkout	2026-08-13T19:14:27.1390777Z with:
+deploy	Checkout	2026-08-13T19:14:27.1391013Z   repository: swipswaps/local-ops-hub
+deploy	Checkout	2026-08-13T19:14:27.1393352Z   token: ***
+deploy	Checkout	2026-08-13T19:14:27.1393578Z   ssh-strict: true
+deploy	Checkout	2026-08-13T19:14:27.1393788Z   ssh-user: git
+deploy	Checkout	2026-08-13T19:14:27.1394005Z   persist-credentials: true
+deploy	Checkout	2026-08-13T19:14:27.1394260Z   clean: true
+deploy	Checkout	2026-08-13T19:14:27.1394479Z   sparse-checkout-cone-mode: true
+deploy	Checkout	2026-08-13T19:14:27.1394743Z   fetch-depth: 1
+deploy	Checkout	2026-08-13T19:14:27.1394954Z   fetch-tags: false
+deploy	Checkout	2026-08-13T19:14:27.1395170Z   show-progress: true
+deploy	Checkout	2026-08-13T19:14:27.1395382Z   lfs: false
+deploy	Checkout	2026-08-13T19:14:27.1395577Z   submodules: false
+deploy	Checkout	2026-08-13T19:14:27.1395831Z   set-safe-directory: true
+deploy	Checkout	2026-08-13T19:14:27.1396087Z   allow-unsafe-pr-checkout: false
+deploy	Checkout	2026-08-13T19:14:27.1396549Z ##[endgroup]
+deploy	Checkout	2026-08-13T19:14:27.2433937Z Syncing repository: swipswaps/local-ops-hub
+deploy	Checkout	2026-08-13T19:14:27.2435824Z ##[group]Getting Git version info
+deploy	Checkout	2026-08-13T19:14:27.2436518Z Working directory is '/home/runner/work/local-ops-hub/local-ops-hub'
+deploy	Checkout	2026-08-13T19:14:27.2437481Z [command]/usr/bin/git version
+deploy	Checkout	2026-08-13T19:14:27.2585747Z git version 2.54.0
+deploy	Checkout	2026-08-13T19:14:27.2607964Z ##[endgroup]
+deploy	Checkout	2026-08-13T19:14:27.2622845Z Temporarily overriding HOME='/home/runner/work/_temp/dfd92810-de9d-4c06-803b-15c377c0d9a3' before making global git config changes
+deploy	Checkout	2026-08-13T19:14:27.2624376Z Adding repository directory to the temporary git global config as a safe directory
+deploy	Checkout	2026-08-13T19:14:27.2628301Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/local-ops-hub/local-ops-hub
+deploy	Checkout	2026-08-13T19:14:27.2687912Z Deleting the contents of '/home/runner/work/local-ops-hub/local-ops-hub'
+deploy	Checkout	2026-08-13T19:14:27.2692005Z ##[group]Initializing the repository
+deploy	Checkout	2026-08-13T19:14:27.2696661Z [command]/usr/bin/git init /home/runner/work/local-ops-hub/local-ops-hub
+deploy	Checkout	2026-08-13T19:14:27.2862824Z hint: Using 'master' as the name for the initial branch. This default branch name
+deploy	Checkout	2026-08-13T19:14:27.2864234Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+deploy	Checkout	2026-08-13T19:14:27.2865578Z hint: to use in all of your new repositories, which will suppress this warning,
+deploy	Checkout	2026-08-13T19:14:27.2866533Z hint: call:
+deploy	Checkout	2026-08-13T19:14:27.2867225Z hint:
+deploy	Checkout	2026-08-13T19:14:27.2867718Z hint: 	git config --global init.defaultBranch <name>
+deploy	Checkout	2026-08-13T19:14:27.2868067Z hint:
+deploy	Checkout	2026-08-13T19:14:27.2868631Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+deploy	Checkout	2026-08-13T19:14:27.2869192Z hint: 'development'. The just-created branch can be renamed via this command:
+deploy	Checkout	2026-08-13T19:14:27.2869606Z hint:
+deploy	Checkout	2026-08-13T19:14:27.2869821Z hint: 	git branch -m <name>
+deploy	Checkout	2026-08-13T19:14:27.2870077Z hint:
+deploy	Checkout	2026-08-13T19:14:27.2954312Z hint: Disable this message with "git config set advice.defaultBranchName false"
+deploy	Checkout	2026-08-13T19:14:27.2955786Z Initialized empty Git repository in /home/runner/work/local-ops-hub/local-ops-hub/.git/
+deploy	Checkout	2026-08-13T19:14:27.2957863Z [command]/usr/bin/git remote add origin https://github.com/swipswaps/local-ops-hub
+deploy	Checkout	2026-08-13T19:14:27.2972464Z ##[endgroup]
+deploy	Checkout	2026-08-13T19:14:27.2973239Z ##[group]Disabling automatic garbage collection
+deploy	Checkout	2026-08-13T19:14:27.2977752Z [command]/usr/bin/git config --local gc.auto 0
+deploy	Checkout	2026-08-13T19:14:27.3013248Z ##[endgroup]
+deploy	Checkout	2026-08-13T19:14:27.3013890Z ##[group]Setting up auth
+deploy	Checkout	2026-08-13T19:14:27.3021546Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+deploy	Checkout	2026-08-13T19:14:27.3061938Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+deploy	Checkout	2026-08-13T19:14:27.3477558Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+deploy	Checkout	2026-08-13T19:14:27.3515441Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+deploy	Checkout	2026-08-13T19:14:27.3739229Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+deploy	Checkout	2026-08-13T19:14:27.3774663Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+deploy	Checkout	2026-08-13T19:14:27.3996260Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+deploy	Checkout	2026-08-13T19:14:27.4035617Z ##[endgroup]
+deploy	Checkout	2026-08-13T19:14:27.4036366Z ##[group]Fetching the repository
+deploy	Checkout	2026-08-13T19:14:27.4046407Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +7f26e0a104ee4d65bc6f9454d42027c3e94e5c9e:refs/remotes/origin/master
+deploy	Checkout	2026-08-13T19:14:28.0760267Z From https://github.com/swipswaps/local-ops-hub
+deploy	Checkout	2026-08-13T19:14:28.0761091Z  * [new ref]         7f26e0a104ee4d65bc6f9454d42027c3e94e5c9e -> origin/master
+deploy	Checkout	2026-08-13T19:14:28.0800129Z ##[endgroup]
+deploy	Checkout	2026-08-13T19:14:28.0800746Z ##[group]Determining the checkout info
+deploy	Checkout	2026-08-13T19:14:28.0802771Z ##[endgroup]
+deploy	Checkout	2026-08-13T19:14:28.0808820Z [command]/usr/bin/git sparse-checkout disable
+deploy	Checkout	2026-08-13T19:14:28.0861524Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+deploy	Checkout	2026-08-13T19:14:28.0894459Z ##[group]Checking out the ref
+deploy	Checkout	2026-08-13T19:14:28.0898340Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+deploy	Checkout	2026-08-13T19:14:28.1025493Z Reset branch 'master'
+deploy	Checkout	2026-08-13T19:14:28.1028055Z branch 'master' set up to track 'origin/master'.
+deploy	Checkout	2026-08-13T19:14:28.1033881Z ##[endgroup]
+deploy	Checkout	2026-08-13T19:14:28.1082507Z [command]/usr/bin/git log -1 --format=%H
+deploy	Checkout	2026-08-13T19:14:28.1109678Z 7f26e0a104ee4d65bc6f9454d42027c3e94e5c9e
+deploy	Setup Node	﻿2026-08-13T19:14:28.1370010Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+deploy	Setup Node	2026-08-13T19:14:28.1371946Z ##[group]Run actions/setup-node@v4
+deploy	Setup Node	2026-08-13T19:14:28.1372224Z with:
+deploy	Setup Node	2026-08-13T19:14:28.1372423Z   node-version: 20
+deploy	Setup Node	2026-08-13T19:14:28.1372648Z   cache: npm
+deploy	Setup Node	2026-08-13T19:14:28.1372848Z   always-auth: false
+deploy	Setup Node	2026-08-13T19:14:28.1373066Z   check-latest: false
+deploy	Setup Node	2026-08-13T19:14:28.1375283Z   token: ***
+deploy	Setup Node	2026-08-13T19:14:28.1375492Z ##[endgroup]
+deploy	Setup Node	2026-08-13T19:14:28.2860151Z Attempting to download 20...
+deploy	Setup Node	2026-08-13T19:14:28.2964116Z (node:2281) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+deploy	Setup Node	2026-08-13T19:14:28.2965099Z (Use `node --trace-deprecation ...` to show where the warning was created)
+deploy	Setup Node	2026-08-13T19:14:29.3311596Z Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+deploy	Setup Node	2026-08-13T19:14:29.9030893Z Extracting ...
+deploy	Setup Node	2026-08-13T19:14:29.9165359Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/23d0d055-39f6-4fc8-a72f-268e04f5d82e -f /home/runner/work/_temp/ba8728ef-135b-439b-91fb-3b16e6e557fa
+deploy	Setup Node	2026-08-13T19:14:30.9281698Z Adding to the cache ...
+deploy	Setup Node	2026-08-13T19:14:32.6182209Z ##[group]Environment details
+deploy	Setup Node	2026-08-13T19:14:32.8409127Z node: v20.20.2
+deploy	Setup Node	2026-08-13T19:14:32.8409852Z npm: 10.8.2
+deploy	Setup Node	2026-08-13T19:14:32.8410231Z yarn: 1.22.22
+deploy	Setup Node	2026-08-13T19:14:32.8411098Z ##[endgroup]
+deploy	Setup Node	2026-08-13T19:14:32.8443197Z [command]/opt/hostedtoolcache/node/20.20.2/x64/bin/npm config get cache
+deploy	Setup Node	2026-08-13T19:14:32.9495469Z /home/runner/.npm
+deploy	Setup Node	2026-08-13T19:14:33.1752415Z Cache hit for: node-cache-Linux-x64-npm-08585f2ced93e08a8da727e00bb487e17f5f0657811e06d876a26b494f2b55d9
+deploy	Setup Node	2026-08-13T19:14:33.1909811Z (node:2281) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+deploy	Setup Node	2026-08-13T19:14:34.3305269Z Received 15642509 of 15642509 (100.0%), 16.4 MBs/sec
+deploy	Setup Node	2026-08-13T19:14:34.3306173Z Cache Size: ~15 MB (15642509 B)
+deploy	Setup Node	2026-08-13T19:14:34.3335593Z [command]/usr/bin/tar -xf /home/runner/work/_temp/2a936e73-07d3-474f-9a0c-e88dbaafad74/cache.tzst -P -C /home/runner/work/local-ops-hub/local-ops-hub --use-compress-program unzstd
+deploy	Setup Node	2026-08-13T19:14:34.9163099Z Cache restored successfully
+deploy	Setup Node	2026-08-13T19:14:34.9175632Z Cache restored from key: node-cache-Linux-x64-npm-08585f2ced93e08a8da727e00bb487e17f5f0657811e06d876a26b494f2b55d9
+deploy	Install dependencies	﻿2026-08-13T19:14:34.9388200Z ##[group]Run npm ci
+deploy	Install dependencies	2026-08-13T19:14:34.9388832Z [36;1mnpm ci[0m
+deploy	Install dependencies	2026-08-13T19:14:34.9436738Z shell: /usr/bin/bash -e {0}
+deploy	Install dependencies	2026-08-13T19:14:34.9437044Z ##[endgroup]
+deploy	Install dependencies	2026-08-13T19:14:37.1423296Z 
+deploy	Install dependencies	2026-08-13T19:14:37.1430538Z added 162 packages, and audited 163 packages in 2s
+deploy	Install dependencies	2026-08-13T19:14:37.1430876Z 
+deploy	Install dependencies	2026-08-13T19:14:37.1431101Z 30 packages are looking for funding
+deploy	Install dependencies	2026-08-13T19:14:37.1431436Z   run `npm fund` for details
+deploy	Install dependencies	2026-08-13T19:14:37.1434124Z 
+deploy	Install dependencies	2026-08-13T19:14:37.1434398Z found 0 vulnerabilities
+deploy	Build	﻿2026-08-13T19:14:37.1629423Z ##[group]Run npm run build
+deploy	Build	2026-08-13T19:14:37.1629793Z [36;1mnpm run build[0m
+deploy	Build	2026-08-13T19:14:37.1672814Z shell: /usr/bin/bash -e {0}
+deploy	Build	2026-08-13T19:14:37.1673298Z ##[endgroup]
+deploy	Build	2026-08-13T19:14:37.2750654Z 
+deploy	Build	2026-08-13T19:14:37.2751309Z > local-ops-hub@1.0.0 build
+deploy	Build	2026-08-13T19:14:37.2751702Z > vite build
+deploy	Build	2026-08-13T19:14:37.2751855Z 
+deploy	Build	2026-08-13T19:14:37.4908344Z [36mvite v6.4.3 [32mbuilding for production...[36m[39m
+deploy	Build	2026-08-13T19:14:37.7961095Z transforming...
+deploy	Build	2026-08-13T19:14:40.0405565Z [32m✓[39m 1574 modules transformed.
+deploy	Build	2026-08-13T19:14:40.2303313Z rendering chunks...
+deploy	Build	2026-08-13T19:14:40.3450011Z computing gzip size...
+deploy	Build	2026-08-13T19:14:40.3548216Z [2mdist/[22m[32mindex.html                 [39m[1m[2m  0.76 kB[22m[1m[22m[2m │ gzip:  0.41 kB[22m
+deploy	Build	2026-08-13T19:14:40.3550606Z [2mdist/[22m[2massets/[22m[35mindex-DqkHgSQ8.css  [39m[1m[2m  9.48 kB[22m[1m[22m[2m │ gzip:  2.59 kB[22m
+deploy	Build	2026-08-13T19:14:40.3553151Z [2mdist/[22m[2massets/[22m[36mindex-CIYtkrMy.js   [39m[1m[2m209.78 kB[22m[1m[22m[2m │ gzip: 65.27 kB[22m[2m │ map: 944.06 kB[22m
+deploy	Build	2026-08-13T19:14:40.3565311Z [32m✓ built in 2.84s[39m
+deploy	Setup Pages	﻿2026-08-13T19:14:40.4053639Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+deploy	Setup Pages	2026-08-13T19:14:40.4055934Z ##[group]Run actions/configure-pages@v4
+deploy	Setup Pages	2026-08-13T19:14:40.4056394Z with:
+deploy	Setup Pages	2026-08-13T19:14:40.4060759Z   token: ***
+deploy	Setup Pages	2026-08-13T19:14:40.4061115Z   enablement: false
+deploy	Setup Pages	2026-08-13T19:14:40.4061466Z ##[endgroup]
+deploy	Setup Pages	2026-08-13T19:14:40.4833845Z (node:2422) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+deploy	Setup Pages	2026-08-13T19:14:40.4835811Z (Use `node --trace-deprecation ...` to show where the warning was created)
+deploy	Setup Pages	2026-08-13T19:14:40.4956235Z (node:2422) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+deploy	Upload artifact	﻿2026-08-13T19:14:40.7674848Z ##[group]Run actions/upload-pages-artifact@v3
+deploy	Upload artifact	2026-08-13T19:14:40.7675208Z with:
+deploy	Upload artifact	2026-08-13T19:14:40.7675426Z   path: ./dist
+deploy	Upload artifact	2026-08-13T19:14:40.7675650Z   name: github-pages
+deploy	Upload artifact	2026-08-13T19:14:40.7675883Z   retention-days: 1
+deploy	Upload artifact	2026-08-13T19:14:40.7676095Z env:
+deploy	Upload artifact	2026-08-13T19:14:40.7676286Z   GITHUB_PAGES: true
+deploy	Upload artifact	2026-08-13T19:14:40.7676510Z ##[endgroup]
+deploy	Upload artifact	2026-08-13T19:14:40.7740728Z ##[start-action display=Archive artifact;id=__actions_upload-pages-artifact.__run]
+deploy	Upload artifact	2026-08-13T19:14:40.7770322Z ##[group]Run echo ::group::Archive artifact
+deploy	Upload artifact	2026-08-13T19:14:40.7770683Z [36;1mecho ::group::Archive artifact[0m
+deploy	Upload artifact	2026-08-13T19:14:40.7770972Z [36;1mtar \[0m
+deploy	Upload artifact	2026-08-13T19:14:40.7771230Z [36;1m  --dereference --hard-dereference \[0m
+deploy	Upload artifact	2026-08-13T19:14:40.7771559Z [36;1m  --directory "$INPUT_PATH" \[0m
+deploy	Upload artifact	2026-08-13T19:14:40.7771878Z [36;1m  -cvf "$RUNNER_TEMP/artifact.tar" \[0m
+deploy	Upload artifact	2026-08-13T19:14:40.7772194Z [36;1m  --exclude=.git \[0m
+deploy	Upload artifact	2026-08-13T19:14:40.7772461Z [36;1m  --exclude=.github \[0m
+deploy	Upload artifact	2026-08-13T19:14:40.7772743Z [36;1m  .[0m
+deploy	Upload artifact	2026-08-13T19:14:40.7772955Z [36;1mecho ::endgroup::[0m
+deploy	Upload artifact	2026-08-13T19:14:40.7798014Z shell: /usr/bin/sh -e {0}
+deploy	Upload artifact	2026-08-13T19:14:40.7798285Z env:
+deploy	Upload artifact	2026-08-13T19:14:40.7798954Z   GITHUB_PAGES: true
+deploy	Upload artifact	2026-08-13T19:14:40.7799195Z   INPUT_PATH: ./dist
+deploy	Upload artifact	2026-08-13T19:14:40.7799417Z ##[endgroup]
+deploy	Upload artifact	2026-08-13T19:14:40.7839732Z ##[group]Archive artifact
+deploy	Upload artifact	2026-08-13T19:14:40.7856066Z ./
+deploy	Upload artifact	2026-08-13T19:14:40.7856456Z ./index.html
+deploy	Upload artifact	2026-08-13T19:14:40.7856828Z ./assets/
+deploy	Upload artifact	2026-08-13T19:14:40.7857258Z ./assets/index-CIYtkrMy.js
+deploy	Upload artifact	2026-08-13T19:14:40.7858810Z ./assets/index-CIYtkrMy.js.map
+deploy	Upload artifact	2026-08-13T19:14:40.7866852Z ./assets/index-DqkHgSQ8.css
+deploy	Upload artifact	2026-08-13T19:14:40.7869864Z ##[endgroup]
+deploy	Upload artifact	2026-08-13T19:14:40.7884120Z ##[end-action id=__actions_upload-pages-artifact.__run;outcome=success;conclusion=success;duration_ms=14]
+deploy	Upload artifact	2026-08-13T19:14:40.7888705Z ##[start-action display=Archive artifact;id=__actions_upload-pages-artifact.__run_2]
+deploy	Upload artifact	2026-08-13T19:14:40.7896673Z ##[end-action id=__actions_upload-pages-artifact.__run_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+deploy	Upload artifact	2026-08-13T19:14:40.7900962Z ##[start-action display=Archive artifact;id=__actions_upload-pages-artifact.__run_3]
+deploy	Upload artifact	2026-08-13T19:14:40.7906549Z ##[end-action id=__actions_upload-pages-artifact.__run_3;outcome=skipped;conclusion=skipped;duration_ms=0]
+deploy	Upload artifact	2026-08-13T19:14:40.7909937Z ##[start-action display=Upload artifact;id=__actions_upload-pages-artifact.upload-artifact]
+deploy	Upload artifact	2026-08-13T19:14:40.7982771Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+deploy	Upload artifact	2026-08-13T19:14:40.7984984Z ##[group]Run actions/upload-artifact@v4
+deploy	Upload artifact	2026-08-13T19:14:40.7985438Z with:
+deploy	Upload artifact	2026-08-13T19:14:40.7985758Z   name: github-pages
+deploy	Upload artifact	2026-08-13T19:14:40.7986175Z   path: /home/runner/work/_temp/artifact.tar
+deploy	Upload artifact	2026-08-13T19:14:40.7986694Z   retention-days: 1
+deploy	Upload artifact	2026-08-13T19:14:40.7987066Z   if-no-files-found: error
+deploy	Upload artifact	2026-08-13T19:14:40.7987480Z   compression-level: 6
+deploy	Upload artifact	2026-08-13T19:14:40.7987851Z   overwrite: false
+deploy	Upload artifact	2026-08-13T19:14:40.7988217Z   include-hidden-files: false
+deploy	Upload artifact	2026-08-13T19:14:40.7988805Z env:
+deploy	Upload artifact	2026-08-13T19:14:40.7989118Z   GITHUB_PAGES: true
+deploy	Upload artifact	2026-08-13T19:14:40.7989473Z ##[endgroup]
+deploy	Upload artifact	2026-08-13T19:14:40.9765567Z (node:2436) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+deploy	Upload artifact	2026-08-13T19:14:40.9766848Z (Use `node --trace-deprecation ...` to show where the warning was created)
+deploy	Upload artifact	2026-08-13T19:14:40.9899582Z With the provided path, there will be 1 file uploaded
+deploy	Upload artifact	2026-08-13T19:14:40.9949367Z Artifact name is valid!
+deploy	Upload artifact	2026-08-13T19:14:40.9979377Z Root directory input is valid!
+deploy	Upload artifact	2026-08-13T19:14:41.2811699Z Beginning upload of artifact content to blob storage
+deploy	Upload artifact	2026-08-13T19:14:41.3413006Z (node:2436) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+deploy	Upload artifact	2026-08-13T19:14:41.8443508Z Uploaded bytes 280178
+deploy	Upload artifact	2026-08-13T19:14:41.9160396Z Finished uploading artifact content to blob storage!
+deploy	Upload artifact	2026-08-13T19:14:41.9161702Z SHA256 digest of uploaded artifact zip is c53668add2dcc2f6207f44781a767f41931a15f1386aceebd32e4365f92d9473
+deploy	Upload artifact	2026-08-13T19:14:41.9162713Z Finalizing artifact upload
+deploy	Upload artifact	2026-08-13T19:14:42.1949689Z Artifact github-pages.zip successfully finalized. Artifact ID 9194681709
+deploy	Upload artifact	2026-08-13T19:14:42.1957430Z Artifact github-pages has been successfully uploaded! Final size is 280178 bytes. Artifact ID is 9194681709
+deploy	Upload artifact	2026-08-13T19:14:42.1959534Z Artifact download URL: https://github.com/swipswaps/local-ops-hub/actions/runs/31734823479/artifacts/9194681709
+deploy	Upload artifact	2026-08-13T19:14:42.2069722Z ##[end-action id=__actions_upload-pages-artifact.upload-artifact;outcome=success;conclusion=success;duration_ms=1415]
+deploy	Deploy to GitHub Pages	﻿2026-08-13T19:14:42.2142721Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.2144020Z ##[group]Run actions/deploy-pages@v4
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.2144311Z with:
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.2146497Z   token: ***
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.2146719Z   timeout: 600000
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.2146940Z   error_count: 10
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.2147158Z   reporting_interval: 5000
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.2147415Z   artifact_name: github-pages
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.2147674Z   preview: false
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.2147887Z env:
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.2148086Z   GITHUB_PAGES: true
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.2148308Z ##[endgroup]
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.3991633Z (node:2449) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.3993522Z (Use `node --trace-deprecation ...` to show where the warning was created)
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.6111436Z Fetching artifact metadata for "github-pages" in this workflow run
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.8543245Z Found 1 artifact(s)
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.8555757Z Creating Pages deployment with payload:
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.8556299Z {
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.8556589Z 	"artifact_id": 9194681709,
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.8557059Z 	"pages_build_version": "7f26e0a104ee4d65bc6f9454d42027c3e94e5c9e",
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.8587963Z 	"oidc_token": "***"
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:42.8588265Z }
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:43.2248757Z Created deployment for 7f26e0a104ee4d65bc6f9454d42027c3e94e5c9e, ID: 7f26e0a104ee4d65bc6f9454d42027c3e94e5c9e
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:48.2267668Z Getting Pages deployment status...
+deploy	Deploy to GitHub Pages	2026-08-13T19:14:48.4742565Z Reported success!
+deploy	Post Setup Node	﻿2026-08-13T19:14:48.4967217Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+deploy	Post Setup Node	2026-08-13T19:14:48.4968869Z Post job cleanup.
+deploy	Post Setup Node	2026-08-13T19:14:48.6157957Z (node:2461) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+deploy	Post Setup Node	2026-08-13T19:14:48.6159219Z (Use `node --trace-deprecation ...` to show where the warning was created)
+deploy	Post Setup Node	2026-08-13T19:14:48.6163395Z Cache hit occurred on the primary key node-cache-Linux-x64-npm-08585f2ced93e08a8da727e00bb487e17f5f0657811e06d876a26b494f2b55d9, not saving cache.
+deploy	Post Checkout	﻿2026-08-13T19:14:48.6301159Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+deploy	Post Checkout	2026-08-13T19:14:48.6302447Z Post job cleanup.
+deploy	Post Checkout	2026-08-13T19:14:48.7175250Z [command]/usr/bin/git version
+deploy	Post Checkout	2026-08-13T19:14:48.7215956Z git version 2.54.0
+deploy	Post Checkout	2026-08-13T19:14:48.7254319Z Temporarily overriding HOME='/home/runner/work/_temp/9e3af9fa-d351-40cf-a9da-f71c9eb54f71' before making global git config changes
+deploy	Post Checkout	2026-08-13T19:14:48.7255940Z Adding repository directory to the temporary git global config as a safe directory
+deploy	Post Checkout	2026-08-13T19:14:48.7259886Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/local-ops-hub/local-ops-hub
+deploy	Post Checkout	2026-08-13T19:14:48.7299707Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+deploy	Post Checkout	2026-08-13T19:14:48.7346334Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+deploy	Post Checkout	2026-08-13T19:14:48.7597636Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+deploy	Post Checkout	2026-08-13T19:14:48.7622092Z http.https://github.com/.extraheader
+deploy	Post Checkout	2026-08-13T19:14:48.7633835Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+deploy	Post Checkout	2026-08-13T19:14:48.7669169Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+deploy	Post Checkout	2026-08-13T19:14:48.7941948Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+deploy	Post Checkout	2026-08-13T19:14:48.7993613Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+deploy	Complete job	﻿2026-08-13T19:14:48.8474009Z Cleaning up orphan processes
+deploy	Complete job	2026-08-13T19:14:48.8851246Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v4, actions/deploy-pages@v4, actions/setup-node@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
