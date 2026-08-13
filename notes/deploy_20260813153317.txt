@@ -1,0 +1,7 @@
+=== Deployment Evidence ===
+Timestamp: 2026-08-13T15:33:18Z
+Owner: swipswaps
+Repo: local-ops-hub
+Pages URL: https://swipswaps.github.io/local-ops-hub/
+Pages live: YES
+Workflow run: 
