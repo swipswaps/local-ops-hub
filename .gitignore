@@ -1,0 +1,20 @@
+﻿# Windows
+*.exe
+*.msi
+*.iso
+*.vdi
+*.vbox
+*.vbox-prev
+*.log
+*.tmp
+
+# Linux
+*.o
+*.so
+*.ko
+
+# Misc
+.DS_Store
+*.bak
+*.backup
+__pycache__/
