@@ -1,0 +1,8 @@
+=== DEPLOYMENT EVIDENCE ===
+Timestamp: 2026-08-14T14:39:57.296214+00:00
+Owner: swipswaps
+Repo: local-ops-hub
+Pages URL: https://swipswaps.github.io/local-ops-hub/
+Backend: http://localhost:8000
+Raw evidence link: https://raw.githubusercontent.com/swipswaps/local-ops-hub/main/notes/deploy_2026-08-14T14-39-57.296214+00-00.txt
+=== END ===
