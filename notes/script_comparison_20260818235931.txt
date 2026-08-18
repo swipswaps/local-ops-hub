@@ -1,0 +1,27 @@
+============================================================================
+BOOT SCRIPT COMPARISON – 2026-08-18T23:59:31Z
+============================================================================
+
+SCRIPT                                        | QEMU FLAGS      | CONFLICT CHECKER     | HOST/VM   
+----------------------------------------------+-----------------+----------------------+-----------
+boot-pmos-auto-vnc.sh                         | & vnc serial kernel-direct | no                   | inside VM 
+boot-pmos-auto-wait.sh                        |  vnc serial kernel-direct | no                   | inside VM 
+boot-pmos-auto.sh                             |  vnc uefi serial | no                   | inside VM 
+boot-pmos-graphics-fix.sh                     | std vnc serial kernel-direct | no                   | inside VM 
+boot-pmos-kernel-direct.sh                    | std vnc serial kernel-direct | no                   | inside VM 
+boot-pmos-spice.sh                            | virtio serial kernel-direct | no                   | inside VM 
+boot-pmos-text.sh                             | std vnc serial kernel-direct | no                   | inside VM 
+boot-pmos-uefi-bootindex.sh                   |  vnc uefi serial | no                   | inside VM 
+boot-pmos-uefi-clean.sh                       |  vnc uefi serial | no                   | inside VM 
+boot-pmos-uefi-final.sh                       |  vnc uefi serial | no                   | inside VM 
+boot-pmos-uefi-now.sh                         |  vnc uefi serial | no                   | inside VM 
+boot-pmos-virtio-tablet-fixed.sh              | virtio vnc usb-tablet serial kernel-direct | no                   | inside VM 
+boot-pmos-virtio-tablet-fixed_0002.sh         | virtio vnc usb-tablet serial kernel-direct | yes                  | inside VM 
+boot-pmos-virtio-tablet-fixed_0003.sh         | virtio vnc usb-tablet serial kernel-direct | yes                  | inside VM 
+boot-pmos-virtio-tablet-fixed_0004.sh         | virtio vnc usb-tablet serial kernel-direct | yes                  | inside VM 
+boot-pmos-virtio-tablet-fixed_0005.sh         | virtio vnc usb-tablet serial kernel-direct | no                   | inside VM 
+boot-pmos-virtio-tablet.sh                    | mouse)..." vnc usb-tablet serial kernel-direct | no                   | inside VM 
+boot-pmos-virtio.sh                           | virtio vnc serial kernel-direct | no                   | inside VM 
+boot-pmos-vnc-fixed.sh                        | std vnc usb-tablet serial kernel-direct | no                   | inside VM 
+boot-pmos-with-large-disk.sh                  | virtio vnc serial kernel-direct | no                   | inside VM 
+boot_pmos.sh                                  | :$VNC_DISPLAY" vnc kernel-direct | no                   | inside VM 

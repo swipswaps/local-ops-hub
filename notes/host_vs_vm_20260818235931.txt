@@ -1,0 +1,16 @@
+
+============================================================================
+FIX SCRIPT ANALYSIS – 2026-08-18T23:59:36Z
+============================================================================
+
+SCRIPT                                        | RUNS WHERE   | KEY FEATURES        
+----------------------------------------------+--------------+---------------------
+fix-pmos-installer.sh                         | inside VM    | polkit-bypass logging tmpfs-mount symlink-fix 
+fix_pmos_boot.sh                              | inside VM    | logging             
+fix_pmos_boot_robust.sh                       | inside VM    | logging             
+fix_pmos_boot_with_vnc_handling.sh            | inside VM    | logging             
+fix_lockfile.sh                               | unknown      | (none)              
+fix_workflow_master.sh                        | unknown      | (none)              
+fix_and_diagnose.sh                           | unknown      | logging             
+fix_and_run.sh                                | unknown      | password-set        
+fix_and_run_patch.sh                          | unknown      | (none)              

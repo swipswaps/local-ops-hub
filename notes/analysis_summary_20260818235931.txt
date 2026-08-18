@@ -1,0 +1,35 @@
+============================================================================
+ANALYSIS SUMMARY – 2026-08-18T23:59:38Z
+============================================================================
+
+BOOT SCRIPTS:
+  Total: 21 boot scripts
+  With conflict detection: 3
+  Running inside VM: 21
+  Running on host: 0
+0
+
+FIX SCRIPTS:
+  Total: 9 fix scripts
+  Designed for inside VM: 4
+  Designed for host (offline): 0
+0
+  Designed for host (repo): 0
+0
+
+CONFLICT DETECTION:
+  Scripts with conflict checker: 
+  The conflict checker was first introduced in boot-pmos-virtio-tablet-fixed_0002.sh
+
+RECOMMENDATIONS:
+  Keep one boot script with conflict detection: boot-pmos-virtio-tablet-fixed_0005.sh
+  Keep the most complete fix script: fix-pmos-installer.sh
+  Remove all other boot and fix variants after verifying the keepers work
+
+RAW LINKS FOR THIS ANALYSIS:
+  https://raw.githubusercontent.com/swipswaps/local-ops-hub/master/notes/script_analysis_20260818235931.txt
+  https://raw.githubusercontent.com/swipswaps/local-ops-hub/master/notes/script_comparison_20260818235931.txt
+  https://raw.githubusercontent.com/swipswaps/local-ops-hub/master/notes/conflict_checkers_20260818235931.txt
+  https://raw.githubusercontent.com/swipswaps/local-ops-hub/master/notes/host_vs_vm_20260818235931.txt
+  https://raw.githubusercontent.com/swipswaps/local-ops-hub/master/notes/analysis_summary_20260818235931.txt
+

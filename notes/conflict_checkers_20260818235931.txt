@@ -1,0 +1,43 @@
+
+=== boot-pmos-virtio-tablet-fixed_0002.sh ===
+The following lines contain the conflict detection logic:
+
+13:find_lock_holders() {
+16:	# Method 1: fuser (most reliable for file locks)
+17:	if command -v fuser >/dev/null 2>&1; then
+18:		pids=$(fuser "$NEWDISK" 2>/dev/null | tr -s ' ' '\n' | grep -E '^[0-9]+$' | sort -u | tr '\n' ' ')
+21:	# Method 2: lsof fallback
+22:	if [ -z "$pids" ] && command -v lsof >/dev/null 2>&1; then
+23:		pids=$(lsof "$NEWDISK" 2>/dev/null | awk 'NR>1 {print $2}' | sort -u | tr '\n' ' ')
+50:echo "🔍 Pre-flight check: scanning for disk lock holders..."
+52:LOCK_PIDS=$(find_lock_holders)
+88:			REMAINING=$(find_lock_holders)
+92:				echo "   Try: sudo fuser -k $NEWDISK"
+103:	echo "   ✅ No lock holders detected — disk is free."
+
+
+=== boot-pmos-virtio-tablet-fixed_0003.sh ===
+The following lines contain the conflict detection logic:
+
+14:find_lock_holders() {
+16:	if command -v fuser >/dev/null 2>&1; then
+17:		pids=$(fuser "$NEWDISK" 2>/dev/null | tr -s ' ' '\n' | grep -E '^[0-9]+$' | sort -u | tr '\n' ' ')
+19:	if [ -z "$pids" ] && command -v lsof >/dev/null 2>&1; then
+20:		pids=$(lsof "$NEWDISK" 2>/dev/null | awk 'NR>1 {print $2}' | sort -u | tr '\n' ' ')
+41:echo "🔍 Pre-flight check: scanning for disk lock holders..."
+42:LOCK_PIDS=$(find_lock_holders)
+65:			REMAINING=$(find_lock_holders)
+68:				echo "   Try: sudo fuser -k $NEWDISK"
+79:	echo "   ✅ No lock holders detected — disk is free."
+
+
+=== boot-pmos-virtio-tablet-fixed_0004.sh ===
+The following lines contain the conflict detection logic:
+
+13:find_lock_holders() {
+15:	if command -v fuser >/dev/null 2>&1; then
+16:		pids=$(fuser "$NEWDISK" 2>/dev/null | tr -s ' ' '\n' | grep -E '^[0-9]+$' | sort -u | tr '\n' ' ')
+18:	if [ -z "$pids" ] && command -v lsof >/dev/null 2>&1; then
+19:		pids=$(lsof "$NEWDISK" 2>/dev/null | awk 'NR>1 {print $2}' | sort -u | tr '\n' ' ')
+37:LOCK_PIDS=$(find_lock_holders)
+

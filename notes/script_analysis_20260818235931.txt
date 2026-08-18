@@ -1,0 +1,37 @@
+[2026-08-18T23:59:31Z] [SUCCESS] phase1: fetching boot scripts from GitHub
+[2026-08-18T23:59:32Z] [SUCCESS] fetch: boot-pmos-auto-vnc.sh (flags: & vnc serial kernel-direct, conflict: no)
+[2026-08-18T23:59:32Z] [SUCCESS] fetch: boot-pmos-auto-wait.sh (flags:  vnc serial kernel-direct, conflict: no)
+[2026-08-18T23:59:32Z] [SUCCESS] fetch: boot-pmos-auto.sh (flags:  vnc uefi serial, conflict: no)
+[2026-08-18T23:59:32Z] [SUCCESS] fetch: boot-pmos-graphics-fix.sh (flags: std vnc serial kernel-direct, conflict: no)
+[2026-08-18T23:59:33Z] [SUCCESS] fetch: boot-pmos-kernel-direct.sh (flags: std vnc serial kernel-direct, conflict: no)
+[2026-08-18T23:59:33Z] [SUCCESS] fetch: boot-pmos-spice.sh (flags: virtio serial kernel-direct, conflict: no)
+[2026-08-18T23:59:33Z] [SUCCESS] fetch: boot-pmos-text.sh (flags: std vnc serial kernel-direct, conflict: no)
+[2026-08-18T23:59:33Z] [SUCCESS] fetch: boot-pmos-uefi-bootindex.sh (flags:  vnc uefi serial, conflict: no)
+[2026-08-18T23:59:34Z] [SUCCESS] fetch: boot-pmos-uefi-clean.sh (flags:  vnc uefi serial, conflict: no)
+[2026-08-18T23:59:34Z] [SUCCESS] fetch: boot-pmos-uefi-final.sh (flags:  vnc uefi serial, conflict: no)
+[2026-08-18T23:59:34Z] [SUCCESS] fetch: boot-pmos-uefi-now.sh (flags:  vnc uefi serial, conflict: no)
+[2026-08-18T23:59:34Z] [SUCCESS] fetch: boot-pmos-virtio-tablet-fixed.sh (flags: virtio vnc usb-tablet serial kernel-direct, conflict: no)
+[2026-08-18T23:59:34Z] [SUCCESS] fetch: boot-pmos-virtio-tablet-fixed_0002.sh (flags: virtio vnc usb-tablet serial kernel-direct, conflict: yes)
+[2026-08-18T23:59:35Z] [SUCCESS] fetch: boot-pmos-virtio-tablet-fixed_0003.sh (flags: virtio vnc usb-tablet serial kernel-direct, conflict: yes)
+[2026-08-18T23:59:35Z] [SUCCESS] fetch: boot-pmos-virtio-tablet-fixed_0004.sh (flags: virtio vnc usb-tablet serial kernel-direct, conflict: yes)
+[2026-08-18T23:59:35Z] [SUCCESS] fetch: boot-pmos-virtio-tablet-fixed_0005.sh (flags: virtio vnc usb-tablet serial kernel-direct, conflict: no)
+[2026-08-18T23:59:35Z] [SUCCESS] fetch: boot-pmos-virtio-tablet.sh (flags: mouse)..." vnc usb-tablet serial kernel-direct, conflict: no)
+[2026-08-18T23:59:36Z] [SUCCESS] fetch: boot-pmos-virtio.sh (flags: virtio vnc serial kernel-direct, conflict: no)
+[2026-08-18T23:59:36Z] [SUCCESS] fetch: boot-pmos-vnc-fixed.sh (flags: std vnc usb-tablet serial kernel-direct, conflict: no)
+[2026-08-18T23:59:36Z] [SUCCESS] fetch: boot-pmos-with-large-disk.sh (flags: virtio vnc serial kernel-direct, conflict: no)
+[2026-08-18T23:59:36Z] [SUCCESS] fetch: boot_pmos.sh (flags: :$VNC_DISPLAY" vnc kernel-direct, conflict: no)
+[2026-08-18T23:59:36Z] [SUCCESS] phase1: fetched 21/21 boot scripts (0 failed)
+[2026-08-18T23:59:36Z] [SUCCESS] phase2: analyzing fix scripts
+[2026-08-18T23:59:36Z] [SUCCESS] fix_analyze: fix-pmos-installer.sh (inside VM)
+[2026-08-18T23:59:37Z] [SUCCESS] fix_analyze: fix_pmos_boot.sh (inside VM)
+[2026-08-18T23:59:37Z] [SUCCESS] fix_analyze: fix_pmos_boot_robust.sh (inside VM)
+[2026-08-18T23:59:37Z] [SUCCESS] fix_analyze: fix_pmos_boot_with_vnc_handling.sh (inside VM)
+[2026-08-18T23:59:37Z] [SUCCESS] fix_analyze: fix_lockfile.sh (unknown)
+[2026-08-18T23:59:38Z] [SUCCESS] fix_analyze: fix_workflow_master.sh (unknown)
+[2026-08-18T23:59:38Z] [SUCCESS] fix_analyze: fix_and_diagnose.sh (unknown)
+[2026-08-18T23:59:38Z] [SUCCESS] fix_analyze: fix_and_run.sh (unknown)
+[2026-08-18T23:59:38Z] [SUCCESS] fix_analyze: fix_and_run_patch.sh (unknown)
+[2026-08-18T23:59:38Z] [SUCCESS] phase2: analyzed 9 fix scripts
+[2026-08-18T23:59:38Z] [SUCCESS] phase3: generating summary
+[2026-08-18T23:59:38Z] [SUCCESS] phase3: summary generated
+[2026-08-18T23:59:38Z] [SUCCESS] phase4: pushing analysis to GitHub
