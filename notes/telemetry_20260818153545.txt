@@ -1,0 +1,186 @@
+============================================================
+  TELEMETRY REQUIRED – PMBOOTSTRAP DIAGNOSTIC DUMP
+  Generated: 2026-08-18T15:35:45Z
+============================================================
+
+=== SYSTEM ===
+Linux unknown22f5046d535b 7.0.11-100.fc43.x86_64 #1 SMP PREEMPT_DYNAMIC Mon Jun  1 22:51:40 UTC 2026 x86_64 GNU/Linux
+
+=== PMBOOTSTRAP ===
+3.11.1
+
+=== PYTHON ===
+Python 3.14.6
+
+=== CONFIG FILE (/home/owner/pmbootstrap-build/pmbootstrap.cfg) ===
+[pmbootstrap]
+aports = /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/    log_result "pmbootstrap_init" "false" "init failed"
+device = generic-x86_64
+ui = xfce4
+work = /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/if [ $? -ne 0 ]; then
+
+[providers]
+
+[mirrors]
+
+
+=== OTHER PMBOOTSTRAP CONFIGS (find ~/.config/pmbootstrap*) ===
+
+=== PMAPORTS (/home/owner/pmbootstrap-build/pmaports) ===
+d402390 amlogic: force partition resize on first boot
+origin	https://gitlab.postmarketos.org/postmarketOS/pmaports.git (fetch)
+origin	https://gitlab.postmarketos.org/postmarketOS/pmaports.git (push)
+
+=== WORK DIRECTORY (/home/owner/pmbootstrap-build/work) ===
+total 36
+drwxr-xr-x. 1 owner owner    14 Aug 18 10:51 .
+drwxr-xr-x. 1 owner owner   122 Aug 18 10:51 ..
+-rw-r--r--. 1 owner owner 33432 Aug 18 11:34 log.txt
+36K	/home/owner/pmbootstrap-build/work
+
+=== DISK SPACE ===
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda3       930G  226G  705G  25% /
+
+=== ENVIRONMENT (filtered) ===
+DEBUGINFOD_IMA_CERT_PATH=/etc/keys/ima:
+FPATH=/usr/share/lmod/lmod/init/ksh_funcs
+HOME=/home/owner
+MANPATH=/usr/share/lmod/lmod/share/man:
+MODULEPATH=/etc/modulefiles:/usr/share/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core
+MODULEPATH_ROOT=/usr/share/modulefiles
+MODULESHOME=/usr/share/lmod/lmod
+MOZ_GMP_PATH=/usr/lib64/mozilla/plugins/gmp-gmpopenh264/system-installed
+PATH=/home/owner/.local/bin:/home/owner/.cargo/bin:/home/owner/bin:/home/owner/.cargo/bin:/home/owner/bin:/home/owner/.local/bin:/home/owner/bin:/usr/local/bin:/usr/bin:/home/owner/.dotnet/tools
+USER=owner
+XDG_CACHE_HOME=/home/owner/.cache
+XDG_CONFIG_DIRS=/etc/xdg
+XDG_CONFIG_HOME=/home/owner/.config
+XDG_CURRENT_DESKTOP=XFCE
+XDG_DATA_DIRS=/home/owner/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/owner
+XDG_MENU_PREFIX=xfce-
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+XDG_SEAT=seat0
+XDG_SESSION_CLASS=user
+XDG_SESSION_DESKTOP=xfce
+XDG_SESSION_ID=22
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+XDG_SESSION_TYPE=x11
+XDG_VTNR=1
+
+=== ATTEMPT PMBOOTSTRAP INIT WITH -y (capturing output) ===
+[11:35:46] Location of the 'work' path. Multiple chroots (native, device arch, device rootfs) will be created in there.[0m
+[11:35:46] [1mWork path [/home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/if [ $? -ne 0 ]; then][0m: [11:35:46] Location of the 'pmaports' path, containing package definitions.[0m
+[11:35:46] [1mpmaports path [/home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/    log_result "pmbootstrap_init" "false" "init failed"][0m: [11:35:46] Setting up the native chroot and cloning the package build recipes (pmaports)...[0m
+[11:35:46] Clone git repository: https://gitlab.postmarketos.org/postmarketOS/pmaports.git[0m
+Cloning into '/home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/    log_result "pmbootstrap_init" "false" "init failed"'...
+[11:37:46] Choose the postmarketOS release channel.[0m
+[11:37:46] Available (14):[0m
+[11:37:46] * edge: Rolling release / Most devices / Occasional breakage: https://postmarketos.org/edge[0m
+[11:37:46] * v26.06: Latest release / Recommended for best stability[0m
+[11:37:46] * v25.12: Old release (unsupported)[0m
+[11:37:46] [1mChannel [edge][0m: [11:37:46] [91mERROR:[0m Invalid channel specified, please type in one from the list above.[0m
+[11:37:46] [1mChannel [edge][0m: [11:37:46] [91mERROR:[0m Invalid channel specified, please type in one from the list above.[0m
+[11:37:46] [1mChannel [edge][0m: [11:37:46] [91mERROR:[0m Invalid channel specified, please type in one from the list above.[0m
+[11:37:46] [1mChannel [edge][0m: [11:37:46] [91mERROR:[0m Invalid channel specified, please type in one from the list above.[0m
+[11:37:46] [1mChannel [edge][0m: [11:37:46] [91mERROR:[0m Invalid channel specified, please type in one from the list above.[0m
+[11:37:46] [1mChannel [edge][0m: [11:37:46] [91mERROR:[0m Invalid channel specified, please type in one from the list above.[0m
+[11:37:46] [1mChannel [edge][0m: [11:37:46] [91mERROR:[0m Invalid channel specified, please type in one from the list above.[0m
+[11:37:46] [1mChannel [edge][0m: [11:37:46] [91mERROR:[0m Invalid channel specified, please type in one from the list above.[0m
+[11:37:46] [1mChannel [edge][0m: [11:37:46] [91mERROR:[0m Invalid channel specified, please type in one from the list above.[0m
+[11:37:46] [1mChannel [edge][0m: [11:37:46] [91mERROR:[0m Invalid channel specified, please type in one from the list above.[0m
+[11:37:46] [1mChannel [edge][0m: [11:37:46] [91mERROR:[0m Invalid channel specified, please type in one from the list above.[0m
+[11:37:46] [1mChannel [edge][0m: [11:37:46] [91mERROR:[0m Invalid channel specified, please type in one from the list above.[0m
+[11:37:46] [1mChannel [edge][0m: [11:37:46] [91mERROR:[0m Invalid channel specified, please type in one from the list above.[0m
+[11:37:46] [1mChannel [edge][0m: [11:37:46] [91mERROR:[0m Invalid channel specified, please type in one from the list above.[0m
+[11:37:46] [1mChannel [edge][0m: [11:37:46] [91mERROR:[0m Invalid channel specified, please type in one from the list above.[0m
+[11:37:46] [1mChannel [edge][0m: [11:37:46] [94mNOTE:[0m pmaports is on main branch, copying git hooks.[0m
+[11:37:46] Choose your target device vendor (either an existing one, or a new one for porting).[0m
+[11:37:46] Available vendors (107): acer, alcatel, amazon, amediatech, amlogic, apple, ark, arrow, asus, ayaneo, ayn, bananapi, barnesnoble, beelink, blackberry, bq, clockworkpi, cubietech, cutiepi, dell, dongshanpi, epson, essential, fairphone, finepower, fly, fxtec, generic, gigaset, goclever, google, gp, hisense, hp, htc, huawei, inet, infocus, jolla, khadas, klipad, kobo, lark, leeco, lenovo, lg, librecomputer, linksys, lynx, mangopi, medion, meizu, microsoft, mnt, mobvoi, motorola, nextbit, nobby, nokia, nothing, nvidia, odroid, oneplus, oppo, ouya, pine64, planet, pocketbook, postmarketos, powkiddy, purism, qcom, qemu, qualcomm, radxa, raspberry, realme, rockchip, samsung, semc, sharp, shift, sipeed, solidrun, sony, sourceparts, sqfmi, starway, surftab, t2m, thundercomm, tokio, tolino, trekstor, vernee, vivo, volla, wd, wexler, wiko, wileyfox, xiaomi, xunlong, yu, zhihe, zte, zuk[0m
+[11:37:46] [1mVendor [generic][0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: [a-z0-9]+). Please try again.[0m
+[11:37:46] [1mVendor [generic][0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: [a-z0-9]+). Please try again.[0m
+[11:37:46] [1mVendor [generic][0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: [a-z0-9]+). Please try again.[0m
+[11:37:46] [1mVendor [generic][0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: [a-z0-9]+). Please try again.[0m
+[11:37:46] [1mVendor [generic][0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: [a-z0-9]+). Please try again.[0m
+[11:37:46] [1mVendor [generic][0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: [a-z0-9]+). Please try again.[0m
+[11:37:46] [1mVendor [generic][0m: [11:37:46] Devices are categorised as follows, from best to worst:
+* [95mMain[0m: ports where mostly everything works.
+* [94mCommunity[0m: often mostly usable, but may lack important functionality.
+* [92mTesting[0m: anything from "just boots in some sense" to almost fully functioning ports.
+* [93mDownstream[0m: ports that use a downstream kernel — very limited functionality. Not recommended.
+
+Available devices by codename (3): [92mloongarch64[0m (testing), [94mppc64le[0m (community), [94mx86_64[0m (community)[0m
+[11:37:46] [1mDevice codename [x86_64][0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: [a-z0-9\._-]+). Please try again.[0m
+[11:37:46] [1mDevice codename [x86_64][0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: [a-z0-9\._-]+). Please try again.[0m
+[11:37:46] [1mDevice codename [x86_64][0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: [a-z0-9\._-]+). Please try again.[0m
+[11:37:46] [1mDevice codename [x86_64][0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: [a-z0-9\._-]+). Please try again.[0m
+[11:37:46] [1mDevice codename [x86_64][0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: [a-z0-9\._-]+). Please try again.[0m
+[11:37:46] [1mDevice codename [x86_64][0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: [a-z0-9\._-]+). Please try again.[0m
+[11:37:46] [1mDevice codename [x86_64][0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: [a-z0-9\._-]+). Please try again.[0m
+[11:37:46] [1mDevice codename [x86_64][0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: [a-z0-9\._-]+). Please try again.[0m
+[11:37:46] [1mDevice codename [x86_64][0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: [a-z0-9\._-]+). Please try again.[0m
+[11:37:46] [1mDevice codename [x86_64][0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: [a-z0-9\._-]+). Please try again.[0m
+[11:37:46] [1mDevice codename [x86_64][0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: [a-z0-9\._-]+). Please try again.[0m
+[11:37:46] [1mDevice codename [x86_64][0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: [a-z0-9\._-]+). Please try again.[0m
+[11:37:46] [1mDevice codename [x86_64][0m: [11:37:46] [1mThe specified device ('generic-else') could not be found in existing ports.[0m
+If you're trying to select a device that is supported, check the following:
+
+* Make sure you spelled the vendor name and codename correctly. 
+* Check if you're on the right release branch. Devices in the 'downstream' category are only available on the 'edge' branch; if you selected a stable branch, run pmbootstrap init again and select 'edge'.
+* If the device is supported by a generic port, type in the vendor and codename of the generic port.
+
+If you want to create a new device port, follow the guide at <https://postmarketos.org/porting/>.[0m
+[11:37:46] Do you want to create a new device port? (y/n) [y]: y[0m
+[11:37:46] What type of port are you creating?[0m
+[11:37:46] * mainline: Port using upstream/mainline kernel, compatible with upstream user space.[0m
+[11:37:46] * downstream: Port using downstream kernel, using the original (e.g. Android) kernel sources, at least partially incompatible with upstream user space.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m Input did not pass validation (regex: mainline|downstream). Please try again.[0m
+[11:37:46] [1mType? (mainline/downstream)[0m: [11:37:46] [91mERROR:[0m EOF when reading a line[0m
+[11:37:46] See also: <https://postmarketos.org/troubleshooting>[0m
+
+Run 'pmbootstrap log' for details.
+
+Before you report this error, ensure that pmbootstrap is up to date.
+Find the latest version here: https://gitlab.postmarketos.org/postmarketOS/pmbootstrap/-/tags
+Your version: 3.11.1
+[92mChannel[0m: systemd-edge (pmaports: main)
+[92mDevice[0m:  generic-x86_64 (x86_64, kernel: stable)
+[92mUI[0m:      xfce4
+[92msystemd[0m: yes (default selected in pmbootstrap init, postmarketos-ui-xfce4 defaults to systemd)

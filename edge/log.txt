@@ -1,0 +1,102 @@
+
+
+(599044) [12:32:28] $ /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -y init
+(599044) [12:32:28] pmbootstrap v3.11.1 (Python 3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)])
+(599044) [12:32:28] Location of the 'work' path. Multiple chroots (native, device arch, device rootfs) will be created in there.
+[12:32:28] Work path [/home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/edge]: RC=$?
+(599044) [12:32:28] Location of the 'pmaports' path, containing package definitions.
+[12:32:28] pmaports path [/home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/generic]: if [ $RC -eq 0 ]; then
+(599044) [12:32:28] Save config: /home/owner/.config/pmbootstrap_v3.cfg
+(599044) [12:32:28] % cd /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/if [ $RC -eq 0 ]; then; git remote -v
+(599044) [12:32:28] % cd /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/if [ $RC -eq 0 ]; then; git show origin/main:channels.cfg
+(599044) [12:32:28] Choose the postmarketOS release channel.
+(599044) [12:32:28] Available (14):
+(599044) [12:32:28] * edge: Rolling release / Most devices / Occasional breakage: https://postmarketos.org/edge
+(599044) [12:32:28] * v26.06: Latest release / Recommended for best stability
+(599044) [12:32:28] * v25.12: Old release (unsupported)
+[12:32:28] Channel [edge]:     echo "✅ init completed"
+(599044) [12:32:28] ERROR: Invalid channel specified, please type in one from the list above.
+[12:32:28] Channel [edge]: else
+(599044) [12:32:28] ERROR: Invalid channel specified, please type in one from the list above.
+[12:32:28] Channel [edge]:     echo "❌ init failed with exit $rc"
+(599044) [12:32:28] ERROR: Invalid channel specified, please type in one from the list above.
+[12:32:28] Channel [edge]:     exit $rc
+(599044) [12:32:28] ERROR: Invalid channel specified, please type in one from the list above.
+[12:32:28] Channel [edge]: fi
+(599044) [12:32:28] ERROR: Invalid channel specified, please type in one from the list above.
+[12:32:28] Channel [edge]: edge
+(599044) [12:32:28] % cd /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/if [ $RC -eq 0 ]; then; git rev-parse --abbrev-ref HEAD
+main
+(599044) [12:32:28] % cd /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/if [ $RC -eq 0 ]; then; git rev-parse --abbrev-ref HEAD
+main
+(599044) [12:32:28] NOTE: pmaports is on main branch, copying git hooks.
+(599044) [12:32:28] % cp /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/if [ $RC -eq 0 ]; then/.githooks/pre-commit /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/if [ $RC -eq 0 ]; then/.git/hooks/pre-commit
+(599044) [12:32:28] % cp /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/if [ $RC -eq 0 ]; then/.githooks/prepare-commit-msg /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/if [ $RC -eq 0 ]; then/.git/hooks/prepare-commit-msg
+(599044) [12:32:28] Choose your target device vendor (either an existing one, or a new one for porting).
+(599044) [12:32:28] Available vendors (0): 
+[12:32:28] Vendor [qemu]: # ----------------------------------------------------------------------------
+(599044) [12:32:28] ERROR: Input did not pass validation (regex: [a-z0-9]+). Please try again.
+[12:32:28] Vendor [qemu]: # 6. Now run install (using config file and env vars)
+(599044) [12:32:28] ERROR: Input did not pass validation (regex: [a-z0-9]+). Please try again.
+[12:32:28] Vendor [qemu]: # ----------------------------------------------------------------------------
+(599044) [12:32:28] ERROR: Input did not pass validation (regex: [a-z0-9]+). Please try again.
+[12:32:28] Vendor [qemu]: echo ">>> Running: $PMB -c $CONFIG_FILE -w $WORK_DIR -p $PMAPORTS_DIR install"
+(599044) [12:32:28] ERROR: Input did not pass validation (regex: [a-z0-9]+). Please try again.
+[12:32:28] Vendor [qemu]: "$PMB" -c "$CONFIG_FILE" -w "$WORK_DIR" -p "$PMAPORTS_DIR" install
+(599044) [12:32:28] ERROR: Input did not pass validation (regex: [a-z0-9]+). Please try again.
+[12:32:28] Vendor [qemu]: RC2=$?
+(599044) [12:32:28] ERROR: Input did not pass validation (regex: [a-z0-9]+). Please try again.
+[12:32:28] Vendor [qemu]: if [ $RC2 -eq 0 ]; then
+(599044) [12:32:28] ERROR: Input did not pass validation (regex: [a-z0-9]+). Please try again.
+[12:32:28] Vendor [qemu]:     echo "✅ Installation completed"
+(599044) [12:32:28] ERROR: Input did not pass validation (regex: [a-z0-9]+). Please try again.
+[12:32:28] Vendor [qemu]:     echo "Image will be in $WORK_DIR/rootfs/*.img"
+(599044) [12:32:28] ERROR: Input did not pass validation (regex: [a-z0-9]+). Please try again.
+[12:32:28] Vendor [qemu]: else
+(599044) [12:32:28] [1mThe specified vendor (else) could not be found in existing ports.[0m
+If you're trying to select a device that is supported, check the following:
+
+* Make sure you spelled the vendor name correctly. 
+* Check if you're on the right release branch. Devices in the 'downstream' category are only available on the 'edge' branch; if you selected a stable branch, run pmbootstrap init again and select 'edge'.
+* If the device is supported by a generic port, type in the vendor and codename of the generic port.
+
+If you want to create a new device port, follow the guide at <https://postmarketos.org/porting/>.
+(599044) [12:32:28] Do you want to create a new device port? (y/n) [y]: y
+[12:32:28] Device codename:     echo "❌ Installation failed with exit $RC2"
+(599044) [12:32:28] ERROR: Input did not pass validation (regex: [a-z0-9\._-]+). Please try again.
+[12:32:28] Device codename: fi
+(599044) [12:32:28] [1mThe specified device ('else-fi') could not be found in existing ports.[0m
+If you're trying to select a device that is supported, check the following:
+
+* Make sure you spelled the vendor name and codename correctly. 
+* Check if you're on the right release branch. Devices in the 'downstream' category are only available on the 'edge' branch; if you selected a stable branch, run pmbootstrap init again and select 'edge'.
+* If the device is supported by a generic port, type in the vendor and codename of the generic port.
+
+If you want to create a new device port, follow the guide at <https://postmarketos.org/porting/>.
+(599044) [12:32:28] Do you want to create a new device port? (y/n) [y]: y
+(599044) [12:32:28] What type of port are you creating?
+(599044) [12:32:28] * mainline: Port using upstream/mainline kernel, compatible with upstream user space.
+(599044) [12:32:28] * downstream: Port using downstream kernel, using the original (e.g. Android) kernel sources, at least partially incompatible with upstream user space.
+(599044) [12:32:28] ERROR: EOF when reading a line
+(599044) [12:32:28] See also: <https://postmarketos.org/troubleshooting>
+(599044) [12:32:28] Traceback (most recent call last):
+  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/__init__.py", line 86, in main
+    config_init.frontend(args)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/config/init.py", line 968, in frontend
+    device, device_is_new, deviceinfo_path, kernel = ask_for_device(get_context(), channel)
+                                                     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/config/init.py", line 633, in ask_for_device
+    device_category = ask_for_mainline_downstream()
+  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/config/init.py", line 482, in ask_for_mainline_downstream
+    port_type = pmb.helpers.cli.ask(
+        question="Type?",
+    ...<3 lines>...
+        complete=["mainline", "downstream"],
+    )
+  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/helpers/cli.py", line 81, in ask
+    ret = input(f"{line_color}: ")
+EOFError: EOF when reading a line
+
+(599044) [12:32:28] % cd /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/if [ $RC -eq 0 ]; then; git rev-parse --abbrev-ref HEAD
+(599044) [12:32:28] % cd /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/if [ $RC -eq 0 ]; then; git status --porcelain

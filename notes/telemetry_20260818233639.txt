@@ -1,0 +1,21 @@
+[2026-08-18T23:36:39Z] [TELEMETRY] preflight 1/4 25%
+[2026-08-18T23:36:39Z] [TELEMETRY] preflight complete (elapsed: 00:00)
+[2026-08-18T23:36:39Z] [TELEMETRY] cataloging 1/4 25%
+[2026-08-18T23:36:39Z] [TELEMETRY] cataloging: boot-pmos-auto-wait.sh 5/77 6%
+[2026-08-18T23:36:39Z] [TELEMETRY] cataloging: boot-pmos-text.sh 10/77 12%
+[2026-08-18T23:36:39Z] [TELEMETRY] cataloging: boot-pmos-virtio.sh 15/77 19%
+[2026-08-18T23:36:40Z] [TELEMETRY] cataloging: boot-pmos-virtio-tablet-fixed.sh 20/77 25%
+[2026-08-18T23:36:40Z] [TELEMETRY] cataloging: capture_and_validate.sh 25/77 32%
+[2026-08-18T23:36:40Z] [TELEMETRY] cataloging: check_live_bundle.sh 30/77 38%
+[2026-08-18T23:36:40Z] [TELEMETRY] cataloging: deploy_and_verify.sh 35/77 45%
+[2026-08-18T23:36:40Z] [TELEMETRY] cataloging: deploy_verify.sh 40/77 51%
+[2026-08-18T23:36:41Z] [TELEMETRY] cataloging: fetch_failed_logs.sh 45/77 58%
+[2026-08-18T23:36:41Z] [TELEMETRY] cataloging: fix_lockfile.sh 50/77 64%
+[2026-08-18T23:36:41Z] [TELEMETRY] cataloging: fix_workflow_and_rerun.sh 55/77 71%
+[2026-08-18T23:36:41Z] [TELEMETRY] cataloging: force_redeploy_and_clear_cache.sh 60/77 77%
+[2026-08-18T23:36:41Z] [TELEMETRY] cataloging: poll_until_live.sh 65/77 84%
+[2026-08-18T23:36:42Z] [TELEMETRY] cataloging: raw_diagnostic.sh 70/77 90%
+[2026-08-18T23:36:42Z] [TELEMETRY] cataloging: trigger_correct_commit.sh 75/77 97%
+[2026-08-18T23:36:42Z] [TELEMETRY] cataloging: wait_and_check.sh 77/77 100%
+[2026-08-18T23:36:42Z] [TELEMETRY] cataloging (77 scripts) complete (elapsed: 00:03)
+[2026-08-18T23:36:42Z] [TELEMETRY] testing: audit_repo.sh 1/77 1%

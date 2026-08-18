@@ -1,0 +1,36 @@
+============================================================================
+REPOSITORY SCRIPT CATALOG – 2026-08-18T23:37:05Z
+============================================================================
+
+SCRIPT                                                  | TYPE       |  LINES | EXEC         | KEY FEATURES   
+--------------------------------------------------------+------------+--------+--------------+----------------
+audit_repo.sh                                           | boot       |    652 | yes          | qemu expect guestfish polkit pmbootstrap SET-E SED-VIOLATION 
+auto_wait_and_diagnose.sh                               | diagnostic |     84 | yes          | none           
+boot-pmos-auto.sh                                       | boot       |     58 | yes          | qemu           
+boot-pmos-auto-vnc.sh                                   | boot       |     26 | yes          | qemu           
+boot-pmos-auto-wait.sh                                  | boot       |     23 | yes          | qemu           
+boot-pmos-graphics-fix.sh                               | boot       |     22 | yes          | qemu           
+boot-pmos-kernel-direct.sh                              | boot       |     42 | yes          | qemu           
+boot_pmos.sh                                            | boot       |    188 | yes          | qemu SET-E     
+boot-pmos-spice.sh                                      | boot       |     21 | yes          | qemu           
+boot-pmos-text.sh                                       | boot       |     19 | yes          | qemu           
+boot-pmos-uefi-bootindex.sh                             | boot       |     15 | yes          | qemu           
+boot-pmos-uefi-clean.sh                                 | boot       |     15 | yes          | qemu           
+boot-pmos-uefi-final.sh                                 | boot       |     41 | yes          | qemu           
+boot-pmos-uefi-now.sh                                   | boot       |     74 | yes          | qemu           
+boot-pmos-virtio.sh                                     | boot       |     19 | yes          | qemu           
+boot-pmos-virtio-tablet-fixed_0002.sh                   | boot       |    121 | yes          | qemu SED-VIOLATION 
+boot-pmos-virtio-tablet-fixed_0003.sh                   | boot       |     97 | yes          | qemu SED-VIOLATION 
+boot-pmos-virtio-tablet-fixed_0004.sh                   | boot       |     59 | yes          | qemu SED-VIOLATION 
+boot-pmos-virtio-tablet-fixed_0005.sh                   | boot       |     24 | yes          | qemu           
+boot-pmos-virtio-tablet-fixed.sh                        | boot       |     23 | yes          | qemu           
+boot-pmos-virtio-tablet.sh                              | boot       |     23 | yes          | qemu           
+boot-pmos-vnc-fixed.sh                                  | boot       |     23 | yes          | qemu           
+boot-pmos-with-large-disk.sh                            | boot       |     67 | yes          | qemu           
+capture_and_push_diagnostic.sh                          | deploy     |     84 | yes          | none           
+capture_and_validate.sh                                 | diagnostic |    111 | yes          | none           
+capture_full_raw_json.sh                                | diagnostic |    110 | yes          | none           
+capture_full_raw_json_verbose.sh                        | diagnostic |    109 | yes          | none           
+capture_full_raw.sh                                     | diagnostic |     76 | yes          | none           
+capture_raw_json.sh                                     | diagnostic |    112 | yes          | none           
+check_live_bundle.sh                                    | unknown    |     51 | yes          | SED-VIOLATION  

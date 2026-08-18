@@ -1,0 +1,653 @@
+
+============================================================
+  TELEMETRY COLLECTION
+============================================================
+
+=== System info ===
+Linux unknown22f5046d535b 7.0.11-100.fc43.x86_64 #1 SMP PREEMPT_DYNAMIC Mon Jun  1 22:51:40 UTC 2026 x86_64 GNU/Linux
+
+=== pmbootstrap version ===
+3.11.1
+
+=== Config file ===
+[pmbootstrap]
+aports = /home/owner/pmbootstrap-build/pmaports
+device = generic-x86_64
+is_default_channel = False
+timezone = America/New_York
+ui = xfce4
+work = /home/owner/pmbootstrap-build/work
+
+[providers]
+
+[mirrors]
+
+
+=== pmbootstrap log (last 50 lines) ===
+(626121) [13:38:01] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)
+(626121) [13:38:01] * i3wm: (X11) Tiling WM (keyboard required)
+(626121) [13:38:01] * kodi: (GBM) 10-foot UI useful on TV's
+(626121) [13:38:01] * lomiri: (Wayland) The convergent desktop environment (Experimental)
+(626121) [13:38:01] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)
+(626121) [13:38:01] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)
+(626121) [13:38:01] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield
+(626121) [13:38:01] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)
+(626121) [13:38:01] * openbox: (X11) A highly configurable and lightweight X11 window manager (keyboard required)
+(626121) [13:38:01] * os-installer: UI for installing postmarketOS
+(626121) [13:38:01] * phosh: (Wayland) Mobile UI using GNOME components and apps
+(626121) [13:38:01] * plasma-bigscreen: (Wayland) 10-feet variant of Plasma, made for big screen TVs
+(626121) [13:38:01] * plasma-desktop: (Wayland) KDE Desktop Environment (works well with tablets)
+(626121) [13:38:01] * plasma-mobile: (Wayland) Mobile variant of KDE Plasma
+(626121) [13:38:01] * retroarch: RetroArch in KMS mode
+(626121) [13:38:01] * shelli: Plain console with touchscreen gesture support
+(626121) [13:38:01] * sway: (Wayland) Tiling WM, drop-in replacement for i3wm
+(626121) [13:38:01] * sxmo-de-dwm: Simple Mobile: Mobile environment based on SXMO and running on dwm
+(626121) [13:38:01] * sxmo-de-i3: Simple Mobile: Mobile environment based on SXMO and running on i3
+(626121) [13:38:01] * sxmo-de-river: Simple Mobile: Mobile environment based on SXMO and running on river
+(626121) [13:38:01] * sxmo-de-sway: Simple Mobile: Mobile environment based on SXMO and running on sway
+(626121) [13:38:01] * weston: (Wayland) Reference compositor (demo, not a phone interface)
+(626121) [13:38:01] * windowmaker: (X11) Window manager inspired by the NeXTSTEP user interface (stylus recommended)
+(626121) [13:38:01] * xfce4: (X11) Lightweight desktop (stylus recommended)
+[13:38:01] User interface [xfce4]: xfce4
+(626121) [13:38:01] Based on your UI selection, 'default' will result in choosing systemd.
+[13:38:01] Which service manager should be used? (default/openrc/systemd) [default]: default
+(626121) [13:38:01] Additional options: extra free space: 0 MB, boot partition size: 512 MB, parallel jobs: 4, ccache per arch: 5G, sudo timer: False, mirror: http://mirror.postmarketos.org/postmarketos/
+[13:38:01] Change them? (y/n) [n]: n
+(626121) [13:38:01] Additional packages that will be installed to rootfs. Specify them in a comma separated list (e.g.: vim,file) or "none"
+[13:38:01] Extra packages [none]: none
+(626121) [13:38:01] Your host timezone: America/New_York
+[13:38:01] Use this timezone instead of GMT? (y/n) [y]: y
+(626121) [13:38:01] Choose your preferred locale, like e.g. en_US. Only UTF-8 is supported, it gets appended automatically. Use tab-completion if needed.
+[13:38:01] Locale [en_US]: en_US
+[13:38:01] Device hostname (short form, e.g. 'foo') [generic-x86-64]: generic-x86-64
+(626121) [13:38:01] NOTE: No SSH public keys found to copy to the device.
+(626121) [13:38:01] See https://postmarketos.org/ssh-key-glob for more information.
+(626121) [13:38:01] After pmaports are changed, the binary packages may be outdated. If you want to install postmarketOS without changes, reply 'n' for a faster installation.
+[13:38:01] Build outdated packages during 'pmbootstrap install'? (y/n) [y]: y
+(626121) [13:38:01] Save config: /home/owner/pmbootstrap-build/pmbootstrap.cfg
+[13:38:01] Zap existing chroots to apply configuration? (y/n) [y]: user
+(626121) [13:38:06] ERROR: Input did not pass validation (regex: (y|n)). Please try again.
+[13:38:06] Zap existing chroots to apply configuration? (y/n) [y]: user
+(626121) [13:38:11] ERROR: Input did not pass validation (regex: (y|n)). Please try again.
+
+
+(626173) [13:38:17] $ /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports zap
+(626173) [13:38:17] pmbootstrap v3.11.1 (Python 3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)])
+(626173) [13:38:17] % sudo losetup --json --list
+
+=== Full expect log ===
+spawn /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports init
+parent: waiting for sync byte
+parent: telling child to go ahead
+parent: now unsynchronized from child
+spawn: returns {626121}
+
+expect: does "" (spawn_id exp5) match glob pattern "Work path"? no
+[13:38:01] Location of the 'work' path. Multiple chroots (native, device arch, device rootfs) will be created in there.[0m
+[13:38:01] [1mWork path [/home/owner/pmbootstrap-build/work][0m: 
+expect: does "[13:38:01] Location of the 'work' path. Multiple chroots (native, device arch, device rootfs) will be created in there.\u001b[0m\r\n[13:38:01] \u001b[1mWork path [/home/owner/pmbootstrap-build/work]\u001b[0m: " (spawn_id exp5) match glob pattern "Work path"? yes
+expect: set expect_out(0,string) "Work path"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) "[13:38:01] Location of the 'work' path. Multiple chroots (native, device arch, device rootfs) will be created in there.\u001b[0m\r\n[13:38:01] \u001b[1mWork path"
+send: sending "\r" to { exp5 }
+
+expect: does " [/home/owner/pmbootstrap-build/work]\u001b[0m: " (spawn_id exp5) match glob pattern "pmaports path"? no
+
+
+expect: does " [/home/owner/pmbootstrap-build/work]\u001b[0m: \r\n" (spawn_id exp5) match glob pattern "pmaports path"? no
+[13:38:01] Location of the 'pmaports' path, containing package definitions.[0m
+
+expect: does " [/home/owner/pmbootstrap-build/work]\u001b[0m: \r\n[13:38:01] Location of the 'pmaports' path, containing package definitions.\u001b[0m\r\n" (spawn_id exp5) match glob pattern "pmaports path"? no
+[13:38:01] [1mpmaports path [/home/owner/pmbootstrap-build/pmaports][0m: 
+expect: does " [/home/owner/pmbootstrap-build/work]\u001b[0m: \r\n[13:38:01] Location of the 'pmaports' path, containing package definitions.\u001b[0m\r\n[13:38:01] \u001b[1mpmaports path [/home/owner/pmbootstrap-build/pmaports]\u001b[0m: " (spawn_id exp5) match glob pattern "pmaports path"? yes
+expect: set expect_out(0,string) "pmaports path"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " [/home/owner/pmbootstrap-build/work]\u001b[0m: \r\n[13:38:01] Location of the 'pmaports' path, containing package definitions.\u001b[0m\r\n[13:38:01] \u001b[1mpmaports path"
+send: sending "\r" to { exp5 }
+
+expect: does " [/home/owner/pmbootstrap-build/pmaports]\u001b[0m: " (spawn_id exp5) match glob pattern "Channel"? no
+
+
+expect: does " [/home/owner/pmbootstrap-build/pmaports]\u001b[0m: \r\n" (spawn_id exp5) match glob pattern "Channel"? no
+[13:38:01] Choose the postmarketOS release channel.[0m
+[13:38:01] Available (14):[0m
+
+expect: does " [/home/owner/pmbootstrap-build/pmaports]\u001b[0m: \r\n[13:38:01] Choose the postmarketOS release channel.\u001b[0m\r\n[13:38:01] Available (14):\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Channel"? no
+[13:38:01] * edge: Rolling release / Most devices / Occasional breakage: https://postmarketos.org/edge[0m
+[13:38:01] * v26.06: Latest release / Recommended for best stability[0m
+
+expect: does " [/home/owner/pmbootstrap-build/pmaports]\u001b[0m: \r\n[13:38:01] Choose the postmarketOS release channel.\u001b[0m\r\n[13:38:01] Available (14):\u001b[0m\r\n[13:38:01] * edge: Rolling release / Most devices / Occasional breakage: https://postmarketos.org/edge\u001b[0m\r\n[13:38:01] * v26.06: Latest release / Recommended for best stability\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Channel"? no
+[13:38:01] * v25.12: Old release (unsupported)[0m
+
+expect: does " [/home/owner/pmbootstrap-build/pmaports]\u001b[0m: \r\n[13:38:01] Choose the postmarketOS release channel.\u001b[0m\r\n[13:38:01] Available (14):\u001b[0m\r\n[13:38:01] * edge: Rolling release / Most devices / Occasional breakage: https://postmarketos.org/edge\u001b[0m\r\n[13:38:01] * v26.06: Latest release / Recommended for best stability\u001b[0m\r\n[13:38:01] * v25.12: Old release (unsupported)\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Channel"? no
+[13:38:01] [1mChannel [edge][0m: 
+expect: does " [/home/owner/pmbootstrap-build/pmaports]\u001b[0m: \r\n[13:38:01] Choose the postmarketOS release channel.\u001b[0m\r\n[13:38:01] Available (14):\u001b[0m\r\n[13:38:01] * edge: Rolling release / Most devices / Occasional breakage: https://postmarketos.org/edge\u001b[0m\r\n[13:38:01] * v26.06: Latest release / Recommended for best stability\u001b[0m\r\n[13:38:01] * v25.12: Old release (unsupported)\u001b[0m\r\n[13:38:01] \u001b[1mChannel [edge]\u001b[0m: " (spawn_id exp5) match glob pattern "Channel"? yes
+expect: set expect_out(0,string) "Channel"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " [/home/owner/pmbootstrap-build/pmaports]\u001b[0m: \r\n[13:38:01] Choose the postmarketOS release channel.\u001b[0m\r\n[13:38:01] Available (14):\u001b[0m\r\n[13:38:01] * edge: Rolling release / Most devices / Occasional breakage: https://postmarketos.org/edge\u001b[0m\r\n[13:38:01] * v26.06: Latest release / Recommended for best stability\u001b[0m\r\n[13:38:01] * v25.12: Old release (unsupported)\u001b[0m\r\n[13:38:01] \u001b[1mChannel"
+send: sending "edge\r" to { exp5 }
+
+expect: does " [edge]\u001b[0m: " (spawn_id exp5) match glob pattern "Vendor"? no
+edge
+
+expect: does " [edge]\u001b[0m: edge\r\n" (spawn_id exp5) match glob pattern "Vendor"? no
+[13:38:01] [94mNOTE:[0m pmaports is on main branch, copying git hooks.[0m
+
+expect: does " [edge]\u001b[0m: edge\r\n[13:38:01] \u001b[94mNOTE:\u001b[0m pmaports is on main branch, copying git hooks.\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Vendor"? no
+[13:38:01] Choose your target device vendor (either an existing one, or a new one for porting).[0m
+
+expect: does " [edge]\u001b[0m: edge\r\n[13:38:01] \u001b[94mNOTE:\u001b[0m pmaports is on main branch, copying git hooks.\u001b[0m\r\n[13:38:01] Choose your target device vendor (either an existing one, or a new one for porting).\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Vendor"? no
+[13:38:01] Available vendors (107): acer, alcatel, amazon, amediatech, amlogic, apple, ark, arrow, asus, ayaneo, ayn, bananapi, barnesnoble, beelink, blackberry, bq, clockworkpi, cubietech, cutiepi, dell, dongshanpi, epson, essential, fairphone, finepower, fly, fxtec, generic, gigaset, goclever, google, gp, hisense, hp, htc, huawei, inet, infocus, jolla, khadas, klipad, kobo, lark, leeco, lenovo, lg, librecomputer, linksys, lynx, mangopi, medion, meizu, microsoft, mnt, mobvoi, motorola, nextbit, nobby, nokia, nothing, nvidia, odroid, oneplus, oppo, ouya, pine64, planet, pocketbook, postmarketos, powkiddy, purism, qcom, qemu, qualcomm, radxa, raspberry, realme, rockchip, samsung, semc, sharp, shift, sipeed, solidrun, sony, sourceparts, sqfmi, starway, surftab, t2m, thundercomm, tokio, tolino, trekstor, vernee, vivo, volla, wd, wexler, wiko, wileyfox, xiaomi, xunlong, yu, zhihe, zte, zuk[0m
+
+expect: does " [edge]\u001b[0m: edge\r\n[13:38:01] \u001b[94mNOTE:\u001b[0m pmaports is on main branch, copying git hooks.\u001b[0m\r\n[13:38:01] Choose your target device vendor (either an existing one, or a new one for porting).\u001b[0m\r\n[13:38:01] Available vendors (107): acer, alcatel, amazon, amediatech, amlogic, apple, ark, arrow, asus, ayaneo, ayn, bananapi, barnesnoble, beelink, blackberry, bq, clockworkpi, cubietech, cutiepi, dell, dongshanpi, epson, essential, fairphone, finepower, fly, fxtec, generic, gigaset, goclever, google, gp, hisense, hp, htc, huawei, inet, infocus, jolla, khadas, klipad, kobo, lark, leeco, lenovo, lg, librecomputer, linksys, lynx, mangopi, medion, meizu, microsoft, mnt, mobvoi, motorola, nextbit, nobby, nokia, nothing, nvidia, odroid, oneplus, oppo, ouya, pine64, planet, pocketbook, postmarketos, powkiddy, purism, qcom, qemu, qualcomm, radxa, raspberry, realme, rockchip, samsung, semc, sharp, shift, sipeed, solidrun, sony, sourceparts, sqfmi, starway, surftab, t2m, thundercomm, tokio, tolino, trekstor, vernee, vivo, volla, wd, wexler, wiko, wileyfox, xiaomi, xunlong, yu, zhihe, zte, zuk\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Vendor"? no
+[13:38:01] [1mVendor [generic][0m: 
+expect: does " [edge]\u001b[0m: edge\r\n[13:38:01] \u001b[94mNOTE:\u001b[0m pmaports is on main branch, copying git hooks.\u001b[0m\r\n[13:38:01] Choose your target device vendor (either an existing one, or a new one for porting).\u001b[0m\r\n[13:38:01] Available vendors (107): acer, alcatel, amazon, amediatech, amlogic, apple, ark, arrow, asus, ayaneo, ayn, bananapi, barnesnoble, beelink, blackberry, bq, clockworkpi, cubietech, cutiepi, dell, dongshanpi, epson, essential, fairphone, finepower, fly, fxtec, generic, gigaset, goclever, google, gp, hisense, hp, htc, huawei, inet, infocus, jolla, khadas, klipad, kobo, lark, leeco, lenovo, lg, librecomputer, linksys, lynx, mangopi, medion, meizu, microsoft, mnt, mobvoi, motorola, nextbit, nobby, nokia, nothing, nvidia, odroid, oneplus, oppo, ouya, pine64, planet, pocketbook, postmarketos, powkiddy, purism, qcom, qemu, qualcomm, radxa, raspberry, realme, rockchip, samsung, semc, sharp, shift, sipeed, solidrun, sony, sourceparts, sqfmi, starway, surftab, t2m, thundercomm, tokio, tolino, trekstor, vernee, vivo, volla, wd, wexler, wiko, wileyfox, xiaomi, xunlong, yu, zhihe, zte, zuk\u001b[0m\r\n[13:38:01] \u001b[1mVendor [generic]\u001b[0m: " (spawn_id exp5) match glob pattern "Vendor"? yes
+expect: set expect_out(0,string) "Vendor"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " [edge]\u001b[0m: edge\r\n[13:38:01] \u001b[94mNOTE:\u001b[0m pmaports is on main branch, copying git hooks.\u001b[0m\r\n[13:38:01] Choose your target device vendor (either an existing one, or a new one for porting).\u001b[0m\r\n[13:38:01] Available vendors (107): acer, alcatel, amazon, amediatech, amlogic, apple, ark, arrow, asus, ayaneo, ayn, bananapi, barnesnoble, beelink, blackberry, bq, clockworkpi, cubietech, cutiepi, dell, dongshanpi, epson, essential, fairphone, finepower, fly, fxtec, generic, gigaset, goclever, google, gp, hisense, hp, htc, huawei, inet, infocus, jolla, khadas, klipad, kobo, lark, leeco, lenovo, lg, librecomputer, linksys, lynx, mangopi, medion, meizu, microsoft, mnt, mobvoi, motorola, nextbit, nobby, nokia, nothing, nvidia, odroid, oneplus, oppo, ouya, pine64, planet, pocketbook, postmarketos, powkiddy, purism, qcom, qemu, qualcomm, radxa, raspberry, realme, rockchip, samsung, semc, sharp, shift, sipeed, solidrun, sony, sourceparts, sqfmi, starway, surftab, t2m, thundercomm, tokio, tolino, trekstor, vernee, vivo, volla, wd, wexler, wiko, wileyfox, xiaomi, xunlong, yu, zhihe, zte, zuk\u001b[0m\r\n[13:38:01] \u001b[1mVendor"
+send: sending "generic\r" to { exp5 }
+
+expect: does " [generic]\u001b[0m: " (spawn_id exp5) match glob pattern "Device codename"? no
+generic
+
+expect: does " [generic]\u001b[0m: generic\r\n" (spawn_id exp5) match glob pattern "Device codename"? no
+[13:38:01] Devices are categorised as follows, from best to worst:
+* [95mMain[0m: ports where mostly everything works.
+* [94mCommunity[0m: often mostly usable, but may lack important functionality.
+* [92mTesting[0m: anything from "just boots in some sense" to almost fully functioning ports.
+* [93mDownstream[0m: ports that use a downstream kernel — very limited functionality. Not recommended.
+
+Available devices by codename (3): [92mloongarch64[0m (testing), [94mppc64le[0m (community), [94mx86_64[0m (community)[0m
+
+expect: does " [generic]\u001b[0m: generic\r\n[13:38:01] Devices are categorised as follows, from best to worst:\r\n* \u001b[95mMain\u001b[0m: ports where mostly everything works.\r\n* \u001b[94mCommunity\u001b[0m: often mostly usable, but may lack important functionality.\r\n* \u001b[92mTesting\u001b[0m: anything from "just boots in some sense" to almost fully functioning ports.\r\n* \u001b[93mDownstream\u001b[0m: ports that use a downstream kernel \u2014 very limited functionality. Not recommended.\r\n\r\nAvailable devices by codename (3): \u001b[92mloongarch64\u001b[0m (testing), \u001b[94mppc64le\u001b[0m (community), \u001b[94mx86_64\u001b[0m (community)\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Device codename"? no
+[13:38:01] [1mDevice codename [x86_64][0m: 
+expect: does " [generic]\u001b[0m: generic\r\n[13:38:01] Devices are categorised as follows, from best to worst:\r\n* \u001b[95mMain\u001b[0m: ports where mostly everything works.\r\n* \u001b[94mCommunity\u001b[0m: often mostly usable, but may lack important functionality.\r\n* \u001b[92mTesting\u001b[0m: anything from "just boots in some sense" to almost fully functioning ports.\r\n* \u001b[93mDownstream\u001b[0m: ports that use a downstream kernel \u2014 very limited functionality. Not recommended.\r\n\r\nAvailable devices by codename (3): \u001b[92mloongarch64\u001b[0m (testing), \u001b[94mppc64le\u001b[0m (community), \u001b[94mx86_64\u001b[0m (community)\u001b[0m\r\n[13:38:01] \u001b[1mDevice codename [x86_64]\u001b[0m: " (spawn_id exp5) match glob pattern "Device codename"? yes
+expect: set expect_out(0,string) "Device codename"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " [generic]\u001b[0m: generic\r\n[13:38:01] Devices are categorised as follows, from best to worst:\r\n* \u001b[95mMain\u001b[0m: ports where mostly everything works.\r\n* \u001b[94mCommunity\u001b[0m: often mostly usable, but may lack important functionality.\r\n* \u001b[92mTesting\u001b[0m: anything from "just boots in some sense" to almost fully functioning ports.\r\n* \u001b[93mDownstream\u001b[0m: ports that use a downstream kernel \u2014 very limited functionality. Not recommended.\r\n\r\nAvailable devices by codename (3): \u001b[92mloongarch64\u001b[0m (testing), \u001b[94mppc64le\u001b[0m (community), \u001b[94mx86_64\u001b[0m (community)\u001b[0m\r\n[13:38:01] \u001b[1mDevice codename"
+send: sending "x86_64\r" to { exp5 }
+
+expect: does " [x86_64]\u001b[0m: " (spawn_id exp5) match glob pattern "Kernel"? no
+x86_64
+
+expect: does " [x86_64]\u001b[0m: x86_64\r\n" (spawn_id exp5) match glob pattern "Kernel"? no
+[13:38:01] Which kernel do you want to use with your device?[0m
+
+expect: does " [x86_64]\u001b[0m: x86_64\r\n[13:38:01] Which kernel do you want to use with your device?\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Kernel"? no
+[13:38:01] Available kernels (3):[0m
+[13:38:01] * lts: Long-term maintenance kernel (most stability, not all security fixes & new features)[0m
+
+expect: does " [x86_64]\u001b[0m: x86_64\r\n[13:38:01] Which kernel do you want to use with your device?\u001b[0m\r\n[13:38:01] Available kernels (3):\u001b[0m\r\n[13:38:01] * lts: Long-term maintenance kernel (most stability, not all security fixes & new features)\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Kernel"? no
+[13:38:01] * mainline: Upstream development kernel (regular breakage, latest features)[0m
+[13:38:01] * stable: Stable kernel (recommended, best balance between stability and features)[0m
+[13:38:01] [1mKernel [stable][0m: 
+expect: does " [x86_64]\u001b[0m: x86_64\r\n[13:38:01] Which kernel do you want to use with your device?\u001b[0m\r\n[13:38:01] Available kernels (3):\u001b[0m\r\n[13:38:01] * lts: Long-term maintenance kernel (most stability, not all security fixes & new features)\u001b[0m\r\n[13:38:01] * mainline: Upstream development kernel (regular breakage, latest features)\u001b[0m\r\n[13:38:01] * stable: Stable kernel (recommended, best balance between stability and features)\u001b[0m\r\n[13:38:01] \u001b[1mKernel [stable]\u001b[0m: " (spawn_id exp5) match glob pattern "Kernel"? yes
+expect: set expect_out(0,string) "Kernel"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " [x86_64]\u001b[0m: x86_64\r\n[13:38:01] Which kernel do you want to use with your device?\u001b[0m\r\n[13:38:01] Available kernels (3):\u001b[0m\r\n[13:38:01] * lts: Long-term maintenance kernel (most stability, not all security fixes & new features)\u001b[0m\r\n[13:38:01] * mainline: Upstream development kernel (regular breakage, latest features)\u001b[0m\r\n[13:38:01] * stable: Stable kernel (recommended, best balance between stability and features)\u001b[0m\r\n[13:38:01] \u001b[1mKernel"
+send: sending "\r" to { exp5 }
+
+expect: does " [stable]\u001b[0m: " (spawn_id exp5) match glob pattern "Username"? no
+
+
+expect: does " [stable]\u001b[0m: \r\n" (spawn_id exp5) match glob pattern "Username"? no
+[13:38:01] [1mUsername [user][0m: 
+expect: does " [stable]\u001b[0m: \r\n[13:38:01] \u001b[1mUsername [user]\u001b[0m: " (spawn_id exp5) match glob pattern "Username"? yes
+expect: set expect_out(0,string) "Username"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " [stable]\u001b[0m: \r\n[13:38:01] \u001b[1mUsername"
+send: sending "user\r" to { exp5 }
+Gate keeper glob pattern for 'Provider\s+\[default\][^\n]*:' is 'Provider*\[default]*:'. Activating booster.
+
+expect: does " [user]\u001b[0m: " (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+user
+
+expect: does " [user]\u001b[0m: user\r\n" (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+[13:38:01] Available providers for postmarketos-base-ui-audio-backend (2):[0m
+
+expect: does " [user]\u001b[0m: user\r\n[13:38:01] Available providers for postmarketos-base-ui-audio-backend (2):\u001b[0m\r\n" (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+[13:38:01] * pulseaudio: Use pulseaudio as the audio backend. [1m(default)[0m[0m
+[13:38:01] * pipewire: Use pipewire as the audio backend. (but may not work with all devices)[0m
+[13:38:01] [1mProvider [default][0m: 
+expect: does " [user]\u001b[0m: user\r\n[13:38:01] Available providers for postmarketos-base-ui-audio-backend (2):\u001b[0m\r\n[13:38:01] * pulseaudio: Use pulseaudio as the audio backend. \u001b[1m(default)\u001b[0m\u001b[0m\r\n[13:38:01] * pipewire: Use pipewire as the audio backend. (but may not work with all devices)\u001b[0m\r\n[13:38:01] \u001b[1mProvider [default]\u001b[0m: " (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=yes re=yes
+expect: set expect_out(0,string) "Provider [default]\u001b[0m:"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " [user]\u001b[0m: user\r\n[13:38:01] Available providers for postmarketos-base-ui-audio-backend (2):\u001b[0m\r\n[13:38:01] * pulseaudio: Use pulseaudio as the audio backend. \u001b[1m(default)\u001b[0m\u001b[0m\r\n[13:38:01] * pipewire: Use pipewire as the audio backend. (but may not work with all devices)\u001b[0m\r\n[13:38:01] \u001b[1mProvider [default]\u001b[0m:"
+send: sending "\r" to { exp5 }
+Gate keeper glob pattern for 'Provider\s+\[default\][^\n]*:' is 'Provider*\[default]*:'. Activating booster.
+
+expect: does " " (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+
+
+expect: does " \r\n" (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+[13:38:01] Available providers for postmarketos-base-ui-wifi (2):[0m
+
+expect: does " \r\n[13:38:01] Available providers for postmarketos-base-ui-wifi (2):\u001b[0m\r\n" (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+[13:38:01] * wpa_supplicant: Use wpa_supplicant as the WiFi backend. [1m(default)[0m[0m
+[13:38:01] * iwd: Use iwd as the WiFi backend (but may not work with all devices)[0m
+
+expect: does " \r\n[13:38:01] Available providers for postmarketos-base-ui-wifi (2):\u001b[0m\r\n[13:38:01] * wpa_supplicant: Use wpa_supplicant as the WiFi backend. \u001b[1m(default)\u001b[0m\u001b[0m\r\n[13:38:01] * iwd: Use iwd as the WiFi backend (but may not work with all devices)\u001b[0m\r\n" (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+[13:38:01] [1mProvider [default][0m: 
+expect: does " \r\n[13:38:01] Available providers for postmarketos-base-ui-wifi (2):\u001b[0m\r\n[13:38:01] * wpa_supplicant: Use wpa_supplicant as the WiFi backend. \u001b[1m(default)\u001b[0m\u001b[0m\r\n[13:38:01] * iwd: Use iwd as the WiFi backend (but may not work with all devices)\u001b[0m\r\n[13:38:01] \u001b[1mProvider [default]\u001b[0m: " (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=yes re=yes
+expect: set expect_out(0,string) "Provider [default]\u001b[0m:"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " \r\n[13:38:01] Available providers for postmarketos-base-ui-wifi (2):\u001b[0m\r\n[13:38:01] * wpa_supplicant: Use wpa_supplicant as the WiFi backend. \u001b[1m(default)\u001b[0m\u001b[0m\r\n[13:38:01] * iwd: Use iwd as the WiFi backend (but may not work with all devices)\u001b[0m\r\n[13:38:01] \u001b[1mProvider [default]\u001b[0m:"
+send: sending "\r" to { exp5 }
+Gate keeper glob pattern for 'Provider\s+\[default\][^\n]*:' is 'Provider*\[default]*:'. Activating booster.
+
+expect: does " " (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+
+
+expect: does " \r\n" (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+[13:38:01] Available providers for postmarketos-usb-moded-default-profile (2):[0m
+
+expect: does " \r\n[13:38:01] Available providers for postmarketos-usb-moded-default-profile (2):\u001b[0m\r\n" (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+[13:38:01] * developer: Make 'developer mode' the default usb-moded profile (always enables usb networking) [1m(default)[0m[0m
+[13:38:01] * charging: Make 'charging mode' the default usb-moded profile (usb networking must be manually enabled)[0m
+[13:38:01] [1mProvider [default][0m: 
+expect: does " \r\n[13:38:01] Available providers for postmarketos-usb-moded-default-profile (2):\u001b[0m\r\n[13:38:01] * developer: Make 'developer mode' the default usb-moded profile (always enables usb networking) \u001b[1m(default)\u001b[0m\u001b[0m\r\n[13:38:01] * charging: Make 'charging mode' the default usb-moded profile (usb networking must be manually enabled)\u001b[0m\r\n[13:38:01] \u001b[1mProvider [default]\u001b[0m: " (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=yes re=yes
+expect: set expect_out(0,string) "Provider [default]\u001b[0m:"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " \r\n[13:38:01] Available providers for postmarketos-usb-moded-default-profile (2):\u001b[0m\r\n[13:38:01] * developer: Make 'developer mode' the default usb-moded profile (always enables usb networking) \u001b[1m(default)\u001b[0m\u001b[0m\r\n[13:38:01] * charging: Make 'charging mode' the default usb-moded profile (usb networking must be manually enabled)\u001b[0m\r\n[13:38:01] \u001b[1mProvider [default]\u001b[0m:"
+send: sending "\r" to { exp5 }
+
+expect: does " " (spawn_id exp5) match glob pattern "User interface"? no
+
+
+expect: does " \r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:38:01] Available user interfaces (30): [0m
+
+expect: does " \r\n[13:38:01] Available user interfaces (30): \u001b[0m\r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:38:01] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.[0m
+[13:38:01] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support[0m
+[13:38:01] * cage: (Wayland) Kiosk WM[0m
+[13:38:01] * console: Console environment, with no graphical/touch UI[0m
+
+expect: does " \r\n[13:38:01] Available user interfaces (30): \u001b[0m\r\n[13:38:01] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:38:01] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:38:01] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:38:01] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:38:01] * cosmic: COSMIC Desktop Environment from System76[0m
+[13:38:01] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support[0m
+[13:38:01] * gnome: (Wayland) Gnome Shell[0m
+[13:38:01] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)[0m
+
+expect: does " \r\n[13:38:01] Available user interfaces (30): \u001b[0m\r\n[13:38:01] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:38:01] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:38:01] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:38:01] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n[13:38:01] * cosmic: COSMIC Desktop Environment from System76\u001b[0m\r\n[13:38:01] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support\u001b[0m\r\n[13:38:01] * gnome: (Wayland) Gnome Shell\u001b[0m\r\n[13:38:01] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)\u001b[0m\r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:38:01] * i3wm: (X11) Tiling WM (keyboard required)[0m
+[13:38:01] * kodi: (GBM) 10-foot UI useful on TV's[0m
+[13:38:01] * lomiri: (Wayland) The convergent desktop environment (Experimental)[0m
+[13:38:01] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)[0m
+[13:38:01] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)[0m
+
+expect: does " \r\n[13:38:01] Available user interfaces (30): \u001b[0m\r\n[13:38:01] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:38:01] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:38:01] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:38:01] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n[13:38:01] * cosmic: COSMIC Desktop Environment from System76\u001b[0m\r\n[13:38:01] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support\u001b[0m\r\n[13:38:01] * gnome: (Wayland) Gnome Shell\u001b[0m\r\n[13:38:01] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)\u001b[0m\r\n[13:38:01] * i3wm: (X11) Tiling WM (keyboard required)\u001b[0m\r\n[13:38:01] * kodi: (GBM) 10-foot UI useful on TV's\u001b[0m\r\n[13:38:01] * lomiri: (Wayland) The convergent desktop environment (Experimental)\u001b[0m\r\n[13:38:01] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)\u001b[0m\r\n[13:38:01] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)\u001b[0m\r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:38:01] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield[0m
+[13:38:01] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)[0m
+
+expect: does " \r\n[13:38:01] Available user interfaces (30): \u001b[0m\r\n[13:38:01] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:38:01] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:38:01] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:38:01] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n[13:38:01] * cosmic: COSMIC Desktop Environment from System76\u001b[0m\r\n[13:38:01] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support\u001b[0m\r\n[13:38:01] * gnome: (Wayland) Gnome Shell\u001b[0m\r\n[13:38:01] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)\u001b[0m\r\n[13:38:01] * i3wm: (X11) Tiling WM (keyboard required)\u001b[0m\r\n[13:38:01] * kodi: (GBM) 10-foot UI useful on TV's\u001b[0m\r\n[13:38:01] * lomiri: (Wayland) The convergent desktop environment (Experimental)\u001b[0m\r\n[13:38:01] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)\u001b[0m\r\n[13:38:01] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)\u001b[0m\r\n[13:38:01] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield\u001b[0m\r\n[13:38:01] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)\u001b[0m\r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:38:01] * openbox: (X11) A highly configurable and lightweight X11 window manager (keyboard required)[0m
+[13:38:01] * os-installer: UI for installing postmarketOS[0m
+[13:38:01] * phosh: (Wayland) Mobile UI using GNOME components and apps[0m
+[13:38:01] * plasma-bigscreen: (Wayland) 10-feet variant of Plasma, made for big screen TVs[0m
+[13:38:01] * plasma-desktop: (Wayland) KDE Desktop Environment (works well with tablets)[0m
+[13:38:01] * plasma-mobile: (Wayland) Mobile variant of KDE Plasma[0m
+
+expect: does " \r\n[13:38:01] Available user interfaces (30): \u001b[0m\r\n[13:38:01] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:38:01] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:38:01] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:38:01] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n[13:38:01] * cosmic: COSMIC Desktop Environment from System76\u001b[0m\r\n[13:38:01] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support\u001b[0m\r\n[13:38:01] * gnome: (Wayland) Gnome Shell\u001b[0m\r\n[13:38:01] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)\u001b[0m\r\n[13:38:01] * i3wm: (X11) Tiling WM (keyboard required)\u001b[0m\r\n[13:38:01] * kodi: (GBM) 10-foot UI useful on TV's\u001b[0m\r\n[13:38:01] * lomiri: (Wayland) The convergent desktop environment (Experimental)\u001b[0m\r\n[13:38:01] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)\u001b[0m\r\n[13:38:01] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)\u001b[0m\r\n[13:38:01] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield\u001b[0m\r\n[13:38:01] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)\u001b[0m\r\n[13:38:01] * openbox: (X11) A highly configurable and lightweight X11 window manager (keyboard required)\u001b[0m\r\n[13:38:01] * os-installer: UI for installing postmarketOS\u001b[0m\r\n[13:38:01] * phosh: (Wayland) Mobile UI using GNOME components and apps\u001b[0m\r\n[13:38:01] * plasma-bigscreen: (Wayland) 10-feet variant of Plasma, made for big screen TVs\u001b[0m\r\n[13:38:01] * plasma-desktop: (Wayland) KDE Desktop Environment (works well with tablets)\u001b[0m\r\n[13:38:01] * plasma-mobile: (Wayland) Mobile variant of KDE Plasma\u001b[0m\r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:38:01] * retroarch: RetroArch in KMS mode[0m
+[13:38:01] * shelli: Plain console with touchscreen gesture support[0m
+[13:38:01] * sway: (Wayland) Tiling WM, drop-in replacement for i3wm[0m
+
+expect: does " \r\n[13:38:01] Available user interfaces (30): \u001b[0m\r\n[13:38:01] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:38:01] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:38:01] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:38:01] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n[13:38:01] * cosmic: COSMIC Desktop Environment from System76\u001b[0m\r\n[13:38:01] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support\u001b[0m\r\n[13:38:01] * gnome: (Wayland) Gnome Shell\u001b[0m\r\n[13:38:01] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)\u001b[0m\r\n[13:38:01] * i3wm: (X11) Tiling WM (keyboard required)\u001b[0m\r\n[13:38:01] * kodi: (GBM) 10-foot UI useful on TV's\u001b[0m\r\n[13:38:01] * lomiri: (Wayland) The convergent desktop environment (Experimental)\u001b[0m\r\n[13:38:01] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)\u001b[0m\r\n[13:38:01] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)\u001b[0m\r\n[13:38:01] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield\u001b[0m\r\n[13:38:01] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)\u001b[0m\r\n[13:38:01] * openbox: (X11) A highly configurable and lightweight X11 window manager (keyboard required)\u001b[0m\r\n[13:38:01] * os-installer: UI for installing postmarketOS\u001b[0m\r\n[13:38:01] * phosh: (Wayland) Mobile UI using GNOME components and apps\u001b[0m\r\n[13:38:01] * plasma-bigscreen: (Wayland) 10-feet variant of Plasma, made for big screen TVs\u001b[0m\r\n[13:38:01] * plasma-desktop: (Wayland) KDE Desktop Environment (works well with tablets)\u001b[0m\r\n[13:38:01] * plasma-mobile: (Wayland) Mobile variant of KDE Plasma\u001b[0m\r\n[13:38:01] * retroarch: RetroArch in KMS mode\u001b[0m\r\n[13:38:01] * shelli: Plain console with touchscreen gesture support\u001b[0m\r\n[13:38:01] * sway: (Wayland) Tiling WM, drop-in replacement for i3wm\u001b[0m\r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:38:01] * sxmo-de-dwm: Simple Mobile: Mobile environment based on SXMO and running on dwm[0m
+[13:38:01] * sxmo-de-i3: Simple Mobile: Mobile environment based on SXMO and running on i3[0m
+
+expect: does " \r\n[13:38:01] Available user interfaces (30): \u001b[0m\r\n[13:38:01] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:38:01] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:38:01] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:38:01] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n[13:38:01] * cosmic: COSMIC Desktop Environment from System76\u001b[0m\r\n[13:38:01] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support\u001b[0m\r\n[13:38:01] * gnome: (Wayland) Gnome Shell\u001b[0m\r\n[13:38:01] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)\u001b[0m\r\n[13:38:01] * i3wm: (X11) Tiling WM (keyboard required)\u001b[0m\r\n[13:38:01] * kodi: (GBM) 10-foot UI useful on TV's\u001b[0m\r\n[13:38:01] * lomiri: (Wayland) The convergent desktop environment (Experimental)\u001b[0m\r\n[13:38:01] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)\u001b[0m\r\n[13:38:01] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)\u001b[0m\r\n[13:38:01] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield\u001b[0m\r\n[13:38:01] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)\u001b[0m\r\n[13:38:01] * openbox: (X11) A highly configurable and lightweight X11 window manager (keyboard required)\u001b[0m\r\n[13:38:01] * os-installer: UI for installing postmarketOS\u001b[0m\r\n[13:38:01] * phosh: (Wayland) Mobile UI using GNOME components and apps\u001b[0m\r\n[13:38:01] * plasma-bigscreen: (Wayland) 10-feet variant of Plasma, made for big screen TVs\u001b[0m\r\n[13:38:01] * plasma-desktop: (Wayland) KDE Desktop Environment (works well with tablets)\u001b[0m\r\n[13:38:01] * plasma-mobile: (Wayland) Mobile variant of KDE Plasma\u001b[0m\r\n[13:38:01] * retroarch: RetroArch in KMS mode\u001b[0m\r\n[13:38:01] * shelli: Plain console with touchscreen gesture support\u001b[0m\r\n[13:38:01] * sway: (Wayland) Tiling WM, drop-in replacement for i3wm\u001b[0m\r\n[13:38:01] * sxmo-de-dwm: Simple Mobile: Mobile environment based on SXMO and running on dwm\u001b[0m\r\n[13:38:01] * sxmo-de-i3: Simple Mobile: Mobile environment based on SXMO and running on i3\u001b[0m\r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:38:01] * sxmo-de-river: Simple Mobile: Mobile environment based on SXMO and running on river[0m
+[13:38:01] * sxmo-de-sway: Simple Mobile: Mobile environment based on SXMO and running on sway[0m
+
+expect: does " \r\n[13:38:01] Available user interfaces (30): \u001b[0m\r\n[13:38:01] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:38:01] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:38:01] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:38:01] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n[13:38:01] * cosmic: COSMIC Desktop Environment from System76\u001b[0m\r\n[13:38:01] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support\u001b[0m\r\n[13:38:01] * gnome: (Wayland) Gnome Shell\u001b[0m\r\n[13:38:01] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)\u001b[0m\r\n[13:38:01] * i3wm: (X11) Tiling WM (keyboard required)\u001b[0m\r\n[13:38:01] * kodi: (GBM) 10-foot UI useful on TV's\u001b[0m\r\n[13:38:01] * lomiri: (Wayland) The convergent desktop environment (Experimental)\u001b[0m\r\n[13:38:01] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)\u001b[0m\r\n[13:38:01] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)\u001b[0m\r\n[13:38:01] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield\u001b[0m\r\n[13:38:01] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)\u001b[0m\r\n[13:38:01] * openbox: (X11) A highly configurable and lightweight X11 window manager (keyboard required)\u001b[0m\r\n[13:38:01] * os-installer: UI for installing postmarketOS\u001b[0m\r\n[13:38:01] * phosh: (Wayland) Mobile UI using GNOME components and apps\u001b[0m\r\n[13:38:01] * plasma-bigscreen: (Wayland) 10-feet variant of Plasma, made for big screen TVs\u001b[0m\r\n[13:38:01] * plasma-desktop: (Wayland) KDE Desktop Environment (works well with tablets)\u001b[0m\r\n[13:38:01] * plasma-mobile: (Wayland) Mobile variant of KDE Plasma\u001b[0m\r\n[13:38:01] * retroarch: RetroArch in KMS mode\u001b[0m\r\n[13:38:01] * shelli: Plain console with touchscreen gesture support\u001b[0m\r\n[13:38:01] * sway: (Wayland) Tiling WM, drop-in replacement for i3wm\u001b[0m\r\n[13:38:01] * sxmo-de-dwm: Simple Mobile: Mobile environment based on SXMO and running on dwm\u001b[0m\r\n[13:38:01] * sxmo-de-i3: Simple Mobile: Mobile environment based on SXMO and running on i3\u001b[0m\r\n[13:38:01] * sxmo-de-river: Simple Mobile: Mobile environment based on SXMO and running on river\u001b[0m\r\n[13:38:01] * sxmo-de-sway: Simple Mobile: Mobile environment based on SXMO and running on sway\u001b[0m\r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:38:01] * weston: (Wayland) Reference compositor (demo, not a phone interface)[0m
+[13:38:01] * windowmaker: (X11) Window manager inspired by the NeXTSTEP user interface (stylus recommended)[0m
+
+expect: does " \r\n[13:38:01] Available user interfaces (30): \u001b[0m\r\n[13:38:01] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:38:01] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:38:01] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:38:01] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n[13:38:01] * cosmic: COSMIC Desktop Environment from System76\u001b[0m\r\n[13:38:01] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support\u001b[0m\r\n[13:38:01] * gnome: (Wayland) Gnome Shell\u001b[0m\r\n[13:38:01] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)\u001b[0m\r\n[13:38:01] * i3wm: (X11) Tiling WM (keyboard required)\u001b[0m\r\n[13:38:01] * kodi: (GBM) 10-foot UI useful on TV's\u001b[0m\r\n[13:38:01] * lomiri: (Wayland) The convergent desktop environment (Experimental)\u001b[0m\r\n[13:38:01] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)\u001b[0m\r\n[13:38:01] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)\u001b[0m\r\n[13:38:01] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield\u001b[0m\r\n[13:38:01] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)\u001b[0m\r\n[13:38:01] * openbox: (X11) A highly configurable and lightweight X11 window manager (keyboard required)\u001b[0m\r\n[13:38:01] * os-installer: UI for installing postmarketOS\u001b[0m\r\n[13:38:01] * phosh: (Wayland) Mobile UI using GNOME components and apps\u001b[0m\r\n[13:38:01] * plasma-bigscreen: (Wayland) 10-feet variant of Plasma, made for big screen TVs\u001b[0m\r\n[13:38:01] * plasma-desktop: (Wayland) KDE Desktop Environment (works well with tablets)\u001b[0m\r\n[13:38:01] * plasma-mobile: (Wayland) Mobile variant of KDE Plasma\u001b[0m\r\n[13:38:01] * retroarch: RetroArch in KMS mode\u001b[0m\r\n[13:38:01] * shelli: Plain console with touchscreen gesture support\u001b[0m\r\n[13:38:01] * sway: (Wayland) Tiling WM, drop-in replacement for i3wm\u001b[0m\r\n[13:38:01] * sxmo-de-dwm: Simple Mobile: Mobile environment based on SXMO and running on dwm\u001b[0m\r\n[13:38:01] * sxmo-de-i3: Simple Mobile: Mobile environment based on SXMO and running on i3\u001b[0m\r\n[13:38:01] * sxmo-de-river: Simple Mobile: Mobile environment based on SXMO and running on river\u001b[0m\r\n[13:38:01] * sxmo-de-sway: Simple Mobile: Mobile environment based on SXMO and running on sway\u001b[0m\r\n[13:38:01] * weston: (Wayland) Reference compositor (demo, not a phone interface)\u001b[0m\r\n[13:38:01] * windowmaker: (X11) Window manager inspired by the NeXTSTEP user interface (stylus recommended)\u001b[0m\r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:38:01] * xfce4: (X11) Lightweight desktop (stylus recommended)[0m
+
+expect: does " \r\n[13:38:01] Available user interfaces (30): \u001b[0m\r\n[13:38:01] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:38:01] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:38:01] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:38:01] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n[13:38:01] * cosmic: COSMIC Desktop Environment from System76\u001b[0m\r\n[13:38:01] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support\u001b[0m\r\n[13:38:01] * gnome: (Wayland) Gnome Shell\u001b[0m\r\n[13:38:01] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)\u001b[0m\r\n[13:38:01] * i3wm: (X11) Tiling WM (keyboard required)\u001b[0m\r\n[13:38:01] * kodi: (GBM) 10-foot UI useful on TV's\u001b[0m\r\n[13:38:01] * lomiri: (Wayland) The convergent desktop environment (Experimental)\u001b[0m\r\n[13:38:01] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)\u001b[0m\r\n[13:38:01] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)\u001b[0m\r\n[13:38:01] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield\u001b[0m\r\n[13:38:01] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)\u001b[0m\r\n[13:38:01] * openbox: (X11) A highly configurable and lightweight X11 window manager (keyboard required)\u001b[0m\r\n[13:38:01] * os-installer: UI for installing postmarketOS\u001b[0m\r\n[13:38:01] * phosh: (Wayland) Mobile UI using GNOME components and apps\u001b[0m\r\n[13:38:01] * plasma-bigscreen: (Wayland) 10-feet variant of Plasma, made for big screen TVs\u001b[0m\r\n[13:38:01] * plasma-desktop: (Wayland) KDE Desktop Environment (works well with tablets)\u001b[0m\r\n[13:38:01] * plasma-mobile: (Wayland) Mobile variant of KDE Plasma\u001b[0m\r\n[13:38:01] * retroarch: RetroArch in KMS mode\u001b[0m\r\n[13:38:01] * shelli: Plain console with touchscreen gesture support\u001b[0m\r\n[13:38:01] * sway: (Wayland) Tiling WM, drop-in replacement for i3wm\u001b[0m\r\n[13:38:01] * sxmo-de-dwm: Simple Mobile: Mobile environment based on SXMO and running on dwm\u001b[0m\r\n[13:38:01] * sxmo-de-i3: Simple Mobile: Mobile environment based on SXMO and running on i3\u001b[0m\r\n[13:38:01] * sxmo-de-river: Simple Mobile: Mobile environment based on SXMO and running on river\u001b[0m\r\n[13:38:01] * sxmo-de-sway: Simple Mobile: Mobile environment based on SXMO and running on sway\u001b[0m\r\n[13:38:01] * weston: (Wayland) Reference compositor (demo, not a phone interface)\u001b[0m\r\n[13:38:01] * windowmaker: (X11) Window manager inspired by the NeXTSTEP user interface (stylus recommended)\u001b[0m\r\n[13:38:01] * xfce4: (X11) Lightweight desktop (stylus recommended)\u001b[0m\r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:38:01] [1mUser interface [xfce4][0m: 
+expect: does " \r\n[13:38:01] Available user interfaces (30): \u001b[0m\r\n[13:38:01] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:38:01] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:38:01] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:38:01] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n[13:38:01] * cosmic: COSMIC Desktop Environment from System76\u001b[0m\r\n[13:38:01] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support\u001b[0m\r\n[13:38:01] * gnome: (Wayland) Gnome Shell\u001b[0m\r\n[13:38:01] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)\u001b[0m\r\n[13:38:01] * i3wm: (X11) Tiling WM (keyboard required)\u001b[0m\r\n[13:38:01] * kodi: (GBM) 10-foot UI useful on TV's\u001b[0m\r\n[13:38:01] * lomiri: (Wayland) The convergent desktop environment (Experimental)\u001b[0m\r\n[13:38:01] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)\u001b[0m\r\n[13:38:01] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)\u001b[0m\r\n[13:38:01] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield\u001b[0m\r\n[13:38:01] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)\u001b[0m\r\n[13:38:01] * openbox: (X11) A highly configurable and lightweight X11 window manager (keyboard required)\u001b[0m\r\n[13:38:01] * os-installer: UI for installing postmarketOS\u001b[0m\r\n[13:38:01] * phosh: (Wayland) Mobile UI using GNOME components and apps\u001b[0m\r\n[13:38:01] * plasma-bigscreen: (Wayland) 10-feet variant of Plasma, made for big screen TVs\u001b[0m\r\n[13:38:01] * plasma-desktop: (Wayland) KDE Desktop Environment (works well with tablets)\u001b[0m\r\n[13:38:01] * plasma-mobile: (Wayland) Mobile variant of KDE Plasma\u001b[0m\r\n[13:38:01] * retroarch: RetroArch in KMS mode\u001b[0m\r\n[13:38:01] * shelli: Plain console with touchscreen gesture support\u001b[0m\r\n[13:38:01] * sway: (Wayland) Tiling WM, drop-in replacement for i3wm\u001b[0m\r\n[13:38:01] * sxmo-de-dwm: Simple Mobile: Mobile environment based on SXMO and running on dwm\u001b[0m\r\n[13:38:01] * sxmo-de-i3: Simple Mobile: Mobile environment based on SXMO and running on i3\u001b[0m\r\n[13:38:01] * sxmo-de-river: Simple Mobile: Mobile environment based on SXMO and running on river\u001b[0m\r\n[13:38:01] * sxmo-de-sway: Simple Mobile: Mobile environment based on SXMO and running on sway\u001b[0m\r\n[13:38:01] * weston: (Wayland) Reference compositor (demo, not a phone interface)\u001b[0m\r\n[13:38:01] * windowmaker: (X11) Window manager inspired by the NeXTSTEP user interface (stylus recommended)\u001b[0m\r\n[13:38:01] * xfce4: (X11) Lightweight desktop (stylus recommended)\u001b[0m\r\n[13:38:01] \u001b[1mUser interface [xfce4]\u001b[0m: " (spawn_id exp5) match glob pattern "User interface"? yes
+expect: set expect_out(0,string) "User interface"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " \r\n[13:38:01] Available user interfaces (30): \u001b[0m\r\n[13:38:01] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:38:01] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:38:01] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:38:01] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n[13:38:01] * cosmic: COSMIC Desktop Environment from System76\u001b[0m\r\n[13:38:01] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support\u001b[0m\r\n[13:38:01] * gnome: (Wayland) Gnome Shell\u001b[0m\r\n[13:38:01] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)\u001b[0m\r\n[13:38:01] * i3wm: (X11) Tiling WM (keyboard required)\u001b[0m\r\n[13:38:01] * kodi: (GBM) 10-foot UI useful on TV's\u001b[0m\r\n[13:38:01] * lomiri: (Wayland) The convergent desktop environment (Experimental)\u001b[0m\r\n[13:38:01] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)\u001b[0m\r\n[13:38:01] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)\u001b[0m\r\n[13:38:01] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield\u001b[0m\r\n[13:38:01] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)\u001b[0m\r\n[13:38:01] * openbox: (X11) A highly configurable and lightweight X11 window manager (keyboard required)\u001b[0m\r\n[13:38:01] * os-installer: UI for installing postmarketOS\u001b[0m\r\n[13:38:01] * phosh: (Wayland) Mobile UI using GNOME components and apps\u001b[0m\r\n[13:38:01] * plasma-bigscreen: (Wayland) 10-feet variant of Plasma, made for big screen TVs\u001b[0m\r\n[13:38:01] * plasma-desktop: (Wayland) KDE Desktop Environment (works well with tablets)\u001b[0m\r\n[13:38:01] * plasma-mobile: (Wayland) Mobile variant of KDE Plasma\u001b[0m\r\n[13:38:01] * retroarch: RetroArch in KMS mode\u001b[0m\r\n[13:38:01] * shelli: Plain console with touchscreen gesture support\u001b[0m\r\n[13:38:01] * sway: (Wayland) Tiling WM, drop-in replacement for i3wm\u001b[0m\r\n[13:38:01] * sxmo-de-dwm: Simple Mobile: Mobile environment based on SXMO and running on dwm\u001b[0m\r\n[13:38:01] * sxmo-de-i3: Simple Mobile: Mobile environment based on SXMO and running on i3\u001b[0m\r\n[13:38:01] * sxmo-de-river: Simple Mobile: Mobile environment based on SXMO and running on river\u001b[0m\r\n[13:38:01] * sxmo-de-sway: Simple Mobile: Mobile environment based on SXMO and running on sway\u001b[0m\r\n[13:38:01] * weston: (Wayland) Reference compositor (demo, not a phone interface)\u001b[0m\r\n[13:38:01] * windowmaker: (X11) Window manager inspired by the NeXTSTEP user interface (stylus recommended)\u001b[0m\r\n[13:38:01] * xfce4: (X11) Lightweight desktop (stylus recommended)\u001b[0m\r\n[13:38:01] \u001b[1mUser interface"
+send: sending "\r" to { exp5 }
+
+expect: does " [xfce4]\u001b[0m: " (spawn_id exp5) match glob pattern "Which service manager"? no
+
+
+expect: does " [xfce4]\u001b[0m: \r\n" (spawn_id exp5) match glob pattern "Which service manager"? no
+[13:38:01] Based on your UI selection, 'default' will result in choosing systemd.[0m
+
+expect: does " [xfce4]\u001b[0m: \r\n[13:38:01] Based on your UI selection, 'default' will result in choosing systemd.\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Which service manager"? no
+[13:38:01] [1mWhich service manager should be used? (default/openrc/systemd) [default][0m: 
+expect: does " [xfce4]\u001b[0m: \r\n[13:38:01] Based on your UI selection, 'default' will result in choosing systemd.\u001b[0m\r\n[13:38:01] \u001b[1mWhich service manager should be used? (default/openrc/systemd) [default]\u001b[0m: " (spawn_id exp5) match glob pattern "Which service manager"? yes
+expect: set expect_out(0,string) "Which service manager"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " [xfce4]\u001b[0m: \r\n[13:38:01] Based on your UI selection, 'default' will result in choosing systemd.\u001b[0m\r\n[13:38:01] \u001b[1mWhich service manager"
+send: sending "\r" to { exp5 }
+
+expect: does " should be used? (default/openrc/systemd) [default]\u001b[0m: " (spawn_id exp5) match glob pattern "Change them?"? no
+
+
+expect: does " should be used? (default/openrc/systemd) [default]\u001b[0m: \r\n" (spawn_id exp5) match glob pattern "Change them?"? no
+[13:38:01] Additional options: extra free space: 0 MB, boot partition size: 512 MB, parallel jobs: 4, ccache per arch: 5G, sudo timer: False, mirror: http://mirror.postmarketos.org/postmarketos/[0m
+
+expect: does " should be used? (default/openrc/systemd) [default]\u001b[0m: \r\n[13:38:01] Additional options: extra free space: 0 MB, boot partition size: 512 MB, parallel jobs: 4, ccache per arch: 5G, sudo timer: False, mirror: http://mirror.postmarketos.org/postmarketos/\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Change them?"? no
+[13:38:01] [1mChange them? (y/n) [n][0m: 
+expect: does " should be used? (default/openrc/systemd) [default]\u001b[0m: \r\n[13:38:01] Additional options: extra free space: 0 MB, boot partition size: 512 MB, parallel jobs: 4, ccache per arch: 5G, sudo timer: False, mirror: http://mirror.postmarketos.org/postmarketos/\u001b[0m\r\n[13:38:01] \u001b[1mChange them? (y/n) [n]\u001b[0m: " (spawn_id exp5) match glob pattern "Change them?"? yes
+expect: set expect_out(0,string) "Change them?"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " should be used? (default/openrc/systemd) [default]\u001b[0m: \r\n[13:38:01] Additional options: extra free space: 0 MB, boot partition size: 512 MB, parallel jobs: 4, ccache per arch: 5G, sudo timer: False, mirror: http://mirror.postmarketos.org/postmarketos/\u001b[0m\r\n[13:38:01] \u001b[1mChange them?"
+send: sending "\r" to { exp5 }
+
+expect: does " (y/n) [n]\u001b[0m: " (spawn_id exp5) match glob pattern "Extra packages"? no
+
+
+expect: does " (y/n) [n]\u001b[0m: \r\n" (spawn_id exp5) match glob pattern "Extra packages"? no
+[13:38:01] Additional packages that will be installed to rootfs. Specify them in a comma separated list (e.g.: vim,file) or "none"[0m
+
+expect: does " (y/n) [n]\u001b[0m: \r\n[13:38:01] Additional packages that will be installed to rootfs. Specify them in a comma separated list (e.g.: vim,file) or "none"\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Extra packages"? no
+[13:38:01] [1mExtra packages [none][0m: 
+expect: does " (y/n) [n]\u001b[0m: \r\n[13:38:01] Additional packages that will be installed to rootfs. Specify them in a comma separated list (e.g.: vim,file) or "none"\u001b[0m\r\n[13:38:01] \u001b[1mExtra packages [none]\u001b[0m: " (spawn_id exp5) match glob pattern "Extra packages"? yes
+expect: set expect_out(0,string) "Extra packages"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " (y/n) [n]\u001b[0m: \r\n[13:38:01] Additional packages that will be installed to rootfs. Specify them in a comma separated list (e.g.: vim,file) or "none"\u001b[0m\r\n[13:38:01] \u001b[1mExtra packages"
+send: sending "\r" to { exp5 }
+
+expect: does " [none]\u001b[0m: " (spawn_id exp5) match glob pattern "Use this timezone"? no
+
+
+expect: does " [none]\u001b[0m: \r\n" (spawn_id exp5) match glob pattern "Use this timezone"? no
+[13:38:01] Your host timezone: America/New_York[0m
+
+expect: does " [none]\u001b[0m: \r\n[13:38:01] Your host timezone: America/New_York\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Use this timezone"? no
+[13:38:01] [1mUse this timezone instead of GMT? (y/n) [y][0m: 
+expect: does " [none]\u001b[0m: \r\n[13:38:01] Your host timezone: America/New_York\u001b[0m\r\n[13:38:01] \u001b[1mUse this timezone instead of GMT? (y/n) [y]\u001b[0m: " (spawn_id exp5) match glob pattern "Use this timezone"? yes
+expect: set expect_out(0,string) "Use this timezone"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " [none]\u001b[0m: \r\n[13:38:01] Your host timezone: America/New_York\u001b[0m\r\n[13:38:01] \u001b[1mUse this timezone"
+send: sending "\r" to { exp5 }
+
+expect: does " instead of GMT? (y/n) [y]\u001b[0m: " (spawn_id exp5) match glob pattern "Locale"? no
+
+
+expect: does " instead of GMT? (y/n) [y]\u001b[0m: \r\n" (spawn_id exp5) match glob pattern "Locale"? no
+[13:38:01] Choose your preferred locale, like e.g. en_US. Only UTF-8 is supported, it gets appended automatically. Use tab-completion if needed.[0m
+
+expect: does " instead of GMT? (y/n) [y]\u001b[0m: \r\n[13:38:01] Choose your preferred locale, like e.g. en_US. Only UTF-8 is supported, it gets appended automatically. Use tab-completion if needed.\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Locale"? no
+[13:38:01] [1mLocale [en_US][0m: 
+expect: does " instead of GMT? (y/n) [y]\u001b[0m: \r\n[13:38:01] Choose your preferred locale, like e.g. en_US. Only UTF-8 is supported, it gets appended automatically. Use tab-completion if needed.\u001b[0m\r\n[13:38:01] \u001b[1mLocale [en_US]\u001b[0m: " (spawn_id exp5) match glob pattern "Locale"? yes
+expect: set expect_out(0,string) "Locale"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " instead of GMT? (y/n) [y]\u001b[0m: \r\n[13:38:01] Choose your preferred locale, like e.g. en_US. Only UTF-8 is supported, it gets appended automatically. Use tab-completion if needed.\u001b[0m\r\n[13:38:01] \u001b[1mLocale"
+send: sending "\r" to { exp5 }
+
+expect: does " [en_US]\u001b[0m: " (spawn_id exp5) match glob pattern "Device hostname"? no
+
+
+expect: does " [en_US]\u001b[0m: \r\n" (spawn_id exp5) match glob pattern "Device hostname"? no
+[13:38:01] [1mDevice hostname (short form, e.g. 'foo') [generic-x86-64][0m: 
+expect: does " [en_US]\u001b[0m: \r\n[13:38:01] \u001b[1mDevice hostname (short form, e.g. 'foo') [generic-x86-64]\u001b[0m: " (spawn_id exp5) match glob pattern "Device hostname"? yes
+expect: set expect_out(0,string) "Device hostname"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " [en_US]\u001b[0m: \r\n[13:38:01] \u001b[1mDevice hostname"
+send: sending "\r" to { exp5 }
+
+expect: does " (short form, e.g. 'foo') [generic-x86-64]\u001b[0m: " (spawn_id exp5) match glob pattern "Build outdated packages"? no
+
+
+expect: does " (short form, e.g. 'foo') [generic-x86-64]\u001b[0m: \r\n" (spawn_id exp5) match glob pattern "Build outdated packages"? no
+[13:38:01] [94mNOTE:[0m No SSH public keys found to copy to the device.[0m
+
+expect: does " (short form, e.g. 'foo') [generic-x86-64]\u001b[0m: \r\n[13:38:01] \u001b[94mNOTE:\u001b[0m No SSH public keys found to copy to the device.\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Build outdated packages"? no
+[13:38:01] See https://postmarketos.org/ssh-key-glob for more information.[0m
+[13:38:01] After pmaports are changed, the binary packages may be outdated. If you want to install postmarketOS without changes, reply 'n' for a faster installation.[0m
+[13:38:01] [1mBuild outdated packages during 'pmbootstrap install'? (y/n) [y][0m: 
+expect: does " (short form, e.g. 'foo') [generic-x86-64]\u001b[0m: \r\n[13:38:01] \u001b[94mNOTE:\u001b[0m No SSH public keys found to copy to the device.\u001b[0m\r\n[13:38:01] See https://postmarketos.org/ssh-key-glob for more information.\u001b[0m\r\n[13:38:01] After pmaports are changed, the binary packages may be outdated. If you want to install postmarketOS without changes, reply 'n' for a faster installation.\u001b[0m\r\n[13:38:01] \u001b[1mBuild outdated packages during 'pmbootstrap install'? (y/n) [y]\u001b[0m: " (spawn_id exp5) match glob pattern "Build outdated packages"? yes
+expect: set expect_out(0,string) "Build outdated packages"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " (short form, e.g. 'foo') [generic-x86-64]\u001b[0m: \r\n[13:38:01] \u001b[94mNOTE:\u001b[0m No SSH public keys found to copy to the device.\u001b[0m\r\n[13:38:01] See https://postmarketos.org/ssh-key-glob for more information.\u001b[0m\r\n[13:38:01] After pmaports are changed, the binary packages may be outdated. If you want to install postmarketOS without changes, reply 'n' for a faster installation.\u001b[0m\r\n[13:38:01] \u001b[1mBuild outdated packages"
+send: sending "y\r" to { exp5 }
+
+expect: does " during 'pmbootstrap install'? (y/n) [y]\u001b[0m: " (spawn_id exp5) match glob pattern "Choose a password"? no
+y
+
+expect: does " during 'pmbootstrap install'? (y/n) [y]\u001b[0m: y\r\n" (spawn_id exp5) match glob pattern "Choose a password"? no
+[13:38:01] [1mZap existing chroots to apply configuration? (y/n) [y][0m: 
+expect: does " during 'pmbootstrap install'? (y/n) [y]\u001b[0m: y\r\n[13:38:01] \u001b[1mZap existing chroots to apply configuration? (y/n) [y]\u001b[0m: " (spawn_id exp5) match glob pattern "Choose a password"? no
+expect: timed out
+send: sending "user\r" to { exp5 }
+
+expect: does " during 'pmbootstrap install'? (y/n) [y]\u001b[0m: y\r\n[13:38:01] \u001b[1mZap existing chroots to apply configuration? (y/n) [y]\u001b[0m: " (spawn_id exp5) match glob pattern "Confirm password"? no
+user
+[13:38:06] [91mERROR:[0m Input did not pass validation (regex: (y|n)). Please try again.[0m
+
+expect: does " during 'pmbootstrap install'? (y/n) [y]\u001b[0m: y\r\n[13:38:01] \u001b[1mZap existing chroots to apply configuration? (y/n) [y]\u001b[0m: user\r\n[13:38:06] \u001b[91mERROR:\u001b[0m Input did not pass validation (regex: (y|n)). Please try again.\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Confirm password"? no
+[13:38:06] [1mZap existing chroots to apply configuration? (y/n) [y][0m: 
+expect: does " during 'pmbootstrap install'? (y/n) [y]\u001b[0m: y\r\n[13:38:01] \u001b[1mZap existing chroots to apply configuration? (y/n) [y]\u001b[0m: user\r\n[13:38:06] \u001b[91mERROR:\u001b[0m Input did not pass validation (regex: (y|n)). Please try again.\u001b[0m\r\n[13:38:06] \u001b[1mZap existing chroots to apply configuration? (y/n) [y]\u001b[0m: " (spawn_id exp5) match glob pattern "Confirm password"? no
+expect: timed out
+send: sending "user\r" to { exp5 }
+user
+[13:38:11] [91mERROR:[0m Input did not pass validation (regex: (y|n)). Please try again.[0m
+[13:38:11] [1mZap existing chroots to apply configuration? (y/n) [y][0m: expect: timed out
+spawn /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports zap
+parent: waiting for sync byte
+parent: telling child to go ahead
+parent: now unsynchronized from child
+spawn: returns {626173}
+
+expect: does "" (spawn_id exp8) match glob pattern "Continue"? no
+[sudo] password for owner: 
+expect: does "[sudo] password for owner: " (spawn_id exp8) match glob pattern "Continue"? no
+expect: timed out
+send: sending "y\r" to { exp8 }
+
+Sorry, try again.
+[sudo] password for owner: expect: timed out
+spawn /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports --details-to-stdout -v install
+parent: waiting for sync byte
+parent: telling child to go ahead
+parent: now unsynchronized from child
+spawn: returns {626211}
+Gate keeper glob pattern for 'Choose a password' is 'Choose a password'. Activating booster.
+
+expect: does "" (spawn_id exp9) match regular expression "Choose a password"? Gate "Choose a password"? gate=no
+[13:38:27] $ /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports --details-to-stdout -v install[0m
+[13:38:27] pmbootstrap v3.11.1 (Python 3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)])[0m
+
+expect: does "[13:38:27] $ /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports --details-to-stdout -v install\u001b[0m\r\n[13:38:27] pmbootstrap v3.11.1 (Python 3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)])\u001b[0m\r\n" (spawn_id exp9) match regular expression "Choose a password"? Gate "Choose a password"? gate=no
+[13:38:27] postmarketos-ui-xfce4: found apkbuild: /home/owner/pmbootstrap-build/pmaports/main/postmarketos-ui-xfce4/APKBUILD[0m
+
+expect: does "[13:38:27] $ /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports --details-to-stdout -v install\u001b[0m\r\n[13:38:27] pmbootstrap v3.11.1 (Python 3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)])\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: found apkbuild: /home/owner/pmbootstrap-build/pmaports/main/postmarketos-ui-xfce4/APKBUILD\u001b[0m\r\n" (spawn_id exp9) match regular expression "Choose a password"? Gate "Choose a password"? gate=no
+[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'[0m
+[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'[0m
+[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'[0m
+
+expect: does "[13:38:27] $ /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports --details-to-stdout -v install\u001b[0m\r\n[13:38:27] pmbootstrap v3.11.1 (Python 3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)])\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: found apkbuild: /home/owner/pmbootstrap-build/pmaports/main/postmarketos-ui-xfce4/APKBUILD\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n" (spawn_id exp9) match regular expression "Choose a password"? Gate "Choose a password"? gate=no
+[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'[0m
+[13:38:27] postmarketos-ui-xfce4: key 'srcdir' for replacing '$srcdir' not found, ignoring[0m
+
+expect: does "[13:38:27] $ /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports --details-to-stdout -v install\u001b[0m\r\n[13:38:27] pmbootstrap v3.11.1 (Python 3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)])\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: found apkbuild: /home/owner/pmbootstrap-build/pmaports/main/postmarketos-ui-xfce4/APKBUILD\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: key 'srcdir' for replacing '$srcdir' not found, ignoring\u001b[0m\r\n" (spawn_id exp9) match regular expression "Choose a password"? Gate "Choose a password"? gate=no
+[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'[0m
+[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'[0m
+
+expect: does "[13:38:27] $ /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports --details-to-stdout -v install\u001b[0m\r\n[13:38:27] pmbootstrap v3.11.1 (Python 3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)])\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: found apkbuild: /home/owner/pmbootstrap-build/pmaports/main/postmarketos-ui-xfce4/APKBUILD\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: key 'srcdir' for replacing '$srcdir' not found, ignoring\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n" (spawn_id exp9) match regular expression "Choose a password"? Gate "Choose a password"? gate=no
+[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'[0m
+[13:38:27] postmarketos-ui-xfce4: replace '$pkgrel' with '3'[0m
+[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'[0m
+
+expect: does "[13:38:27] $ /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports --details-to-stdout -v install\u001b[0m\r\n[13:38:27] pmbootstrap v3.11.1 (Python 3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)])\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: found apkbuild: /home/owner/pmbootstrap-build/pmaports/main/postmarketos-ui-xfce4/APKBUILD\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: key 'srcdir' for replacing '$srcdir' not found, ignoring\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgrel' with '3'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n" (spawn_id exp9) match regular expression "Choose a password"? Gate "Choose a password"? gate=no
+[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'[0m
+
+expect: does "[13:38:27] $ /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports --details-to-stdout -v install\u001b[0m\r\n[13:38:27] pmbootstrap v3.11.1 (Python 3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)])\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: found apkbuild: /home/owner/pmbootstrap-build/pmaports/main/postmarketos-ui-xfce4/APKBUILD\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: key 'srcdir' for replacing '$srcdir' not found, ignoring\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgrel' with '3'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n" (spawn_id exp9) match regular expression "Choose a password"? Gate "Choose a password"? gate=no
+[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git remote -v[0m
+
+expect: does "[13:38:27] $ /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports --details-to-stdout -v install\u001b[0m\r\n[13:38:27] pmbootstrap v3.11.1 (Python 3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)])\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: found apkbuild: /home/owner/pmbootstrap-build/pmaports/main/postmarketos-ui-xfce4/APKBUILD\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: key 'srcdir' for replacing '$srcdir' not found, ignoring\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgrel' with '3'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git remote -v\u001b[0m\r\n" (spawn_id exp9) match regular expression "Choose a password"? Gate "Choose a password"? gate=no
+[13:38:27] run: ['git', 'remote', '-v'][0m
+
+expect: does "[13:38:27] $ /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports --details-to-stdout -v install\u001b[0m\r\n[13:38:27] pmbootstrap v3.11.1 (Python 3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)])\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: found apkbuild: /home/owner/pmbootstrap-build/pmaports/main/postmarketos-ui-xfce4/APKBUILD\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: key 'srcdir' for replacing '$srcdir' not found, ignoring\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgrel' with '3'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git remote -v\u001b[0m\r\n[13:38:27] run: ['git', 'remote', '-v']\u001b[0m\r\n" (spawn_id exp9) match regular expression "Choose a password"? Gate "Choose a password"? gate=no
+[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git show origin/main:channels.cfg[0m
+
+expect: does "[13:38:27] $ /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports --details-to-stdout -v install\u001b[0m\r\n[13:38:27] pmbootstrap v3.11.1 (Python 3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)])\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: found apkbuild: /home/owner/pmbootstrap-build/pmaports/main/postmarketos-ui-xfce4/APKBUILD\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: key 'srcdir' for replacing '$srcdir' not found, ignoring\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgrel' with '3'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git remote -v\u001b[0m\r\n[13:38:27] run: ['git', 'remote', '-v']\u001b[0m\r\n[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git show origin/main:channels.cfg\u001b[0m\r\n" (spawn_id exp9) match regular expression "Choose a password"? Gate "Choose a password"? gate=no
+[13:38:27] run: ['git', 'show', 'origin/main:channels.cfg'][0m
+
+expect: does "[13:38:27] $ /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports --details-to-stdout -v install\u001b[0m\r\n[13:38:27] pmbootstrap v3.11.1 (Python 3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)])\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: found apkbuild: /home/owner/pmbootstrap-build/pmaports/main/postmarketos-ui-xfce4/APKBUILD\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: key 'srcdir' for replacing '$srcdir' not found, ignoring\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgrel' with '3'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git remote -v\u001b[0m\r\n[13:38:27] run: ['git', 'remote', '-v']\u001b[0m\r\n[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git show origin/main:channels.cfg\u001b[0m\r\n[13:38:27] run: ['git', 'show', 'origin/main:channels.cfg']\u001b[0m\r\n" (spawn_id exp9) match regular expression "Choose a password"? Gate "Choose a password"? gate=no
+[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'[0m
+[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'[0m
+
+expect: does "[13:38:27] $ /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports --details-to-stdout -v install\u001b[0m\r\n[13:38:27] pmbootstrap v3.11.1 (Python 3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)])\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: found apkbuild: /home/owner/pmbootstrap-build/pmaports/main/postmarketos-ui-xfce4/APKBUILD\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: key 'srcdir' for replacing '$srcdir' not found, ignoring\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgrel' with '3'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git remote -v\u001b[0m\r\n[13:38:27] run: ['git', 'remote', '-v']\u001b[0m\r\n[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git show origin/main:channels.cfg\u001b[0m\r\n[13:38:27] run: ['git', 'show', 'origin/main:channels.cfg']\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n" (spawn_id exp9) match regular expression "Choose a password"? Gate "Choose a password"? gate=no
+[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'[0m
+[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'[0m
+[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'[0m
+[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'[0m
+
+expect: does "[13:38:27] $ /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports --details-to-stdout -v install\u001b[0m\r\n[13:38:27] pmbootstrap v3.11.1 (Python 3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)])\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: found apkbuild: /home/owner/pmbootstrap-build/pmaports/main/postmarketos-ui-xfce4/APKBUILD\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: key 'srcdir' for replacing '$srcdir' not found, ignoring\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgrel' with '3'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git remote -v\u001b[0m\r\n[13:38:27] run: ['git', 'remote', '-v']\u001b[0m\r\n[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git show origin/main:channels.cfg\u001b[0m\r\n[13:38:27] run: ['git', 'show', 'origin/main:channels.cfg']\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n" (spawn_id exp9) match regular expression "Choose a password"? Gate "Choose a password"? gate=no
+[13:38:27] device-generic-x86_64: replace '$pkgver' with '28'[0m
+[13:38:27] device-generic-x86_64: replace '$pkgrel' with '0'[0m
+[13:38:27] device-generic-x86_64: replace '$pkgver' with '28'[0m
+[13:38:27] device-generic-x86_64: replace '$pkgrel' with '0'[0m
+
+expect: does "[13:38:27] $ /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports --details-to-stdout -v install\u001b[0m\r\n[13:38:27] pmbootstrap v3.11.1 (Python 3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)])\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: found apkbuild: /home/owner/pmbootstrap-build/pmaports/main/postmarketos-ui-xfce4/APKBUILD\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: key 'srcdir' for replacing '$srcdir' not found, ignoring\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgrel' with '3'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git remote -v\u001b[0m\r\n[13:38:27] run: ['git', 'remote', '-v']\u001b[0m\r\n[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git show origin/main:channels.cfg\u001b[0m\r\n[13:38:27] run: ['git', 'show', 'origin/main:channels.cfg']\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgver' with '28'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgrel' with '0'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgver' with '28'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgrel' with '0'\u001b[0m\r\n" (spawn_id exp9) match regular expression "Choose a password"? Gate "Choose a password"? gate=no
+[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'[0m
+[13:38:27] device-generic-x86_64: replace '$pkgver' with '28'[0m
+[13:38:27] device-generic-x86_64: replace '$pkgrel' with '0'[0m
+
+expect: does "[13:38:27] $ /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports --details-to-stdout -v install\u001b[0m\r\n[13:38:27] pmbootstrap v3.11.1 (Python 3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)])\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: found apkbuild: /home/owner/pmbootstrap-build/pmaports/main/postmarketos-ui-xfce4/APKBUILD\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: key 'srcdir' for replacing '$srcdir' not found, ignoring\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgrel' with '3'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git remote -v\u001b[0m\r\n[13:38:27] run: ['git', 'remote', '-v']\u001b[0m\r\n[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git show origin/main:channels.cfg\u001b[0m\r\n[13:38:27] run: ['git', 'show', 'origin/main:channels.cfg']\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgver' with '28'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgrel' with '0'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgver' with '28'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgrel' with '0'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgver' with '28'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgrel' with '0'\u001b[0m\r\n" (spawn_id exp9) match regular expression "Choose a password"? Gate "Choose a password"? gate=no
+Choose a password for the user 'user': 
+expect: does "[13:38:27] $ /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports --details-to-stdout -v install\u001b[0m\r\n[13:38:27] pmbootstrap v3.11.1 (Python 3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)])\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: found apkbuild: /home/owner/pmbootstrap-build/pmaports/main/postmarketos-ui-xfce4/APKBUILD\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: key 'srcdir' for replacing '$srcdir' not found, ignoring\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgrel' with '3'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git remote -v\u001b[0m\r\n[13:38:27] run: ['git', 'remote', '-v']\u001b[0m\r\n[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git show origin/main:channels.cfg\u001b[0m\r\n[13:38:27] run: ['git', 'show', 'origin/main:channels.cfg']\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgver' with '28'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgrel' with '0'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgver' with '28'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgrel' with '0'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgver' with '28'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgrel' with '0'\u001b[0m\r\nChoose a password for the user 'user': " (spawn_id exp9) match regular expression "Choose a password"? Gate "Choose a password"? gate=yes re=yes
+expect: set expect_out(0,string) "Choose a password"
+expect: set expect_out(spawn_id) "exp9"
+expect: set expect_out(buffer) "[13:38:27] $ /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports --details-to-stdout -v install\u001b[0m\r\n[13:38:27] pmbootstrap v3.11.1 (Python 3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)])\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: found apkbuild: /home/owner/pmbootstrap-build/pmaports/main/postmarketos-ui-xfce4/APKBUILD\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: key 'srcdir' for replacing '$srcdir' not found, ignoring\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgname' with 'postmarketos-ui-xfce4'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgver' with '0.6.0'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$pkgrel' with '3'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] postmarketos-ui-xfce4: replace '$subpkgname' with 'postmarketos-ui-xfce4-openrc'\u001b[0m\r\n[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git remote -v\u001b[0m\r\n[13:38:27] run: ['git', 'remote', '-v']\u001b[0m\r\n[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git show origin/main:channels.cfg\u001b[0m\r\n[13:38:27] run: ['git', 'show', 'origin/main:channels.cfg']\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgver' with '28'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgrel' with '0'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgver' with '28'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgrel' with '0'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgname' with 'device-generic-x86_64'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgver' with '28'\u001b[0m\r\n[13:38:27] device-generic-x86_64: replace '$pkgrel' with '0'\u001b[0m\r\nChoose a password"
+send: sending "user\r" to { exp9 }
+Gate keeper glob pattern for 'Confirm password' is 'Confirm password'. Activating booster.
+
+expect: does " for the user 'user': " (spawn_id exp9) match regular expression "Confirm password"? Gate "Confirm password"? gate=no
+
+Confirm password for 'user': 
+expect: does " for the user 'user': \r\nConfirm password for 'user': " (spawn_id exp9) match regular expression "Confirm password"? Gate "Confirm password"? gate=yes re=yes
+expect: set expect_out(0,string) "Confirm password"
+expect: set expect_out(spawn_id) "exp9"
+expect: set expect_out(buffer) " for the user 'user': \r\nConfirm password"
+send: sending "user\r" to { exp9 }
+
+[13:38:27] [92m*** (1/4) PREPARE NATIVE CHROOT ***[0m
+[13:38:27] [91mERROR:[0m Could not figure out on which release channel the 'native' chroot is. Run 'pmbootstrap zap' to delete your chroots and try again. To do this automatically, run 'pmbootstrap config auto_zap_misconfigured_chroots yes'.[0m
+[13:38:27] See also: <https://postmarketos.org/troubleshooting>[0m
+[13:38:27] Traceback (most recent call last):
+  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/__init__.py", line 113, in main
+    run_command(args)
+    ~~~~~~~~~~~^^^^^^
+  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/commands/__init__.py", line 139, in run_command
+    install(
+    ~~~~~~~^
+        args.add,
+        ^^^^^^^^^
+    ...<27 lines>...
+        args.zap,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/commands/install.py", line 113, in install
+    pmb.install.install(
+    ~~~~~~~~~~~~~~~~~~~^
+        add,
+        ^^^^
+    ...<26 lines>...
+        is_split,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/install/_install.py", line 1407, in install
+    pmb.chroot.init(Chroot.native())
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/meta/__init__.py", line 41, in __call__
+    self.cache.cache[key] = self.func(*args, **kwargs)
+                            ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/chroot/init.py", line 95, in init
+    zap = pmb.config.workdir.chroot_check_channel(chroot)
+  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/config/workdir.py", line 107, in chroot_check_channel
+    raise RuntimeError(f"{msg_unknown} {msg_again}")
+RuntimeError: Could not figure out on which release channel the 'native' chroot is. Run 'pmbootstrap zap' to delete your chroots and try again. To do this automatically, run 'pmbootstrap config auto_zap_misconfigured_chroots yes'.
+[0m
+
+Before you report this error, ensure that pmbootstrap is up to date.
+Find the latest version here: https://gitlab.postmarketos.org/postmarketOS/pmbootstrap/-/tags
+Your version: 3.11.1
+[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git rev-parse --abbrev-ref HEAD[0m
+[13:38:27] run: ['git', 'rev-parse', '--abbrev-ref', 'HEAD'][0m
+[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git status --porcelain[0m
+[13:38:27] run: ['git', 'status', '--porcelain'][0m
+[92mChannel[0m: systemd-edge (pmaports: main)
+[92mDevice[0m:  generic-x86_64 (x86_64, kernel: stable)
+[92mUI[0m:      xfce4
+[92msystemd[0m: yes (default selected in pmbootstrap init, postmarketos-ui-xfce4 defaults to systemd)
+expect: read eof
+expect: set expect_out(spawn_id) "exp9"
+expect: set expect_out(buffer) " for 'user': \r\n[13:38:27] \u001b[92m*** (1/4) PREPARE NATIVE CHROOT ***\u001b[0m\r\n[13:38:27] \u001b[91mERROR:\u001b[0m Could not figure out on which release channel the 'native' chroot is. Run 'pmbootstrap zap' to delete your chroots and try again. To do this automatically, run 'pmbootstrap config auto_zap_misconfigured_chroots yes'.\u001b[0m\r\n[13:38:27] See also: <https://postmarketos.org/troubleshooting>\u001b[0m\r\n[13:38:27] Traceback (most recent call last):\r\n  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/__init__.py", line 113, in main\r\n    run_command(args)\r\n    ~~~~~~~~~~~^^^^^^\r\n  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/commands/__init__.py", line 139, in run_command\r\n    install(\r\n    ~~~~~~~^\r\n        args.add,\r\n        ^^^^^^^^^\r\n    ...<27 lines>...\r\n        args.zap,\r\n        ^^^^^^^^^\r\n    )\r\n    ^\r\n  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/commands/install.py", line 113, in install\r\n    pmb.install.install(\r\n    ~~~~~~~~~~~~~~~~~~~^\r\n        add,\r\n        ^^^^\r\n    ...<26 lines>...\r\n        is_split,\r\n        ^^^^^^^^^\r\n    )\r\n    ^\r\n  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/install/_install.py", line 1407, in install\r\n    pmb.chroot.init(Chroot.native())\r\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\r\n  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/meta/__init__.py", line 41, in __call__\r\n    self.cache.cache[key] = self.func(*args, **kwargs)\r\n                            ~~~~~~~~~^^^^^^^^^^^^^^^^^\r\n  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/chroot/init.py", line 95, in init\r\n    zap = pmb.config.workdir.chroot_check_channel(chroot)\r\n  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/config/workdir.py", line 107, in chroot_check_channel\r\n    raise RuntimeError(f"{msg_unknown} {msg_again}")\r\nRuntimeError: Could not figure out on which release channel the 'native' chroot is. Run 'pmbootstrap zap' to delete your chroots and try again. To do this automatically, run 'pmbootstrap config auto_zap_misconfigured_chroots yes'.\r\n\u001b[0m\r\n\r\nBefore you report this error, ensure that pmbootstrap is up to date.\r\nFind the latest version here: https://gitlab.postmarketos.org/postmarketOS/pmbootstrap/-/tags\r\nYour version: 3.11.1\r\n[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git rev-parse --abbrev-ref HEAD\u001b[0m\r\n[13:38:27] run: ['git', 'rev-parse', '--abbrev-ref', 'HEAD']\u001b[0m\r\n[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git status --porcelain\u001b[0m\r\n[13:38:27] run: ['git', 'status', '--porcelain']\u001b[0m\r\n\u001b[92mChannel\u001b[0m: systemd-edge (pmaports: main)\r\n\u001b[92mDevice\u001b[0m:  generic-x86_64 (x86_64, kernel: stable)\r\n\u001b[92mUI\u001b[0m:      xfce4\r\n\u001b[92msystemd\u001b[0m: yes (default selected in pmbootstrap init, postmarketos-ui-xfce4 defaults to systemd)\r\n"
+
+ERROR: TIMEOUT – unknown prompt encountered.
+Buffer content:
+ for 'user': 
+[13:38:27] [92m*** (1/4) PREPARE NATIVE CHROOT ***[0m
+[13:38:27] [91mERROR:[0m Could not figure out on which release channel the 'native' chroot is. Run 'pmbootstrap zap' to delete your chroots and try again. To do this automatically, run 'pmbootstrap config auto_zap_misconfigured_chroots yes'.[0m
+[13:38:27] See also: <https://postmarketos.org/troubleshooting>[0m
+[13:38:27] Traceback (most recent call last):
+  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/__init__.py", line 113, in main
+    run_command(args)
+    ~~~~~~~~~~~^^^^^^
+  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/commands/__init__.py", line 139, in run_command
+    install(
+    ~~~~~~~^
+        args.add,
+        ^^^^^^^^^
+    ...<27 lines>...
+        args.zap,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/commands/install.py", line 113, in install
+    pmb.install.install(
+    ~~~~~~~~~~~~~~~~~~~^
+        add,
+        ^^^^
+    ...<26 lines>...
+        is_split,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/install/_install.py", line 1407, in install
+    pmb.chroot.init(Chroot.native())
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/meta/__init__.py", line 41, in __call__
+    self.cache.cache[key] = self.func(*args, **kwargs)
+                            ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/chroot/init.py", line 95, in init
+    zap = pmb.config.workdir.chroot_check_channel(chroot)
+  File "/home/owner/pmbootstrap-build/pmbootstrap/pmb/config/workdir.py", line 107, in chroot_check_channel
+    raise RuntimeError(f"{msg_unknown} {msg_again}")
+RuntimeError: Could not figure out on which release channel the 'native' chroot is. Run 'pmbootstrap zap' to delete your chroots and try again. To do this automatically, run 'pmbootstrap config auto_zap_misconfigured_chroots yes'.
+[0m
+
+Before you report this error, ensure that pmbootstrap is up to date.
+Find the latest version here: https://gitlab.postmarketos.org/postmarketOS/pmbootstrap/-/tags
+Your version: 3.11.1
+[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git rev-parse --abbrev-ref HEAD[0m
+[13:38:27] run: ['git', 'rev-parse', '--abbrev-ref', 'HEAD'][0m
+[13:38:27] % cd /home/owner/pmbootstrap-build/pmaports; git status --porcelain[0m
+[13:38:27] run: ['git', 'status', '--porcelain'][0m
+[92mChannel[0m: systemd-edge (pmaports: main)
+[92mDevice[0m:  generic-x86_64 (x86_64, kernel: stable)
+[92mUI[0m:      xfce4
+[92msystemd[0m: yes (default selected in pmbootstrap init, postmarketos-ui-xfce4 defaults to systemd)
+
+
+=== Disk usage ===
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda3       930G  232G  699G  25% /
+
+=== Exit code: 0 ===
+✅ Build completed successfully

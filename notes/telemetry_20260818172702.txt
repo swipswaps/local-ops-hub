@@ -1,0 +1,386 @@
+
+============================================================
+  TELEMETRY COLLECTION
+============================================================
+
+=== System info ===
+Linux unknown22f5046d535b 7.0.11-100.fc43.x86_64 #1 SMP PREEMPT_DYNAMIC Mon Jun  1 22:51:40 UTC 2026 x86_64 GNU/Linux
+
+=== pmbootstrap version ===
+3.11.1
+
+=== Config file ===
+[pmbootstrap]
+aports = /home/owner/pmbootstrap-build/pmaports
+device = generic-x86_64
+ui = xfce4
+work = /home/owner/pmbootstrap-build/work
+
+[providers]
+
+[mirrors]
+
+
+=== pmbootstrap log (last 50 lines) ===
+(622365) [13:27:06] * pipewire: Use pipewire as the audio backend. (but may not work with all devices)
+[13:27:06] Provider [default]: default
+(622365) [13:27:06] Available providers for postmarketos-base-ui-wifi (2):
+(622365) [13:27:06] * wpa_supplicant: Use wpa_supplicant as the WiFi backend. [1m(default)[0m
+(622365) [13:27:06] * iwd: Use iwd as the WiFi backend (but may not work with all devices)
+[13:27:06] Provider [default]: default
+(622365) [13:27:06] Available providers for postmarketos-usb-moded-default-profile (2):
+(622365) [13:27:06] * developer: Make 'developer mode' the default usb-moded profile (always enables usb networking) [1m(default)[0m
+(622365) [13:27:06] * charging: Make 'charging mode' the default usb-moded profile (usb networking must be manually enabled)
+[13:27:06] Provider [default]: default
+(622365) [13:27:06] Available user interfaces (30): 
+(622365) [13:27:06] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.
+(622365) [13:27:06] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support
+(622365) [13:27:06] * cage: (Wayland) Kiosk WM
+(622365) [13:27:06] * console: Console environment, with no graphical/touch UI
+(622365) [13:27:06] * cosmic: COSMIC Desktop Environment from System76
+(622365) [13:27:06] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support
+(622365) [13:27:06] * gnome: (Wayland) Gnome Shell
+(622365) [13:27:06] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)
+(622365) [13:27:06] * i3wm: (X11) Tiling WM (keyboard required)
+(622365) [13:27:06] * kodi: (GBM) 10-foot UI useful on TV's
+(622365) [13:27:06] * lomiri: (Wayland) The convergent desktop environment (Experimental)
+(622365) [13:27:06] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)
+(622365) [13:27:06] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)
+(622365) [13:27:06] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield
+(622365) [13:27:06] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)
+(622365) [13:27:06] * openbox: (X11) A highly configurable and lightweight X11 window manager (keyboard required)
+(622365) [13:27:06] * os-installer: UI for installing postmarketOS
+(622365) [13:27:06] * phosh: (Wayland) Mobile UI using GNOME components and apps
+(622365) [13:27:06] * plasma-bigscreen: (Wayland) 10-feet variant of Plasma, made for big screen TVs
+(622365) [13:27:06] * plasma-desktop: (Wayland) KDE Desktop Environment (works well with tablets)
+(622365) [13:27:06] * plasma-mobile: (Wayland) Mobile variant of KDE Plasma
+(622365) [13:27:06] * retroarch: RetroArch in KMS mode
+(622365) [13:27:06] * shelli: Plain console with touchscreen gesture support
+(622365) [13:27:06] * sway: (Wayland) Tiling WM, drop-in replacement for i3wm
+(622365) [13:27:06] * sxmo-de-dwm: Simple Mobile: Mobile environment based on SXMO and running on dwm
+(622365) [13:27:06] * sxmo-de-i3: Simple Mobile: Mobile environment based on SXMO and running on i3
+(622365) [13:27:06] * sxmo-de-river: Simple Mobile: Mobile environment based on SXMO and running on river
+(622365) [13:27:06] * sxmo-de-sway: Simple Mobile: Mobile environment based on SXMO and running on sway
+(622365) [13:27:06] * weston: (Wayland) Reference compositor (demo, not a phone interface)
+(622365) [13:27:06] * windowmaker: (X11) Window manager inspired by the NeXTSTEP user interface (stylus recommended)
+(622365) [13:27:06] * xfce4: (X11) Lightweight desktop (stylus recommended)
+[13:27:06] User interface [xfce4]: xfce4
+(622365) [13:27:06] Based on your UI selection, 'default' will result in choosing systemd.
+[13:27:06] Which service manager should be used? (default/openrc/systemd) [default]: default
+(622365) [13:27:06] Additional options: extra free space: 0 MB, boot partition size: 512 MB, parallel jobs: 4, ccache per arch: 5G, sudo timer: False, mirror: http://mirror.postmarketos.org/postmarketos/
+[13:27:06] Change them? (y/n) [n]: n
+(622365) [13:27:06] Additional packages that will be installed to rootfs. Specify them in a comma separated list (e.g.: vim,file) or "none"
+[13:27:06] Extra packages [none]: none
+(622365) [13:27:06] Your host timezone: America/New_York
+
+=== Full expect log ===
+spawn /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -c /home/owner/pmbootstrap-build/pmbootstrap.cfg -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports init
+parent: waiting for sync byte
+parent: telling child to go ahead
+parent: now unsynchronized from child
+spawn: returns {622365}
+
+expect: does "" (spawn_id exp5) match glob pattern "Work path"? no
+[13:27:06] Location of the 'work' path. Multiple chroots (native, device arch, device rootfs) will be created in there.[0m
+
+expect: does "[13:27:06] Location of the 'work' path. Multiple chroots (native, device arch, device rootfs) will be created in there.\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Work path"? no
+[13:27:06] [1mWork path [/home/owner/pmbootstrap-build/work][0m: 
+expect: does "[13:27:06] Location of the 'work' path. Multiple chroots (native, device arch, device rootfs) will be created in there.\u001b[0m\r\n[13:27:06] \u001b[1mWork path [/home/owner/pmbootstrap-build/work]\u001b[0m: " (spawn_id exp5) match glob pattern "Work path"? yes
+expect: set expect_out(0,string) "Work path"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) "[13:27:06] Location of the 'work' path. Multiple chroots (native, device arch, device rootfs) will be created in there.\u001b[0m\r\n[13:27:06] \u001b[1mWork path"
+send: sending "\r" to { exp5 }
+
+expect: does " [/home/owner/pmbootstrap-build/work]\u001b[0m: " (spawn_id exp5) match glob pattern "pmaports path"? no
+
+
+expect: does " [/home/owner/pmbootstrap-build/work]\u001b[0m: \r\n" (spawn_id exp5) match glob pattern "pmaports path"? no
+[13:27:06] Location of the 'pmaports' path, containing package definitions.[0m
+[13:27:06] [1mpmaports path [/home/owner/pmbootstrap-build/pmaports][0m: 
+expect: does " [/home/owner/pmbootstrap-build/work]\u001b[0m: \r\n[13:27:06] Location of the 'pmaports' path, containing package definitions.\u001b[0m\r\n[13:27:06] \u001b[1mpmaports path [/home/owner/pmbootstrap-build/pmaports]\u001b[0m: " (spawn_id exp5) match glob pattern "pmaports path"? yes
+expect: set expect_out(0,string) "pmaports path"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " [/home/owner/pmbootstrap-build/work]\u001b[0m: \r\n[13:27:06] Location of the 'pmaports' path, containing package definitions.\u001b[0m\r\n[13:27:06] \u001b[1mpmaports path"
+send: sending "\r" to { exp5 }
+
+expect: does " [/home/owner/pmbootstrap-build/pmaports]\u001b[0m: " (spawn_id exp5) match glob pattern "Channel"? no
+
+
+expect: does " [/home/owner/pmbootstrap-build/pmaports]\u001b[0m: \r\n" (spawn_id exp5) match glob pattern "Channel"? no
+[13:27:06] Choose the postmarketOS release channel.[0m
+
+expect: does " [/home/owner/pmbootstrap-build/pmaports]\u001b[0m: \r\n[13:27:06] Choose the postmarketOS release channel.\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Channel"? no
+[13:27:06] Available (14):[0m
+[13:27:06] * edge: Rolling release / Most devices / Occasional breakage: https://postmarketos.org/edge[0m
+[13:27:06] * v26.06: Latest release / Recommended for best stability[0m
+
+expect: does " [/home/owner/pmbootstrap-build/pmaports]\u001b[0m: \r\n[13:27:06] Choose the postmarketOS release channel.\u001b[0m\r\n[13:27:06] Available (14):\u001b[0m\r\n[13:27:06] * edge: Rolling release / Most devices / Occasional breakage: https://postmarketos.org/edge\u001b[0m\r\n[13:27:06] * v26.06: Latest release / Recommended for best stability\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Channel"? no
+[13:27:06] * v25.12: Old release (unsupported)[0m
+
+expect: does " [/home/owner/pmbootstrap-build/pmaports]\u001b[0m: \r\n[13:27:06] Choose the postmarketOS release channel.\u001b[0m\r\n[13:27:06] Available (14):\u001b[0m\r\n[13:27:06] * edge: Rolling release / Most devices / Occasional breakage: https://postmarketos.org/edge\u001b[0m\r\n[13:27:06] * v26.06: Latest release / Recommended for best stability\u001b[0m\r\n[13:27:06] * v25.12: Old release (unsupported)\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Channel"? no
+[13:27:06] [1mChannel [edge][0m: 
+expect: does " [/home/owner/pmbootstrap-build/pmaports]\u001b[0m: \r\n[13:27:06] Choose the postmarketOS release channel.\u001b[0m\r\n[13:27:06] Available (14):\u001b[0m\r\n[13:27:06] * edge: Rolling release / Most devices / Occasional breakage: https://postmarketos.org/edge\u001b[0m\r\n[13:27:06] * v26.06: Latest release / Recommended for best stability\u001b[0m\r\n[13:27:06] * v25.12: Old release (unsupported)\u001b[0m\r\n[13:27:06] \u001b[1mChannel [edge]\u001b[0m: " (spawn_id exp5) match glob pattern "Channel"? yes
+expect: set expect_out(0,string) "Channel"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " [/home/owner/pmbootstrap-build/pmaports]\u001b[0m: \r\n[13:27:06] Choose the postmarketOS release channel.\u001b[0m\r\n[13:27:06] Available (14):\u001b[0m\r\n[13:27:06] * edge: Rolling release / Most devices / Occasional breakage: https://postmarketos.org/edge\u001b[0m\r\n[13:27:06] * v26.06: Latest release / Recommended for best stability\u001b[0m\r\n[13:27:06] * v25.12: Old release (unsupported)\u001b[0m\r\n[13:27:06] \u001b[1mChannel"
+send: sending "edge\r" to { exp5 }
+
+expect: does " [edge]\u001b[0m: " (spawn_id exp5) match glob pattern "Vendor"? no
+edge
+
+expect: does " [edge]\u001b[0m: edge\r\n" (spawn_id exp5) match glob pattern "Vendor"? no
+[13:27:06] [94mNOTE:[0m pmaports is on main branch, copying git hooks.[0m
+
+expect: does " [edge]\u001b[0m: edge\r\n[13:27:06] \u001b[94mNOTE:\u001b[0m pmaports is on main branch, copying git hooks.\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Vendor"? no
+[13:27:06] Choose your target device vendor (either an existing one, or a new one for porting).[0m
+
+expect: does " [edge]\u001b[0m: edge\r\n[13:27:06] \u001b[94mNOTE:\u001b[0m pmaports is on main branch, copying git hooks.\u001b[0m\r\n[13:27:06] Choose your target device vendor (either an existing one, or a new one for porting).\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Vendor"? no
+[13:27:06] Available vendors (107): acer, alcatel, amazon, amediatech, amlogic, apple, ark, arrow, asus, ayaneo, ayn, bananapi, barnesnoble, beelink, blackberry, bq, clockworkpi, cubietech, cutiepi, dell, dongshanpi, epson, essential, fairphone, finepower, fly, fxtec, generic, gigaset, goclever, google, gp, hisense, hp, htc, huawei, inet, infocus, jolla, khadas, klipad, kobo, lark, leeco, lenovo, lg, librecomputer, linksys, lynx, mangopi, medion, meizu, microsoft, mnt, mobvoi, motorola, nextbit, nobby, nokia, nothing, nvidia, odroid, oneplus, oppo, ouya, pine64, planet, pocketbook, postmarketos, powkiddy, purism, qcom, qemu, qualcomm, radxa, raspberry, realme, rockchip, samsung, semc, sharp, shift, sipeed, solidrun, sony, sourceparts, sqfmi, starway, surftab, t2m, thundercomm, tokio, tolino, trekstor, vernee, vivo, volla, wd, wexler, wiko, wileyfox, xiaomi, xunlong, yu, zhihe, zte, zuk[0m
+
+expect: does " [edge]\u001b[0m: edge\r\n[13:27:06] \u001b[94mNOTE:\u001b[0m pmaports is on main branch, copying git hooks.\u001b[0m\r\n[13:27:06] Choose your target device vendor (either an existing one, or a new one for porting).\u001b[0m\r\n[13:27:06] Available vendors (107): acer, alcatel, amazon, amediatech, amlogic, apple, ark, arrow, asus, ayaneo, ayn, bananapi, barnesnoble, beelink, blackberry, bq, clockworkpi, cubietech, cutiepi, dell, dongshanpi, epson, essential, fairphone, finepower, fly, fxtec, generic, gigaset, goclever, google, gp, hisense, hp, htc, huawei, inet, infocus, jolla, khadas, klipad, kobo, lark, leeco, lenovo, lg, librecomputer, linksys, lynx, mangopi, medion, meizu, microsoft, mnt, mobvoi, motorola, nextbit, nobby, nokia, nothing, nvidia, odroid, oneplus, oppo, ouya, pine64, planet, pocketbook, postmarketos, powkiddy, purism, qcom, qemu, qualcomm, radxa, raspberry, realme, rockchip, samsung, semc, sharp, shift, sipeed, solidrun, sony, sourceparts, sqfmi, starway, surftab, t2m, thundercomm, tokio, tolino, trekstor, vernee, vivo, volla, wd, wexler, wiko, wileyfox, xiaomi, xunlong, yu, zhihe, zte, zuk\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Vendor"? no
+[13:27:06] [1mVendor [generic][0m: 
+expect: does " [edge]\u001b[0m: edge\r\n[13:27:06] \u001b[94mNOTE:\u001b[0m pmaports is on main branch, copying git hooks.\u001b[0m\r\n[13:27:06] Choose your target device vendor (either an existing one, or a new one for porting).\u001b[0m\r\n[13:27:06] Available vendors (107): acer, alcatel, amazon, amediatech, amlogic, apple, ark, arrow, asus, ayaneo, ayn, bananapi, barnesnoble, beelink, blackberry, bq, clockworkpi, cubietech, cutiepi, dell, dongshanpi, epson, essential, fairphone, finepower, fly, fxtec, generic, gigaset, goclever, google, gp, hisense, hp, htc, huawei, inet, infocus, jolla, khadas, klipad, kobo, lark, leeco, lenovo, lg, librecomputer, linksys, lynx, mangopi, medion, meizu, microsoft, mnt, mobvoi, motorola, nextbit, nobby, nokia, nothing, nvidia, odroid, oneplus, oppo, ouya, pine64, planet, pocketbook, postmarketos, powkiddy, purism, qcom, qemu, qualcomm, radxa, raspberry, realme, rockchip, samsung, semc, sharp, shift, sipeed, solidrun, sony, sourceparts, sqfmi, starway, surftab, t2m, thundercomm, tokio, tolino, trekstor, vernee, vivo, volla, wd, wexler, wiko, wileyfox, xiaomi, xunlong, yu, zhihe, zte, zuk\u001b[0m\r\n[13:27:06] \u001b[1mVendor [generic]\u001b[0m: " (spawn_id exp5) match glob pattern "Vendor"? yes
+expect: set expect_out(0,string) "Vendor"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " [edge]\u001b[0m: edge\r\n[13:27:06] \u001b[94mNOTE:\u001b[0m pmaports is on main branch, copying git hooks.\u001b[0m\r\n[13:27:06] Choose your target device vendor (either an existing one, or a new one for porting).\u001b[0m\r\n[13:27:06] Available vendors (107): acer, alcatel, amazon, amediatech, amlogic, apple, ark, arrow, asus, ayaneo, ayn, bananapi, barnesnoble, beelink, blackberry, bq, clockworkpi, cubietech, cutiepi, dell, dongshanpi, epson, essential, fairphone, finepower, fly, fxtec, generic, gigaset, goclever, google, gp, hisense, hp, htc, huawei, inet, infocus, jolla, khadas, klipad, kobo, lark, leeco, lenovo, lg, librecomputer, linksys, lynx, mangopi, medion, meizu, microsoft, mnt, mobvoi, motorola, nextbit, nobby, nokia, nothing, nvidia, odroid, oneplus, oppo, ouya, pine64, planet, pocketbook, postmarketos, powkiddy, purism, qcom, qemu, qualcomm, radxa, raspberry, realme, rockchip, samsung, semc, sharp, shift, sipeed, solidrun, sony, sourceparts, sqfmi, starway, surftab, t2m, thundercomm, tokio, tolino, trekstor, vernee, vivo, volla, wd, wexler, wiko, wileyfox, xiaomi, xunlong, yu, zhihe, zte, zuk\u001b[0m\r\n[13:27:06] \u001b[1mVendor"
+send: sending "generic\r" to { exp5 }
+
+expect: does " [generic]\u001b[0m: " (spawn_id exp5) match glob pattern "Device codename"? no
+generic
+
+expect: does " [generic]\u001b[0m: generic\r\n" (spawn_id exp5) match glob pattern "Device codename"? no
+[13:27:06] Devices are categorised as follows, from best to worst:
+* [95mMain[0m: ports where mostly everything works.
+* [94mCommunity[0m: often mostly usable, but may lack important functionality.
+* [92mTesting[0m: anything from "just boots in some sense" to almost fully functioning ports.
+* [93mDownstream[0m: ports that use a downstream kernel — very limited functionality. Not recommended.
+
+Available devices by codename (3): [92mloongarch64[0m (testing), [94mppc64le[0m (community), [94mx86_64[0m (community)[0m
+
+expect: does " [generic]\u001b[0m: generic\r\n[13:27:06] Devices are categorised as follows, from best to worst:\r\n* \u001b[95mMain\u001b[0m: ports where mostly everything works.\r\n* \u001b[94mCommunity\u001b[0m: often mostly usable, but may lack important functionality.\r\n* \u001b[92mTesting\u001b[0m: anything from "just boots in some sense" to almost fully functioning ports.\r\n* \u001b[93mDownstream\u001b[0m: ports that use a downstream kernel \u2014 very limited functionality. Not recommended.\r\n\r\nAvailable devices by codename (3): \u001b[92mloongarch64\u001b[0m (testing), \u001b[94mppc64le\u001b[0m (community), \u001b[94mx86_64\u001b[0m (community)\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Device codename"? no
+[13:27:06] [1mDevice codename [x86_64][0m: 
+expect: does " [generic]\u001b[0m: generic\r\n[13:27:06] Devices are categorised as follows, from best to worst:\r\n* \u001b[95mMain\u001b[0m: ports where mostly everything works.\r\n* \u001b[94mCommunity\u001b[0m: often mostly usable, but may lack important functionality.\r\n* \u001b[92mTesting\u001b[0m: anything from "just boots in some sense" to almost fully functioning ports.\r\n* \u001b[93mDownstream\u001b[0m: ports that use a downstream kernel \u2014 very limited functionality. Not recommended.\r\n\r\nAvailable devices by codename (3): \u001b[92mloongarch64\u001b[0m (testing), \u001b[94mppc64le\u001b[0m (community), \u001b[94mx86_64\u001b[0m (community)\u001b[0m\r\n[13:27:06] \u001b[1mDevice codename [x86_64]\u001b[0m: " (spawn_id exp5) match glob pattern "Device codename"? yes
+expect: set expect_out(0,string) "Device codename"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " [generic]\u001b[0m: generic\r\n[13:27:06] Devices are categorised as follows, from best to worst:\r\n* \u001b[95mMain\u001b[0m: ports where mostly everything works.\r\n* \u001b[94mCommunity\u001b[0m: often mostly usable, but may lack important functionality.\r\n* \u001b[92mTesting\u001b[0m: anything from "just boots in some sense" to almost fully functioning ports.\r\n* \u001b[93mDownstream\u001b[0m: ports that use a downstream kernel \u2014 very limited functionality. Not recommended.\r\n\r\nAvailable devices by codename (3): \u001b[92mloongarch64\u001b[0m (testing), \u001b[94mppc64le\u001b[0m (community), \u001b[94mx86_64\u001b[0m (community)\u001b[0m\r\n[13:27:06] \u001b[1mDevice codename"
+send: sending "x86_64\r" to { exp5 }
+
+expect: does " [x86_64]\u001b[0m: " (spawn_id exp5) match glob pattern "Kernel"? no
+x86_64
+
+expect: does " [x86_64]\u001b[0m: x86_64\r\n" (spawn_id exp5) match glob pattern "Kernel"? no
+[13:27:06] Which kernel do you want to use with your device?[0m
+
+expect: does " [x86_64]\u001b[0m: x86_64\r\n[13:27:06] Which kernel do you want to use with your device?\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Kernel"? no
+[13:27:06] Available kernels (3):[0m
+[13:27:06] * lts: Long-term maintenance kernel (most stability, not all security fixes & new features)[0m
+[13:27:06] * mainline: Upstream development kernel (regular breakage, latest features)[0m
+
+expect: does " [x86_64]\u001b[0m: x86_64\r\n[13:27:06] Which kernel do you want to use with your device?\u001b[0m\r\n[13:27:06] Available kernels (3):\u001b[0m\r\n[13:27:06] * lts: Long-term maintenance kernel (most stability, not all security fixes & new features)\u001b[0m\r\n[13:27:06] * mainline: Upstream development kernel (regular breakage, latest features)\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Kernel"? no
+[13:27:06] * stable: Stable kernel (recommended, best balance between stability and features)[0m
+[13:27:06] [1mKernel [stable][0m: 
+expect: does " [x86_64]\u001b[0m: x86_64\r\n[13:27:06] Which kernel do you want to use with your device?\u001b[0m\r\n[13:27:06] Available kernels (3):\u001b[0m\r\n[13:27:06] * lts: Long-term maintenance kernel (most stability, not all security fixes & new features)\u001b[0m\r\n[13:27:06] * mainline: Upstream development kernel (regular breakage, latest features)\u001b[0m\r\n[13:27:06] * stable: Stable kernel (recommended, best balance between stability and features)\u001b[0m\r\n[13:27:06] \u001b[1mKernel [stable]\u001b[0m: " (spawn_id exp5) match glob pattern "Kernel"? yes
+expect: set expect_out(0,string) "Kernel"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " [x86_64]\u001b[0m: x86_64\r\n[13:27:06] Which kernel do you want to use with your device?\u001b[0m\r\n[13:27:06] Available kernels (3):\u001b[0m\r\n[13:27:06] * lts: Long-term maintenance kernel (most stability, not all security fixes & new features)\u001b[0m\r\n[13:27:06] * mainline: Upstream development kernel (regular breakage, latest features)\u001b[0m\r\n[13:27:06] * stable: Stable kernel (recommended, best balance between stability and features)\u001b[0m\r\n[13:27:06] \u001b[1mKernel"
+send: sending "\r" to { exp5 }
+
+expect: does " [stable]\u001b[0m: " (spawn_id exp5) match glob pattern "Username"? no
+
+
+expect: does " [stable]\u001b[0m: \r\n" (spawn_id exp5) match glob pattern "Username"? no
+[13:27:06] [1mUsername [user][0m: 
+expect: does " [stable]\u001b[0m: \r\n[13:27:06] \u001b[1mUsername [user]\u001b[0m: " (spawn_id exp5) match glob pattern "Username"? yes
+expect: set expect_out(0,string) "Username"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " [stable]\u001b[0m: \r\n[13:27:06] \u001b[1mUsername"
+send: sending "user\r" to { exp5 }
+Gate keeper glob pattern for 'Provider\s+\[default\][^\n]*:' is 'Provider*\[default]*:'. Activating booster.
+
+expect: does " [user]\u001b[0m: " (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+user
+
+expect: does " [user]\u001b[0m: user\r\n" (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+[13:27:06] Available providers for postmarketos-base-ui-audio-backend (2):[0m
+
+expect: does " [user]\u001b[0m: user\r\n[13:27:06] Available providers for postmarketos-base-ui-audio-backend (2):\u001b[0m\r\n" (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+[13:27:06] * pulseaudio: Use pulseaudio as the audio backend. [1m(default)[0m[0m
+[13:27:06] * pipewire: Use pipewire as the audio backend. (but may not work with all devices)[0m
+
+expect: does " [user]\u001b[0m: user\r\n[13:27:06] Available providers for postmarketos-base-ui-audio-backend (2):\u001b[0m\r\n[13:27:06] * pulseaudio: Use pulseaudio as the audio backend. \u001b[1m(default)\u001b[0m\u001b[0m\r\n[13:27:06] * pipewire: Use pipewire as the audio backend. (but may not work with all devices)\u001b[0m\r\n" (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+[13:27:06] [1mProvider [default][0m: 
+expect: does " [user]\u001b[0m: user\r\n[13:27:06] Available providers for postmarketos-base-ui-audio-backend (2):\u001b[0m\r\n[13:27:06] * pulseaudio: Use pulseaudio as the audio backend. \u001b[1m(default)\u001b[0m\u001b[0m\r\n[13:27:06] * pipewire: Use pipewire as the audio backend. (but may not work with all devices)\u001b[0m\r\n[13:27:06] \u001b[1mProvider [default]\u001b[0m: " (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=yes re=yes
+expect: set expect_out(0,string) "Provider [default]\u001b[0m:"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " [user]\u001b[0m: user\r\n[13:27:06] Available providers for postmarketos-base-ui-audio-backend (2):\u001b[0m\r\n[13:27:06] * pulseaudio: Use pulseaudio as the audio backend. \u001b[1m(default)\u001b[0m\u001b[0m\r\n[13:27:06] * pipewire: Use pipewire as the audio backend. (but may not work with all devices)\u001b[0m\r\n[13:27:06] \u001b[1mProvider [default]\u001b[0m:"
+send: sending "\r" to { exp5 }
+Gate keeper glob pattern for 'Provider\s+\[default\][^\n]*:' is 'Provider*\[default]*:'. Activating booster.
+
+expect: does " " (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+
+
+expect: does " \r\n" (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+[13:27:06] Available providers for postmarketos-base-ui-wifi (2):[0m
+
+expect: does " \r\n[13:27:06] Available providers for postmarketos-base-ui-wifi (2):\u001b[0m\r\n" (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+[13:27:06] * wpa_supplicant: Use wpa_supplicant as the WiFi backend. [1m(default)[0m[0m
+[13:27:06] * iwd: Use iwd as the WiFi backend (but may not work with all devices)[0m
+
+expect: does " \r\n[13:27:06] Available providers for postmarketos-base-ui-wifi (2):\u001b[0m\r\n[13:27:06] * wpa_supplicant: Use wpa_supplicant as the WiFi backend. \u001b[1m(default)\u001b[0m\u001b[0m\r\n[13:27:06] * iwd: Use iwd as the WiFi backend (but may not work with all devices)\u001b[0m\r\n" (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+[13:27:06] [1mProvider [default][0m: 
+expect: does " \r\n[13:27:06] Available providers for postmarketos-base-ui-wifi (2):\u001b[0m\r\n[13:27:06] * wpa_supplicant: Use wpa_supplicant as the WiFi backend. \u001b[1m(default)\u001b[0m\u001b[0m\r\n[13:27:06] * iwd: Use iwd as the WiFi backend (but may not work with all devices)\u001b[0m\r\n[13:27:06] \u001b[1mProvider [default]\u001b[0m: " (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=yes re=yes
+expect: set expect_out(0,string) "Provider [default]\u001b[0m:"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " \r\n[13:27:06] Available providers for postmarketos-base-ui-wifi (2):\u001b[0m\r\n[13:27:06] * wpa_supplicant: Use wpa_supplicant as the WiFi backend. \u001b[1m(default)\u001b[0m\u001b[0m\r\n[13:27:06] * iwd: Use iwd as the WiFi backend (but may not work with all devices)\u001b[0m\r\n[13:27:06] \u001b[1mProvider [default]\u001b[0m:"
+send: sending "\r" to { exp5 }
+Gate keeper glob pattern for 'Provider\s+\[default\][^\n]*:' is 'Provider*\[default]*:'. Activating booster.
+
+expect: does " " (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+
+
+expect: does " \r\n" (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+[13:27:06] Available providers for postmarketos-usb-moded-default-profile (2):[0m
+
+expect: does " \r\n[13:27:06] Available providers for postmarketos-usb-moded-default-profile (2):\u001b[0m\r\n" (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+[13:27:06] * developer: Make 'developer mode' the default usb-moded profile (always enables usb networking) [1m(default)[0m[0m
+[13:27:06] * charging: Make 'charging mode' the default usb-moded profile (usb networking must be manually enabled)[0m
+
+expect: does " \r\n[13:27:06] Available providers for postmarketos-usb-moded-default-profile (2):\u001b[0m\r\n[13:27:06] * developer: Make 'developer mode' the default usb-moded profile (always enables usb networking) \u001b[1m(default)\u001b[0m\u001b[0m\r\n[13:27:06] * charging: Make 'charging mode' the default usb-moded profile (usb networking must be manually enabled)\u001b[0m\r\n" (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=no
+[13:27:06] [1mProvider [default][0m: 
+expect: does " \r\n[13:27:06] Available providers for postmarketos-usb-moded-default-profile (2):\u001b[0m\r\n[13:27:06] * developer: Make 'developer mode' the default usb-moded profile (always enables usb networking) \u001b[1m(default)\u001b[0m\u001b[0m\r\n[13:27:06] * charging: Make 'charging mode' the default usb-moded profile (usb networking must be manually enabled)\u001b[0m\r\n[13:27:06] \u001b[1mProvider [default]\u001b[0m: " (spawn_id exp5) match regular expression "Provider\s+\[default\][^\n]*:"? Gate "Provider*\[default]*:"? gate=yes re=yes
+expect: set expect_out(0,string) "Provider [default]\u001b[0m:"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " \r\n[13:27:06] Available providers for postmarketos-usb-moded-default-profile (2):\u001b[0m\r\n[13:27:06] * developer: Make 'developer mode' the default usb-moded profile (always enables usb networking) \u001b[1m(default)\u001b[0m\u001b[0m\r\n[13:27:06] * charging: Make 'charging mode' the default usb-moded profile (usb networking must be manually enabled)\u001b[0m\r\n[13:27:06] \u001b[1mProvider [default]\u001b[0m:"
+send: sending "\r" to { exp5 }
+
+expect: does " " (spawn_id exp5) match glob pattern "User interface"? no
+
+
+expect: does " \r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:27:06] Available user interfaces (30): [0m
+
+expect: does " \r\n[13:27:06] Available user interfaces (30): \u001b[0m\r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:27:06] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.[0m
+[13:27:06] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support[0m
+[13:27:06] * cage: (Wayland) Kiosk WM[0m
+[13:27:06] * console: Console environment, with no graphical/touch UI[0m
+[13:27:06] * cosmic: COSMIC Desktop Environment from System76[0m
+[13:27:06] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support[0m
+[13:27:06] * gnome: (Wayland) Gnome Shell[0m
+[13:27:06] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)[0m
+[13:27:06] * i3wm: (X11) Tiling WM (keyboard required)[0m
+
+expect: does " \r\n[13:27:06] Available user interfaces (30): \u001b[0m\r\n[13:27:06] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:27:06] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:27:06] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:27:06] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n[13:27:06] * cosmic: COSMIC Desktop Environment from System76\u001b[0m\r\n[13:27:06] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support\u001b[0m\r\n[13:27:06] * gnome: (Wayland) Gnome Shell\u001b[0m\r\n[13:27:06] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)\u001b[0m\r\n[13:27:06] * i3wm: (X11) Tiling WM (keyboard required)\u001b[0m\r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:27:06] * kodi: (GBM) 10-foot UI useful on TV's[0m
+[13:27:06] * lomiri: (Wayland) The convergent desktop environment (Experimental)[0m
+[13:27:06] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)[0m
+[13:27:06] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)[0m
+[13:27:06] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield[0m
+[13:27:06] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)[0m
+
+expect: does " \r\n[13:27:06] Available user interfaces (30): \u001b[0m\r\n[13:27:06] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:27:06] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:27:06] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:27:06] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n[13:27:06] * cosmic: COSMIC Desktop Environment from System76\u001b[0m\r\n[13:27:06] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support\u001b[0m\r\n[13:27:06] * gnome: (Wayland) Gnome Shell\u001b[0m\r\n[13:27:06] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)\u001b[0m\r\n[13:27:06] * i3wm: (X11) Tiling WM (keyboard required)\u001b[0m\r\n[13:27:06] * kodi: (GBM) 10-foot UI useful on TV's\u001b[0m\r\n[13:27:06] * lomiri: (Wayland) The convergent desktop environment (Experimental)\u001b[0m\r\n[13:27:06] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)\u001b[0m\r\n[13:27:06] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)\u001b[0m\r\n[13:27:06] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield\u001b[0m\r\n[13:27:06] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)\u001b[0m\r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:27:06] * openbox: (X11) A highly configurable and lightweight X11 window manager (keyboard required)[0m
+[13:27:06] * os-installer: UI for installing postmarketOS[0m
+[13:27:06] * phosh: (Wayland) Mobile UI using GNOME components and apps[0m
+[13:27:06] * plasma-bigscreen: (Wayland) 10-feet variant of Plasma, made for big screen TVs[0m
+[13:27:06] * plasma-desktop: (Wayland) KDE Desktop Environment (works well with tablets)[0m
+[13:27:06] * plasma-mobile: (Wayland) Mobile variant of KDE Plasma[0m
+
+expect: does " \r\n[13:27:06] Available user interfaces (30): \u001b[0m\r\n[13:27:06] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:27:06] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:27:06] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:27:06] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n[13:27:06] * cosmic: COSMIC Desktop Environment from System76\u001b[0m\r\n[13:27:06] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support\u001b[0m\r\n[13:27:06] * gnome: (Wayland) Gnome Shell\u001b[0m\r\n[13:27:06] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)\u001b[0m\r\n[13:27:06] * i3wm: (X11) Tiling WM (keyboard required)\u001b[0m\r\n[13:27:06] * kodi: (GBM) 10-foot UI useful on TV's\u001b[0m\r\n[13:27:06] * lomiri: (Wayland) The convergent desktop environment (Experimental)\u001b[0m\r\n[13:27:06] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)\u001b[0m\r\n[13:27:06] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)\u001b[0m\r\n[13:27:06] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield\u001b[0m\r\n[13:27:06] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)\u001b[0m\r\n[13:27:06] * openbox: (X11) A highly configurable and lightweight X11 window manager (keyboard required)\u001b[0m\r\n[13:27:06] * os-installer: UI for installing postmarketOS\u001b[0m\r\n[13:27:06] * phosh: (Wayland) Mobile UI using GNOME components and apps\u001b[0m\r\n[13:27:06] * plasma-bigscreen: (Wayland) 10-feet variant of Plasma, made for big screen TVs\u001b[0m\r\n[13:27:06] * plasma-desktop: (Wayland) KDE Desktop Environment (works well with tablets)\u001b[0m\r\n[13:27:06] * plasma-mobile: (Wayland) Mobile variant of KDE Plasma\u001b[0m\r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:27:06] * retroarch: RetroArch in KMS mode[0m
+[13:27:06] * shelli: Plain console with touchscreen gesture support[0m
+[13:27:06] * sway: (Wayland) Tiling WM, drop-in replacement for i3wm[0m
+
+expect: does " \r\n[13:27:06] Available user interfaces (30): \u001b[0m\r\n[13:27:06] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:27:06] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:27:06] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:27:06] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n[13:27:06] * cosmic: COSMIC Desktop Environment from System76\u001b[0m\r\n[13:27:06] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support\u001b[0m\r\n[13:27:06] * gnome: (Wayland) Gnome Shell\u001b[0m\r\n[13:27:06] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)\u001b[0m\r\n[13:27:06] * i3wm: (X11) Tiling WM (keyboard required)\u001b[0m\r\n[13:27:06] * kodi: (GBM) 10-foot UI useful on TV's\u001b[0m\r\n[13:27:06] * lomiri: (Wayland) The convergent desktop environment (Experimental)\u001b[0m\r\n[13:27:06] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)\u001b[0m\r\n[13:27:06] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)\u001b[0m\r\n[13:27:06] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield\u001b[0m\r\n[13:27:06] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)\u001b[0m\r\n[13:27:06] * openbox: (X11) A highly configurable and lightweight X11 window manager (keyboard required)\u001b[0m\r\n[13:27:06] * os-installer: UI for installing postmarketOS\u001b[0m\r\n[13:27:06] * phosh: (Wayland) Mobile UI using GNOME components and apps\u001b[0m\r\n[13:27:06] * plasma-bigscreen: (Wayland) 10-feet variant of Plasma, made for big screen TVs\u001b[0m\r\n[13:27:06] * plasma-desktop: (Wayland) KDE Desktop Environment (works well with tablets)\u001b[0m\r\n[13:27:06] * plasma-mobile: (Wayland) Mobile variant of KDE Plasma\u001b[0m\r\n[13:27:06] * retroarch: RetroArch in KMS mode\u001b[0m\r\n[13:27:06] * shelli: Plain console with touchscreen gesture support\u001b[0m\r\n[13:27:06] * sway: (Wayland) Tiling WM, drop-in replacement for i3wm\u001b[0m\r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:27:06] * sxmo-de-dwm: Simple Mobile: Mobile environment based on SXMO and running on dwm[0m
+[13:27:06] * sxmo-de-i3: Simple Mobile: Mobile environment based on SXMO and running on i3[0m
+
+expect: does " \r\n[13:27:06] Available user interfaces (30): \u001b[0m\r\n[13:27:06] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:27:06] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:27:06] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:27:06] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n[13:27:06] * cosmic: COSMIC Desktop Environment from System76\u001b[0m\r\n[13:27:06] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support\u001b[0m\r\n[13:27:06] * gnome: (Wayland) Gnome Shell\u001b[0m\r\n[13:27:06] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)\u001b[0m\r\n[13:27:06] * i3wm: (X11) Tiling WM (keyboard required)\u001b[0m\r\n[13:27:06] * kodi: (GBM) 10-foot UI useful on TV's\u001b[0m\r\n[13:27:06] * lomiri: (Wayland) The convergent desktop environment (Experimental)\u001b[0m\r\n[13:27:06] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)\u001b[0m\r\n[13:27:06] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)\u001b[0m\r\n[13:27:06] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield\u001b[0m\r\n[13:27:06] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)\u001b[0m\r\n[13:27:06] * openbox: (X11) A highly configurable and lightweight X11 window manager (keyboard required)\u001b[0m\r\n[13:27:06] * os-installer: UI for installing postmarketOS\u001b[0m\r\n[13:27:06] * phosh: (Wayland) Mobile UI using GNOME components and apps\u001b[0m\r\n[13:27:06] * plasma-bigscreen: (Wayland) 10-feet variant of Plasma, made for big screen TVs\u001b[0m\r\n[13:27:06] * plasma-desktop: (Wayland) KDE Desktop Environment (works well with tablets)\u001b[0m\r\n[13:27:06] * plasma-mobile: (Wayland) Mobile variant of KDE Plasma\u001b[0m\r\n[13:27:06] * retroarch: RetroArch in KMS mode\u001b[0m\r\n[13:27:06] * shelli: Plain console with touchscreen gesture support\u001b[0m\r\n[13:27:06] * sway: (Wayland) Tiling WM, drop-in replacement for i3wm\u001b[0m\r\n[13:27:06] * sxmo-de-dwm: Simple Mobile: Mobile environment based on SXMO and running on dwm\u001b[0m\r\n[13:27:06] * sxmo-de-i3: Simple Mobile: Mobile environment based on SXMO and running on i3\u001b[0m\r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:27:06] * sxmo-de-river: Simple Mobile: Mobile environment based on SXMO and running on river[0m
+[13:27:06] * sxmo-de-sway: Simple Mobile: Mobile environment based on SXMO and running on sway[0m
+
+expect: does " \r\n[13:27:06] Available user interfaces (30): \u001b[0m\r\n[13:27:06] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:27:06] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:27:06] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:27:06] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n[13:27:06] * cosmic: COSMIC Desktop Environment from System76\u001b[0m\r\n[13:27:06] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support\u001b[0m\r\n[13:27:06] * gnome: (Wayland) Gnome Shell\u001b[0m\r\n[13:27:06] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)\u001b[0m\r\n[13:27:06] * i3wm: (X11) Tiling WM (keyboard required)\u001b[0m\r\n[13:27:06] * kodi: (GBM) 10-foot UI useful on TV's\u001b[0m\r\n[13:27:06] * lomiri: (Wayland) The convergent desktop environment (Experimental)\u001b[0m\r\n[13:27:06] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)\u001b[0m\r\n[13:27:06] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)\u001b[0m\r\n[13:27:06] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield\u001b[0m\r\n[13:27:06] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)\u001b[0m\r\n[13:27:06] * openbox: (X11) A highly configurable and lightweight X11 window manager (keyboard required)\u001b[0m\r\n[13:27:06] * os-installer: UI for installing postmarketOS\u001b[0m\r\n[13:27:06] * phosh: (Wayland) Mobile UI using GNOME components and apps\u001b[0m\r\n[13:27:06] * plasma-bigscreen: (Wayland) 10-feet variant of Plasma, made for big screen TVs\u001b[0m\r\n[13:27:06] * plasma-desktop: (Wayland) KDE Desktop Environment (works well with tablets)\u001b[0m\r\n[13:27:06] * plasma-mobile: (Wayland) Mobile variant of KDE Plasma\u001b[0m\r\n[13:27:06] * retroarch: RetroArch in KMS mode\u001b[0m\r\n[13:27:06] * shelli: Plain console with touchscreen gesture support\u001b[0m\r\n[13:27:06] * sway: (Wayland) Tiling WM, drop-in replacement for i3wm\u001b[0m\r\n[13:27:06] * sxmo-de-dwm: Simple Mobile: Mobile environment based on SXMO and running on dwm\u001b[0m\r\n[13:27:06] * sxmo-de-i3: Simple Mobile: Mobile environment based on SXMO and running on i3\u001b[0m\r\n[13:27:06] * sxmo-de-river: Simple Mobile: Mobile environment based on SXMO and running on river\u001b[0m\r\n[13:27:06] * sxmo-de-sway: Simple Mobile: Mobile environment based on SXMO and running on sway\u001b[0m\r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:27:06] * weston: (Wayland) Reference compositor (demo, not a phone interface)[0m
+[13:27:06] * windowmaker: (X11) Window manager inspired by the NeXTSTEP user interface (stylus recommended)[0m
+
+expect: does " \r\n[13:27:06] Available user interfaces (30): \u001b[0m\r\n[13:27:06] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:27:06] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:27:06] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:27:06] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n[13:27:06] * cosmic: COSMIC Desktop Environment from System76\u001b[0m\r\n[13:27:06] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support\u001b[0m\r\n[13:27:06] * gnome: (Wayland) Gnome Shell\u001b[0m\r\n[13:27:06] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)\u001b[0m\r\n[13:27:06] * i3wm: (X11) Tiling WM (keyboard required)\u001b[0m\r\n[13:27:06] * kodi: (GBM) 10-foot UI useful on TV's\u001b[0m\r\n[13:27:06] * lomiri: (Wayland) The convergent desktop environment (Experimental)\u001b[0m\r\n[13:27:06] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)\u001b[0m\r\n[13:27:06] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)\u001b[0m\r\n[13:27:06] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield\u001b[0m\r\n[13:27:06] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)\u001b[0m\r\n[13:27:06] * openbox: (X11) A highly configurable and lightweight X11 window manager (keyboard required)\u001b[0m\r\n[13:27:06] * os-installer: UI for installing postmarketOS\u001b[0m\r\n[13:27:06] * phosh: (Wayland) Mobile UI using GNOME components and apps\u001b[0m\r\n[13:27:06] * plasma-bigscreen: (Wayland) 10-feet variant of Plasma, made for big screen TVs\u001b[0m\r\n[13:27:06] * plasma-desktop: (Wayland) KDE Desktop Environment (works well with tablets)\u001b[0m\r\n[13:27:06] * plasma-mobile: (Wayland) Mobile variant of KDE Plasma\u001b[0m\r\n[13:27:06] * retroarch: RetroArch in KMS mode\u001b[0m\r\n[13:27:06] * shelli: Plain console with touchscreen gesture support\u001b[0m\r\n[13:27:06] * sway: (Wayland) Tiling WM, drop-in replacement for i3wm\u001b[0m\r\n[13:27:06] * sxmo-de-dwm: Simple Mobile: Mobile environment based on SXMO and running on dwm\u001b[0m\r\n[13:27:06] * sxmo-de-i3: Simple Mobile: Mobile environment based on SXMO and running on i3\u001b[0m\r\n[13:27:06] * sxmo-de-river: Simple Mobile: Mobile environment based on SXMO and running on river\u001b[0m\r\n[13:27:06] * sxmo-de-sway: Simple Mobile: Mobile environment based on SXMO and running on sway\u001b[0m\r\n[13:27:06] * weston: (Wayland) Reference compositor (demo, not a phone interface)\u001b[0m\r\n[13:27:06] * windowmaker: (X11) Window manager inspired by the NeXTSTEP user interface (stylus recommended)\u001b[0m\r\n" (spawn_id exp5) match glob pattern "User interface"? no
+[13:27:06] * xfce4: (X11) Lightweight desktop (stylus recommended)[0m
+[13:27:06] [1mUser interface [xfce4][0m: 
+expect: does " \r\n[13:27:06] Available user interfaces (30): \u001b[0m\r\n[13:27:06] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:27:06] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:27:06] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:27:06] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n[13:27:06] * cosmic: COSMIC Desktop Environment from System76\u001b[0m\r\n[13:27:06] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support\u001b[0m\r\n[13:27:06] * gnome: (Wayland) Gnome Shell\u001b[0m\r\n[13:27:06] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)\u001b[0m\r\n[13:27:06] * i3wm: (X11) Tiling WM (keyboard required)\u001b[0m\r\n[13:27:06] * kodi: (GBM) 10-foot UI useful on TV's\u001b[0m\r\n[13:27:06] * lomiri: (Wayland) The convergent desktop environment (Experimental)\u001b[0m\r\n[13:27:06] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)\u001b[0m\r\n[13:27:06] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)\u001b[0m\r\n[13:27:06] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield\u001b[0m\r\n[13:27:06] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)\u001b[0m\r\n[13:27:06] * openbox: (X11) A highly configurable and lightweight X11 window manager (keyboard required)\u001b[0m\r\n[13:27:06] * os-installer: UI for installing postmarketOS\u001b[0m\r\n[13:27:06] * phosh: (Wayland) Mobile UI using GNOME components and apps\u001b[0m\r\n[13:27:06] * plasma-bigscreen: (Wayland) 10-feet variant of Plasma, made for big screen TVs\u001b[0m\r\n[13:27:06] * plasma-desktop: (Wayland) KDE Desktop Environment (works well with tablets)\u001b[0m\r\n[13:27:06] * plasma-mobile: (Wayland) Mobile variant of KDE Plasma\u001b[0m\r\n[13:27:06] * retroarch: RetroArch in KMS mode\u001b[0m\r\n[13:27:06] * shelli: Plain console with touchscreen gesture support\u001b[0m\r\n[13:27:06] * sway: (Wayland) Tiling WM, drop-in replacement for i3wm\u001b[0m\r\n[13:27:06] * sxmo-de-dwm: Simple Mobile: Mobile environment based on SXMO and running on dwm\u001b[0m\r\n[13:27:06] * sxmo-de-i3: Simple Mobile: Mobile environment based on SXMO and running on i3\u001b[0m\r\n[13:27:06] * sxmo-de-river: Simple Mobile: Mobile environment based on SXMO and running on river\u001b[0m\r\n[13:27:06] * sxmo-de-sway: Simple Mobile: Mobile environment based on SXMO and running on sway\u001b[0m\r\n[13:27:06] * weston: (Wayland) Reference compositor (demo, not a phone interface)\u001b[0m\r\n[13:27:06] * windowmaker: (X11) Window manager inspired by the NeXTSTEP user interface (stylus recommended)\u001b[0m\r\n[13:27:06] * xfce4: (X11) Lightweight desktop (stylus recommended)\u001b[0m\r\n[13:27:06] \u001b[1mUser interface [xfce4]\u001b[0m: " (spawn_id exp5) match glob pattern "User interface"? yes
+expect: set expect_out(0,string) "User interface"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " \r\n[13:27:06] Available user interfaces (30): \u001b[0m\r\n[13:27:06] * none: Bare minimum OS image for testing and manual customization. The "console" UI should be selected if a graphical UI is not desired.\u001b[0m\r\n[13:27:06] * buffyboard: Plain framebuffer console with modern touchscreen keyboard support\u001b[0m\r\n[13:27:06] * cage: (Wayland) Kiosk WM\u001b[0m\r\n[13:27:06] * console: Console environment, with no graphical/touch UI\u001b[0m\r\n[13:27:06] * cosmic: COSMIC Desktop Environment from System76\u001b[0m\r\n[13:27:06] * fbkeyboard: Plain framebuffer console with touchscreen keyboard support\u001b[0m\r\n[13:27:06] * gnome: (Wayland) Gnome Shell\u001b[0m\r\n[13:27:06] * gnome-mobile: (Wayland) Gnome Shell patched to adapt better to phones (Experimental)\u001b[0m\r\n[13:27:06] * i3wm: (X11) Tiling WM (keyboard required)\u001b[0m\r\n[13:27:06] * kodi: (GBM) 10-foot UI useful on TV's\u001b[0m\r\n[13:27:06] * lomiri: (Wayland) The convergent desktop environment (Experimental)\u001b[0m\r\n[13:27:06] * lxqt: (X11) Lightweight Qt Desktop Environment (stylus recommended)\u001b[0m\r\n[13:27:06] * mate: (X11) MATE Desktop Environment, fork of GNOME2 (stylus recommended)\u001b[0m\r\n[13:27:06] * moonlight: (Wayland) Open Source PC client for NVIDIA GameStream, as used by the NVIDIA Shield\u001b[0m\r\n[13:27:06] * niri: (Wayland) A scrollable-tiling compositor (DOES NOT RUN WITHOUT HW ACCELERATION!)\u001b[0m\r\n[13:27:06] * openbox: (X11) A highly configurable and lightweight X11 window manager (keyboard required)\u001b[0m\r\n[13:27:06] * os-installer: UI for installing postmarketOS\u001b[0m\r\n[13:27:06] * phosh: (Wayland) Mobile UI using GNOME components and apps\u001b[0m\r\n[13:27:06] * plasma-bigscreen: (Wayland) 10-feet variant of Plasma, made for big screen TVs\u001b[0m\r\n[13:27:06] * plasma-desktop: (Wayland) KDE Desktop Environment (works well with tablets)\u001b[0m\r\n[13:27:06] * plasma-mobile: (Wayland) Mobile variant of KDE Plasma\u001b[0m\r\n[13:27:06] * retroarch: RetroArch in KMS mode\u001b[0m\r\n[13:27:06] * shelli: Plain console with touchscreen gesture support\u001b[0m\r\n[13:27:06] * sway: (Wayland) Tiling WM, drop-in replacement for i3wm\u001b[0m\r\n[13:27:06] * sxmo-de-dwm: Simple Mobile: Mobile environment based on SXMO and running on dwm\u001b[0m\r\n[13:27:06] * sxmo-de-i3: Simple Mobile: Mobile environment based on SXMO and running on i3\u001b[0m\r\n[13:27:06] * sxmo-de-river: Simple Mobile: Mobile environment based on SXMO and running on river\u001b[0m\r\n[13:27:06] * sxmo-de-sway: Simple Mobile: Mobile environment based on SXMO and running on sway\u001b[0m\r\n[13:27:06] * weston: (Wayland) Reference compositor (demo, not a phone interface)\u001b[0m\r\n[13:27:06] * windowmaker: (X11) Window manager inspired by the NeXTSTEP user interface (stylus recommended)\u001b[0m\r\n[13:27:06] * xfce4: (X11) Lightweight desktop (stylus recommended)\u001b[0m\r\n[13:27:06] \u001b[1mUser interface"
+send: sending "\r" to { exp5 }
+
+expect: does " [xfce4]\u001b[0m: " (spawn_id exp5) match glob pattern "Which service manager"? no
+
+
+expect: does " [xfce4]\u001b[0m: \r\n" (spawn_id exp5) match glob pattern "Which service manager"? no
+[13:27:06] Based on your UI selection, 'default' will result in choosing systemd.[0m
+
+expect: does " [xfce4]\u001b[0m: \r\n[13:27:06] Based on your UI selection, 'default' will result in choosing systemd.\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Which service manager"? no
+[13:27:06] [1mWhich service manager should be used? (default/openrc/systemd) [default][0m: 
+expect: does " [xfce4]\u001b[0m: \r\n[13:27:06] Based on your UI selection, 'default' will result in choosing systemd.\u001b[0m\r\n[13:27:06] \u001b[1mWhich service manager should be used? (default/openrc/systemd) [default]\u001b[0m: " (spawn_id exp5) match glob pattern "Which service manager"? yes
+expect: set expect_out(0,string) "Which service manager"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " [xfce4]\u001b[0m: \r\n[13:27:06] Based on your UI selection, 'default' will result in choosing systemd.\u001b[0m\r\n[13:27:06] \u001b[1mWhich service manager"
+send: sending "\r" to { exp5 }
+
+expect: does " should be used? (default/openrc/systemd) [default]\u001b[0m: " (spawn_id exp5) match glob pattern "Change them?"? no
+
+[13:27:06] Additional options: extra free space: 0 MB, boot partition size: 512 MB, parallel jobs: 4, ccache per arch: 5G, sudo timer: False, mirror: http://mirror.postmarketos.org/postmarketos/[0m
+
+expect: does " should be used? (default/openrc/systemd) [default]\u001b[0m: \r\n[13:27:06] Additional options: extra free space: 0 MB, boot partition size: 512 MB, parallel jobs: 4, ccache per arch: 5G, sudo timer: False, mirror: http://mirror.postmarketos.org/postmarketos/\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Change them?"? no
+[13:27:06] [1mChange them? (y/n) [n][0m: 
+expect: does " should be used? (default/openrc/systemd) [default]\u001b[0m: \r\n[13:27:06] Additional options: extra free space: 0 MB, boot partition size: 512 MB, parallel jobs: 4, ccache per arch: 5G, sudo timer: False, mirror: http://mirror.postmarketos.org/postmarketos/\u001b[0m\r\n[13:27:06] \u001b[1mChange them? (y/n) [n]\u001b[0m: " (spawn_id exp5) match glob pattern "Change them?"? yes
+expect: set expect_out(0,string) "Change them?"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " should be used? (default/openrc/systemd) [default]\u001b[0m: \r\n[13:27:06] Additional options: extra free space: 0 MB, boot partition size: 512 MB, parallel jobs: 4, ccache per arch: 5G, sudo timer: False, mirror: http://mirror.postmarketos.org/postmarketos/\u001b[0m\r\n[13:27:06] \u001b[1mChange them?"
+send: sending "\r" to { exp5 }
+
+expect: does " (y/n) [n]\u001b[0m: " (spawn_id exp5) match glob pattern "Extra packages"? no
+
+
+expect: does " (y/n) [n]\u001b[0m: \r\n" (spawn_id exp5) match glob pattern "Extra packages"? no
+[13:27:06] Additional packages that will be installed to rootfs. Specify them in a comma separated list (e.g.: vim,file) or "none"[0m
+
+expect: does " (y/n) [n]\u001b[0m: \r\n[13:27:06] Additional packages that will be installed to rootfs. Specify them in a comma separated list (e.g.: vim,file) or "none"\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Extra packages"? no
+[13:27:06] [1mExtra packages [none][0m: 
+expect: does " (y/n) [n]\u001b[0m: \r\n[13:27:06] Additional packages that will be installed to rootfs. Specify them in a comma separated list (e.g.: vim,file) or "none"\u001b[0m\r\n[13:27:06] \u001b[1mExtra packages [none]\u001b[0m: " (spawn_id exp5) match glob pattern "Extra packages"? yes
+expect: set expect_out(0,string) "Extra packages"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " (y/n) [n]\u001b[0m: \r\n[13:27:06] Additional packages that will be installed to rootfs. Specify them in a comma separated list (e.g.: vim,file) or "none"\u001b[0m\r\n[13:27:06] \u001b[1mExtra packages"
+send: sending "\r" to { exp5 }
+
+expect: does " [none]\u001b[0m: " (spawn_id exp5) match glob pattern "Choose a password"? no
+
+
+expect: does " [none]\u001b[0m: \r\n" (spawn_id exp5) match glob pattern "Choose a password"? no
+[13:27:06] Your host timezone: America/New_York[0m
+[13:27:06] [1mUse this timezone instead of GMT? (y/n) [y][0m: 
+expect: does " [none]\u001b[0m: \r\n[13:27:06] Your host timezone: America/New_York\u001b[0m\r\n[13:27:06] \u001b[1mUse this timezone instead of GMT? (y/n) [y]\u001b[0m: " (spawn_id exp5) match glob pattern "Choose a password"? no
+ Additional packages that will be installed to rootfs. Specify them in a comma separated list (e.g.: vim,file) or "none"\u001b[0m\r\n" (spawn_id exp5) match glob pattern "Extra packages"? no
+[13:27:06] [1mExtra packages [none][0m: 
+expect: does " (y/n) [n]\u001b[0m: \r\n[13:27:06] Additional packages that will be installed to rootfs. Specify them in a comma separated list (e.g.: vim,file) or "none"\u001b[0m\r\n[13:27:06] \u001b[1mExtra packages [none]\u001b[0m: " (spawn_id exp5) match glob pattern "Extra packages"? yes
+expect: set expect_out(0,string) "Extra packages"
+expect: set expect_out(spawn_id) "exp5"
+expect: set expect_out(buffer) " (y/n) [n]\u001b[0m: \r\n[13:27:06] Additional packages that will be installed to rootfs. Specify them in a comma separated list (e.g.: vim,file) or "none"\u001b[0m\r\n[13:27:06] \u001b[1mExtra packages"
+send: sending "\r" to { exp5 }
+
+expect: does " [none]\u001b[0m: " (spawn_id exp5) match glob pattern "Choose a password"? no
+
+
+expect: does " [none]\u001b[0m: \r\n" (spawn_id exp5) match glob pattern "Choose a password"? no
+[13:27:06] Your host timezone: America/New_York[0m
+[13:27:06] [1mUse this timezone instead of GMT? (y/n) [y][0m: 
+expect: does " [none]\u001b[0m: \r\n[13:27:06] Your host timezone: America/New_York\u001b[0m\r\n[13:27:06] \u001b[1mUse this timezone instead of GMT? (y/n) [y]\u001b[0m: " (spawn_id exp5) match glob pattern "Choose a password"? no
+sighandler: handling signal(2)
+async event handler: Tcl_Eval(exit 130)
+
+=== Disk usage ===
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda3       930G  232G  699G  25% /
+
+=== Exit code: 130 ===
+❌ Build failed with exit 130
+   Check the expect log above for the failure point.

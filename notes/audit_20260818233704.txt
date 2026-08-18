@@ -1,0 +1,43 @@
+[2026-08-18T23:37:04Z] [SUCCESS] preflight: checking required tools
+[2026-08-18T23:37:04Z] [SUCCESS] preflight: found: git
+[2026-08-18T23:37:04Z] [SUCCESS] preflight: found: python3
+[2026-08-18T23:37:04Z] [SUCCESS] preflight: found: grep
+[2026-08-18T23:37:04Z] [SUCCESS] preflight: found: awk
+[2026-08-18T23:37:05Z] [SUCCESS] preflight: found: cat
+[2026-08-18T23:37:05Z] [SUCCESS] preflight: found: head
+[2026-08-18T23:37:05Z] [SUCCESS] preflight: found: tail
+[2026-08-18T23:37:05Z] [SUCCESS] preflight: found: wc
+[2026-08-18T23:37:05Z] [SUCCESS] preflight: found: cut
+[2026-08-18T23:37:05Z] [SUCCESS] preflight: found: curl
+[2026-08-18T23:37:05Z] [SUCCESS] preflight: all required tools present
+[2026-08-18T23:37:05Z] [SUCCESS] phase1: cataloging scripts
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: audit_repo.sh: boot (652 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: auto_wait_and_diagnose.sh: diagnostic (84 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot-pmos-auto.sh: boot (58 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot-pmos-auto-vnc.sh: boot (26 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot-pmos-auto-wait.sh: boot (23 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot-pmos-graphics-fix.sh: boot (22 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot-pmos-kernel-direct.sh: boot (42 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot_pmos.sh: boot (188 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot-pmos-spice.sh: boot (21 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot-pmos-text.sh: boot (19 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot-pmos-uefi-bootindex.sh: boot (15 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot-pmos-uefi-clean.sh: boot (15 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot-pmos-uefi-final.sh: boot (41 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot-pmos-uefi-now.sh: boot (74 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot-pmos-virtio.sh: boot (19 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot-pmos-virtio-tablet-fixed_0002.sh: boot (121 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot-pmos-virtio-tablet-fixed_0003.sh: boot (97 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot-pmos-virtio-tablet-fixed_0004.sh: boot (59 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot-pmos-virtio-tablet-fixed_0005.sh: boot (24 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot-pmos-virtio-tablet-fixed.sh: boot (23 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot-pmos-virtio-tablet.sh: boot (23 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot-pmos-vnc-fixed.sh: boot (23 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: boot-pmos-with-large-disk.sh: boot (67 lines)
+[2026-08-18T23:37:05Z] [SUCCESS] catalog: capture_and_push_diagnostic.sh: deploy (84 lines)
+[2026-08-18T23:37:06Z] [SUCCESS] catalog: capture_and_validate.sh: diagnostic (111 lines)
+[2026-08-18T23:37:06Z] [SUCCESS] catalog: capture_full_raw_json.sh: diagnostic (110 lines)
+[2026-08-18T23:37:06Z] [SUCCESS] catalog: capture_full_raw_json_verbose.sh: diagnostic (109 lines)
+[2026-08-18T23:37:06Z] [SUCCESS] catalog: capture_full_raw.sh: diagnostic (76 lines)
+[2026-08-18T23:37:06Z] [SUCCESS] catalog: capture_raw_json.sh: diagnostic (112 lines)
+[2026-08-18T23:37:06Z] [SUCCESS] catalog: check_live_bundle.sh: unknown (51 lines)

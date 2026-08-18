@@ -1,0 +1,24 @@
+============================================================
+  FIXING PMBOOTSTRAP CONFIG AND RUNNING INIT
+  Generated: 2026-08-18T15:34:26Z
+============================================================
+
+[2026-08-18T15:34:26Z] [SUCCESS] pmb_found: /home/owner/pmbootstrap-build/venv/bin/pmbootstrap
+[2026-08-18T15:34:26Z] [SUCCESS] pmaports_clone: already present
+[2026-08-18T15:34:26Z] [SUCCESS] config_write: config written to /home/owner/pmbootstrap-build/pmbootstrap.cfg
+=== CONFIG FILE CONTENT ===
+[pmbootstrap]
+work = /home/owner/pmbootstrap-build/work
+aports = /home/owner/pmbootstrap-build/pmaports
+device = generic-x86_64
+ui = xfce4
+channel = edge
+
+>>> Running: /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -y -c /home/owner/pmbootstrap-build/pmbootstrap.cfg init
+[11:34:26] Location of the 'work' path. Multiple chroots (native, device arch, device rootfs) will be created in there.[0m
+[11:34:26] [1mWork path [/home/owner/pmbootstrap-build/work][0m: [11:34:26] Location of the 'pmaports' path, containing package definitions.[0m
+[11:34:26] [1mpmaports path [/home/owner/pmbootstrap-build/pmaports][0m: [11:34:26] Setting up the native chroot and cloning the package build recipes (pmaports)...[0m
+[11:34:26] Clone git repository: https://gitlab.postmarketos.org/postmarketOS/pmaports.git[0m
+Cloning into '/home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/    log_result "pmbootstrap_init" "false" "init failed"'...
+
+Caught KeyboardInterrupt, exiting …

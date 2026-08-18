@@ -1,0 +1,87 @@
+============================================================================
+REPOSITORY SCRIPT CATALOG – 2026-08-18T23:32:49Z
+============================================================================
+
+SCRIPT                                                  | TYPE       |  LINES | EXEC         | KEY FEATURES   
+--------------------------------------------------------+------------+--------+--------------+----------------
+audit_repo.sh                                           | boot       |    519 | yes          | qemu expect guestfish polkit pmbootstrap SET-E SED-VIOLATION 
+auto_wait_and_diagnose.sh                               | diagnostic |     84 | yes          | none           
+boot-pmos-auto.sh                                       | boot       |     58 | yes          | qemu           
+boot-pmos-auto-vnc.sh                                   | boot       |     26 | yes          | qemu           
+boot-pmos-auto-wait.sh                                  | boot       |     23 | yes          | qemu           
+boot-pmos-graphics-fix.sh                               | boot       |     22 | yes          | qemu           
+boot-pmos-kernel-direct.sh                              | boot       |     42 | yes          | qemu           
+boot_pmos.sh                                            | boot       |    188 | yes          | qemu SET-E     
+boot-pmos-spice.sh                                      | boot       |     21 | yes          | qemu           
+boot-pmos-text.sh                                       | boot       |     19 | yes          | qemu           
+boot-pmos-uefi-bootindex.sh                             | boot       |     15 | yes          | qemu           
+boot-pmos-uefi-clean.sh                                 | boot       |     15 | yes          | qemu           
+boot-pmos-uefi-final.sh                                 | boot       |     41 | yes          | qemu           
+boot-pmos-uefi-now.sh                                   | boot       |     74 | yes          | qemu           
+boot-pmos-virtio.sh                                     | boot       |     19 | yes          | qemu           
+boot-pmos-virtio-tablet-fixed_0002.sh                   | boot       |    121 | yes          | qemu SED-VIOLATION 
+boot-pmos-virtio-tablet-fixed_0003.sh                   | boot       |     97 | yes          | qemu SED-VIOLATION 
+boot-pmos-virtio-tablet-fixed_0004.sh                   | boot       |     59 | yes          | qemu SED-VIOLATION 
+boot-pmos-virtio-tablet-fixed_0005.sh                   | boot       |     24 | yes          | qemu           
+boot-pmos-virtio-tablet-fixed.sh                        | boot       |     23 | yes          | qemu           
+boot-pmos-virtio-tablet.sh                              | boot       |     23 | yes          | qemu           
+boot-pmos-vnc-fixed.sh                                  | boot       |     23 | yes          | qemu           
+boot-pmos-with-large-disk.sh                            | boot       |     67 | yes          | qemu           
+capture_and_push_diagnostic.sh                          | deploy     |     84 | yes          | none           
+capture_and_validate.sh                                 | diagnostic |    111 | yes          | none           
+capture_full_raw_json.sh                                | diagnostic |    110 | yes          | none           
+capture_full_raw_json_verbose.sh                        | diagnostic |    109 | yes          | none           
+capture_full_raw.sh                                     | diagnostic |     76 | yes          | none           
+capture_raw_json.sh                                     | diagnostic |    112 | yes          | none           
+check_live_bundle.sh                                    | unknown    |     51 | yes          | SED-VIOLATION  
+collect-installer-logs.sh                               | unknown    |     31 | yes          | none           
+connect-vnc.sh                                          | unknown    |      2 | yes          | none           
+deploy_and_verify_generic.sh                            | deploy     |    166 | yes          | SED-VIOLATION  
+deploy_and_verify_realtime.sh                           | deploy     |    168 | yes          | SED-VIOLATION  
+deploy_and_verify.sh                                    | automation |    176 | yes          | expect         
+deploy_and_verify_v3.sh                                 | deploy     |    187 | yes          | SED-VIOLATION  
+deploy_corrected.sh                                     | deploy     |    200 | yes          | SED-VIOLATION  
+deploy_generic_fixed.sh                                 | deploy     |    185 | yes          | SED-VIOLATION  
+deploy_generic.sh                                       | deploy     |    144 | yes          | SED-VIOLATION  
+deploy_verify.sh                                        | deploy     |    200 | yes          | SED-VIOLATION  
+diagnose-and-boot.sh                                    | boot       |    142 | yes          | qemu pmbootstrap 
+diagnose_pages.sh                                       | automation |     61 | yes          | expect SED-VIOLATION 
+diagnose_pages_v2.sh                                    | diagnostic |     58 | yes          | SED-VIOLATION  
+emit_deploy_integration_with_citations.sh               | automation |    919 | yes          | expect         
+fetch_failed_logs.sh                                    | unknown    |     43 | yes          | none           
+final_correct_run.sh                                    | unknown    |     14 | yes          | none           
+fix_and_diagnose.sh                                     | diagnostic |    151 | yes          | SED-VIOLATION  
+fix_and_run_patch.sh                                    | unknown    |     18 | yes          | none           
+fix_and_run.sh                                          | unknown    |     14 | yes          | none           
+fix_lockfile.sh                                         | unknown    |     33 | yes          | none           
+fix_pmos_boot_robust.sh                                 | boot       |    183 | yes          | qemu SET-E     
+fix_pmos_boot.sh                                        | boot       |    145 | yes          | qemu SET-E     
+fix_pmos_boot_with_vnc_handling.sh                      | boot       |    221 | yes          | qemu SET-E     
+fix-pmos-installer.sh                                   | automation |    283 | yes          | expect polkit SED-VIOLATION 
+fix_workflow_and_rerun.sh                               | unknown    |     56 | yes          | none           
+fix_workflow_master.sh                                  | unknown    |     53 | yes          | none           
+force_deploy_pages.sh                                   | deploy     |     65 | yes          | none           
+force_rebuild_and_verify.sh                             | deploy     |     77 | yes          | SED-VIOLATION  
+force_rebuild_now.sh                                    | unknown    |     57 | yes          | SED-VIOLATION  
+force_redeploy_and_clear_cache.sh                       | deploy     |     23 | yes          | none           
+inspect-environment.sh                                  | fix        |     44 | yes          | polkit         
+patch_and_run_final.sh                                  | unknown    |    213 | yes          | SET-E SED-VIOLATION 
+patch_app_jsx.sh                                        | automation |    168 | yes          | expect SED-VIOLATION 
+patch_correct.sh                                        | unknown    |     98 | yes          | none           
+poll_until_live.sh                                      | unknown    |    134 | yes          | none           
+propagate_correct.sh                                    | unknown    |    121 | yes          | SED-VIOLATION  
+push_evidence.sh                                        | deploy     |     37 | yes          | none           
+push_text_change.sh                                     | deploy     |     35 | yes          | SED-VIOLATION  
+raw_api_diagnostic.sh                                   | unknown    |     43 | yes          | none           
+raw_diagnostic.sh                                       | unknown    |     72 | yes          | none           
+resolve-branch-divergence.sh                            | unknown    |    210 | yes          | none           
+run_deploy.sh                                           | deploy     |     10 | yes          | none           
+show_workflow_logs.sh                                   | unknown    |     34 | yes          | none           
+simple_deploy.sh                                        | deploy     |     58 | yes          | SED-VIOLATION  
+trigger_correct_commit.sh                               | unknown    |     70 | yes          | SED-VIOLATION  
+verify_and_force_deploy.sh                              | deploy     |     52 | yes          | none           
+wait_and_check.sh                                       | unknown    |     43 | yes          | none           
+
+============================================================================
+TOTAL SCRIPTS: 77
+============================================================================

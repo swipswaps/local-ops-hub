@@ -1,0 +1,9 @@
+=== Diagnostic Raw Data ===
+Timestamp: 2026-08-13T16:09:02Z
+
+--- Trigger workflow ---
+https://github.com/swipswaps/local-ops-hub/actions/runs/31719199093
+
+--- Run ID: 31719199093 ---
+--- Polling for completion (raw JSON each poll) ---
+./capture_full_raw.sh: line 47: poll_count: unbound variable

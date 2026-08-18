@@ -1,0 +1,7 @@
+[2026-08-18T22:42:37Z] [SUCCESS] repo_root: REPO_ROOT=/home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo
+[2026-08-18T22:42:37Z] [SUCCESS] branch_detect: CURRENT_BRANCH=master
+[2026-08-18T22:42:37Z] [FAILURE] mount: /dev/vdb1 does not exist – checking alternatives
+[2026-08-18T22:42:38Z] [SUCCESS] mount: found ext4 partition: /dev/sda2
+[2026-08-18T22:42:38Z] [SUCCESS] mount: mounted /dev/sda2 to /mnt/work
+[2026-08-18T22:42:38Z] [FAILURE] mount: /mnt/work has <500 MB free
+[2026-08-18T22:42:38Z] [FAILURE] hard_gate: blocked: insufficient space

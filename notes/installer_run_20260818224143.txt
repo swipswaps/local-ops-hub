@@ -1,0 +1,3 @@
+[2026-08-18T22:41:49Z] [SUCCESS] repo_root: REPO_ROOT=/home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo
+[2026-08-18T22:41:49Z] [FAILURE] mount: /mnt/work unavailable
+[2026-08-18T22:41:49Z] [FAILURE] hard_gate: blocked: mount failed

@@ -1,0 +1,25 @@
+[2026-08-18T22:45:32Z] [SUCCESS] repo_root: REPO_ROOT=/home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo
+[2026-08-18T22:45:32Z] [SUCCESS] branch_detect: CURRENT_BRANCH=master
+[2026-08-18T22:45:32Z] [SUCCESS] mount: using tmpfs for /mnt/work (RAM-backed)
+[2026-08-18T22:45:32Z] [SUCCESS] mount: /mnt/work OK (free: 2097152K)
+[2026-08-18T22:45:32Z] [SUCCESS] symlinks: home dirs redirected to /mnt/work
+[2026-08-18T22:45:35Z] [SUCCESS] polkit: bypass rule installed
+[2026-08-18T22:45:35Z] [SUCCESS] ntp: pre-enabled
+[2026-08-18T22:45:35Z] [FAILURE] env_extract: no gnome-shell environ
+[2026-08-18T22:45:35Z] [SUCCESS] dbus: shared bus: unix:path=/run/user/985/bus
+chown: invalid user: ‘installer:installer’
+[2026-08-18T22:45:35Z] [SUCCESS] launch: repo-scoped relaunch
+
+>>> Relaunching pmOS installer (repo-scoped)...
+    Work dir: /mnt/work (2.0G free)
+    Log: /mnt/work/installer.log
+
+[2026-08-18T22:45:35Z] [SUCCESS] launch: PID=54936
+PID: 54936
+
+[2026-08-18T22:45:45Z] [FAILURE] health: died within 10 s
+
+>>> Crash. Log tail (noise stripped):
+  sudo: unknown user installer
+  sudo: error initializing audit plugin sudoers_audit
+[2026-08-18T22:45:45Z] [FAILURE] hard_gate: blocked: installer crashed

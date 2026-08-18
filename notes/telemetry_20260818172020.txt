@@ -1,0 +1,9 @@
+
+============================================================
+  TELEMETRY COLLECTION
+============================================================
+
+=== System info ===
+Linux unknown22f5046d535b 7.0.11-100.fc43.x86_64 #1 SMP PREEMPT_DYNAMIC Mon Jun  1 22:51:40 UTC 2026 x86_64 GNU/Linux
+
+=== pmbootstrap version ===

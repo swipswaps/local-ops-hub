@@ -1,0 +1,78 @@
+=== USER / ID ===
+uid=0(root) gid=0(root) groups=0(root)
+root
+
+=== RUNNING PROCESSES (ps) ===
+    PID TTY          TIME CMD
+  55721 pts/1    00:00:00 sudo
+  55722 pts/1    00:00:00 inspect-environ
+  55725 pts/1    00:00:00 ps
+
+=== DISPLAY ===
+DISPLAY=:0.0
+WAYLAND_DISPLAY=
+XDG_SESSION_TYPE=
+total 0
+drwxrwxrwt  2 root root  60 Aug 18 15:13 .
+drwxrwxrwt 14 root root 320 Aug 18 18:51 ..
+srwxrwxrwx  1 root root   0 Aug 18 15:13 X0
+
+=== DBUS ===
+DBUS_SESSION_BUS_ADDRESS=
+
+=== MOUNTS ===
+/dev/sda3 on / type btrfs (rw,relatime,compress=zstd:1,space_cache=v2,subvolid=257,subvol=/root00)
+devtmpfs on /dev type devtmpfs (rw,nosuid,size=2887912k,nr_inodes=721978,mode=755,inode64)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev,inode64,usrquota)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,size=1191548k,nr_inodes=819200,mode=755,inode64)
+tmpfs on /run/credentials/systemd-journald.service type tmpfs (ro,nosuid,nodev,noexec,relatime,nosymfollow,size=1024k,nr_inodes=1024,mode=700,inode64,noswap)
+tmpfs on /tmp type tmpfs (rw,nosuid,nodev,size=2978864k,nr_inodes=1048576,inode64,usrquota)
+/dev/sda3 on /home type btrfs (rw,relatime,compress=zstd:1,space_cache=v2,subvolid=256,subvol=/home00)
+/dev/sda2 on /boot type ext4 (rw,relatime)
+/dev/sda1 on /boot/efi type vfat (rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=winnt,errors=remount-ro)
+tmpfs on /run/credentials/getty@tty2.service type tmpfs (ro,nosuid,nodev,noexec,relatime,nosymfollow,size=1024k,nr_inodes=1024,mode=700,inode64,noswap)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=595772k,nr_inodes=148943,mode=700,uid=1000,gid=1000,inode64)
+tmpfs on /home/owner/pmbootstrap-build/work/chroot_native/dev type tmpfs (rw,noexec,relatime,size=1024k,inode64)
+tmpfs on /home/owner/pmbootstrap-build/work/chroot_native/dev/shm type tmpfs (rw,nosuid,nodev,noexec,relatime,inode64)
+/dev/sda3 on /home/owner/pmbootstrap-build/work/chroot_native/var/cache/apk type btrfs (rw,relatime,compress=zstd:1,space_cache=v2,subvolid=256,subvol=/home00)
+/dev/sda3 on /home/owner/pmbootstrap-build/work/chroot_native/mnt/appstream-data type btrfs (rw,relatime,compress=zstd:1,space_cache=v2,subvolid=256,subvol=/home00)
+/dev/sda3 on /home/owner/pmbootstrap-build/work/chroot_native/mnt/pmbootstrap/ccache type btrfs (rw,relatime,compress=zstd:1,space_cache=v2,subvolid=256,subvol=/home00)
+/dev/sda3 on /home/owner/pmbootstrap-build/work/chroot_native/var/cache/distfiles type btrfs (rw,relatime,compress=zstd:1,space_cache=v2,subvolid=256,subvol=/home00)
+/dev/sda3 on /home/owner/pmbootstrap-build/work/chroot_native/mnt/pmbootstrap/git type btrfs (rw,relatime,compress=zstd:1,space_cache=v2,subvolid=256,subvol=/home00)
+/dev/sda3 on /home/owner/pmbootstrap-build/work/chroot_native/mnt/pmbootstrap/go type btrfs (rw,relatime,compress=zstd:1,space_cache=v2,subvolid=256,subvol=/home00)
+/dev/sda3 on /home/owner/pmbootstrap-build/work/chroot_native/mnt/pmbootstrap/rust type btrfs (rw,relatime,compress=zstd:1,space_cache=v2,subvolid=256,subvol=/home00)
+/dev/sda3 on /home/owner/pmbootstrap-build/work/chroot_native/mnt/pmbootstrap/abuild-config type btrfs (rw,relatime,compress=zstd:1,space_cache=v2,subvolid=256,subvol=/home00)
+/dev/sda3 on /home/owner/pmbootstrap-build/work/chroot_native/etc/apk/keys type btrfs (rw,relatime,compress=zstd:1,space_cache=v2,subvolid=256,subvol=/home00)
+/dev/sda3 on /home/owner/pmbootstrap-build/work/chroot_native/mnt/pmbootstrap/sccache type btrfs (rw,relatime,compress=zstd:1,space_cache=v2,subvolid=256,subvol=/home00)
+/dev/sda3 on /home/owner/pmbootstrap-build/work/chroot_native/mnt/pmbootstrap/netboot type btrfs (rw,relatime,compress=zstd:1,space_cache=v2,subvolid=256,subvol=/home00)
+/dev/sda3 on /home/owner/pmbootstrap-build/work/chroot_native/mnt/pmbootstrap/packages type btrfs (rw,relatime,compress=zstd:1,space_cache=v2,subvolid=256,subvol=/home00)
+devtmpfs on /home/owner/pmbootstrap-build/work/chroot_native/dev/loop-control type devtmpfs (rw,nosuid,size=2887912k,nr_inodes=721978,mode=755,inode64)
+devtmpfs on /home/owner/pmbootstrap-build/work/chroot_native/dev/loop0 type devtmpfs (rw,nosuid,size=2887912k,nr_inodes=721978,mode=755,inode64)
+devtmpfs on /home/owner/pmbootstrap-build/work/chroot_native/dev/install type devtmpfs (rw,nosuid,size=2887912k,nr_inodes=721978,mode=755,inode64)
+devtmpfs on /home/owner/pmbootstrap-build/work/chroot_native/dev/installp2 type devtmpfs (rw,nosuid,size=2887912k,nr_inodes=721978,mode=755,inode64)
+devtmpfs on /home/owner/pmbootstrap-build/work/chroot_native/dev/loop0p2 type devtmpfs (rw,nosuid,size=2887912k,nr_inodes=721978,mode=755,inode64)
+devtmpfs on /home/owner/pmbootstrap-build/work/chroot_native/dev/installp1 type devtmpfs (rw,nosuid,size=2887912k,nr_inodes=721978,mode=755,inode64)
+devtmpfs on /home/owner/pmbootstrap-build/work/chroot_native/dev/loop0p1 type devtmpfs (rw,nosuid,size=2887912k,nr_inodes=721978,mode=755,inode64)
+/dev/sda3 on /home/owner/pmbootstrap-build/work/chroot_native/mnt/rootfs_generic-x86_64 type btrfs (rw,relatime,compress=zstd:1,space_cache=v2,subvolid=256,subvol=/home00)
+tmpfs on /mnt/work type tmpfs (rw,relatime,size=2097152k,inode64)
+
+=== BLOCK DEVICES ===
+brw-rw---- 1 root disk 8, 0 Aug 18 15:00 /dev/sda
+brw-rw---- 1 root disk 8, 1 Aug 18 15:00 /dev/sda1
+brw-rw---- 1 root disk 8, 2 Aug 18 15:00 /dev/sda2
+brw-rw---- 1 root disk 8, 3 Aug 18 15:00 /dev/sda3
+No block devices found
+
+=== INSTALLER CHECK ===
+os-installer not found
+os-installer binary not present
+
+=== POLKIT ===
+owner       4111  0.0  0.6 1318056 36588 ?       Sl   15:21   0:00 /usr/libexec/xfce-polkit
+polkitd    54822  0.0  0.1 383284 11304 ?        Ssl  18:45   0:00 /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+
+=== SESSION BUS (list all users) ===
+total 0
+drwxr-xr-x  3 root  root    60 Aug 18 15:21 .
+drwxr-xr-x 59 root  root  1480 Aug 18 18:42 ..
+drwx------ 11 owner owner  340 Aug 18 17:44 1000

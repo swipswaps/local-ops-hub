@@ -1,0 +1,2 @@
+[14:14:42] [91mERROR:[0m Do not run pmbootstrap as root!
+If you absolutely must run it as root, use 'pmbootstrap --as-root'[0m

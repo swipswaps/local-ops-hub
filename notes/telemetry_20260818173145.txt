@@ -1,0 +1,4 @@
+
+=== Exit code: 130 ===
+❌ Build failed with exit 130
+   Check /home/owner/pmbootstrap-build/expect.log for the failure point.

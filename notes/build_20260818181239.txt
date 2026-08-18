@@ -1,0 +1,13 @@
+[14:13:36] [92m*** (1/4) PREPARE NATIVE CHROOT ***[0m
+[14:13:36] [91mERROR:[0m Could not figure out on which release channel the 'native' chroot is. Run 'pmbootstrap zap' to delete your chroots and try again. To do this automatically, run 'pmbootstrap config auto_zap_misconfigured_chroots yes'.[0m
+[14:13:36] See also: <https://postmarketos.org/troubleshooting>[0m
+
+Run 'pmbootstrap log' for details.
+
+Before you report this error, ensure that pmbootstrap is up to date.
+Find the latest version here: https://gitlab.postmarketos.org/postmarketOS/pmbootstrap/-/tags
+Your version: 3.11.1
+[92mChannel[0m: systemd-edge (pmaports: main)
+[92mDevice[0m:  generic-x86_64 (x86_64, kernel: stable)
+[92mUI[0m:      xfce4
+[92msystemd[0m: yes (default selected in pmbootstrap init, postmarketos-ui-xfce4 defaults to systemd)

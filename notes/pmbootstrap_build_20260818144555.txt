@@ -1,0 +1,26 @@
+fatal: destination path '/home/owner/pmbootstrap-build/pmaports' already exists and is not an empty directory.
+=== Running: /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports -c /home/owner/pmbootstrap-build/pmbootstrap.cfg init ===
+[10:45:56] Location of the 'work' path. Multiple chroots (native, device arch, device rootfs) will be created in there.[0m
+[10:45:56] [1mWork path [/home/owner/pmbootstrap-build/work][0m: [10:45:56] Location of the 'pmaports' path, containing package definitions.[0m
+[10:45:56] [1mpmaports path [/home/owner/pmbootstrap-build/pmaports][0m: [10:45:56] Choose the postmarketOS release channel.[0m
+[10:45:56] Available (14):[0m
+[10:45:56] * edge: Rolling release / Most devices / Occasional breakage: https://postmarketos.org/edge[0m
+[10:45:56] * v26.06: Latest release / Recommended for best stability[0m
+[10:45:56] * v25.12: Old release (unsupported)[0m
+[10:45:56] [1mChannel [edge][0m: [10:45:56] [91mERROR:[0m Invalid channel specified, please type in one from the list above.[0m
+[10:45:56] [1mChannel [edge][0m: [10:45:56] [91mERROR:[0m Invalid channel specified, please type in one from the list above.[0m
+[10:45:56] [1mChannel [edge][0m: [10:45:56] [91mERROR:[0m EOF when reading a line[0m
+[10:45:56] See also: <https://postmarketos.org/troubleshooting>[0m
+
+Run 'pmbootstrap log' for details.
+
+Before you report this error, ensure that pmbootstrap is up to date.
+Find the latest version here: https://gitlab.postmarketos.org/postmarketOS/pmbootstrap/-/tags
+Your version: 3.11.1
+[92mChannel[0m: systemd-edge (pmaports: main)
+[92mDevice[0m:  generic-x86_64 (x86_64, kernel: stable)
+[92mUI[0m:      xfce4
+[92msystemd[0m: yes (default selected in pmbootstrap init, postmarketos-ui-xfce4 defaults to systemd)
+=== Running: /home/owner/pmbootstrap-build/venv/bin/pmbootstrap -w /home/owner/pmbootstrap-build/work -p /home/owner/pmbootstrap-build/pmaports -c /home/owner/pmbootstrap-build/pmbootstrap.cfg install ===
+[10:45:56] [93mWARNING:[0m Your work folder version needs to be migrated (from version  to 8)![0m
+[10:45:56] [91mERROR:[0m Sorry, we can't migrate that automatically. Please run 'pmbootstrap shutdown', then delete your current work folder manually ('sudo rm -rf /home/owner/pmbootstrap-build/work') and start over with 'pmbootstrap init'. All your binary packages and caches will be lost.[0m

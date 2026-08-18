@@ -1,0 +1,10 @@
+=== pmbootstrap init ===
+usage: pmbootstrap [-h] [-V] [-c CONFIG] [-j JOBS] [-E EXTRA_SPACE]
+                   [-B BOOT_SIZE] [-p APORTS] [-t TIMEOUT] [-w WORK] [-y]
+                   [--as-root] [-o] [--no-ccache] [--no-cross] [-l LOG]
+                   [--details-to-stdout] [-v] [-q]
+                   {shutdown,index,work_migrate,repo_missing,kconfig,export,sideload,netboot,flasher,initfs,qemu,pkgrel_bump,pkgver_bump,newapkbuild,test,status,ci,init,log,zap,stats,update,build_init,chroot,install,checksum,aportgen,build,deviceinfo_parse,apkbuild_parse,apkindex_parse,config,bootimg_analyze,pull} ...
+pmbootstrap: error: unrecognized arguments: -y
+=== pmbootstrap install ===
+[08:57:10] [91mERROR:[0m pmaports dir not found: /home/owner/.local/var/pmbootstrap/cache_git/pmaports[0m
+[08:57:10] Did you run 'pmbootstrap init'?[0m

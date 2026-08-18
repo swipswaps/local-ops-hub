@@ -1,0 +1,4 @@
+=== Live Bundle Check ===
+Timestamp: 2026-08-13T17:03:37Z
+
+Could not find bundle URL in page HTML.

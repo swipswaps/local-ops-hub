@@ -1,0 +1,43 @@
+[15:39:11] [92m*** (1/4) PREPARE NATIVE CHROOT ***[0m
+[15:39:13] Update package index for x86_64 (5 file(s))[0m
+[15:39:16] Download http://dl-cdn.alpinelinux.org/alpine/edge/main/x86_64/apk-tools-static-3.0.7-r0.apk[0m
+[15:39:16] (native) Creating chroot[0m
+[15:39:21] (native) install cryptsetup util-linux parted[0m
+[15:39:24] [92m*** (2/4) CREATE DEVICE ROOTFS ("generic-x86_64") ***[0m
+[15:39:25] (rootfs_generic-x86_64) Creating chroot[0m
+[15:39:37] (rootfs_generic-x86_64) install postmarketos-base-systemd[0m
+[15:40:07] (rootfs_generic-x86_64) install postmarketos-base device-generic-x86_64 postmarketos-ui-xfce4 device-generic-x86_64-kernel-stable postmarketos-base-nofde sudo-rs firmware-b43xx fwupd linux-firmware oem-amd oem-intel oem-nvidia alsa-plugins-pulse blueman faenza-icon-theme gnome-keyring greybird-themes network-manager-applet pavucontrol pm-utils postmarketos-artwork-wallpapers xfce4-notifyd xfce4-pulseaudio-plugin xfce4-screensaver xfce4-terminal xfce4-whiskermenu-plugin font-droid font-droid-nonlatin font-twemoji lang font-droid font-droid-nonlatin font-twemoji lang[0m
+[15:44:44] (rootfs_generic-x86_64) install postmarketos-mkinitfs[0m
+[15:44:45] (rootfs_generic-x86_64) mkinitfs[0m
+[15:45:04]  [92m*** SET LOGIN PASSWORD FOR: 'user' ***[0m
+[15:45:04] [94mNOTE:[0m No valid keymap specified for device[0m
+[15:45:04] [92m*** (3/4) PREPARE INSTALL BLOCKDEVICE ***[0m
+[15:45:06] (native) create generic-x86_64.img (3477M)[0m
+[15:45:06] (native) mount /dev/install (generic-x86_64.img)[0m
+[15:45:08] (native) partition /dev/install (boot: 512M)[0m
+[15:45:09] Mounting partitions of /dev/loop0 inside the chroot[0m
+[15:45:09] (native) install e2fsprogs[0m
+[15:45:10] (native) format /dev/installp2 (pmOS_root, ext4)[0m
+[15:45:12] (native) mount /dev/installp2 to /mnt/install[0m
+[15:45:12] (native) install dosfstools[0m
+[15:45:12] (native) format /dev/installp1 (pmOS_boot, fat32)[0m
+[15:45:14] (native) create /etc/fstab[0m
+[15:45:14] (rootfs_generic-x86_64) mkinitfs[0m
+[15:45:23] [92m*** (4/4) FILL INSTALL BLOCKDEVICE ***[0m
+[15:45:23] (native) copy rootfs_generic-x86_64 to /mnt/install/[0m
+[15:49:18] [0m
+[15:49:18] [92m*** FLASHING INFORMATION ***[0m
+[15:49:18] Refer to the installation instructions of your device, or the generic install instructions in the wiki.[0m
+[15:49:18] https://wiki.postmarketos.org/wiki/Installation_guide#pmbootstrap_flash[0m
+[15:49:18] [0m
+[15:49:18] [92m*** SSH DAEMON INFORMATION ***[0m
+[15:49:18] SSH daemon is enabled (disable with --no-sshd).[0m
+[15:49:18] Login as 'user' with the password given during installation.[0m
+[15:49:18] [0m
+[15:49:18] [92m*** FIREWALL INFORMATION ***[0m
+[15:49:18] Firewall is enabled, but will not work (no support in kernel config for nftables).[0m
+[15:49:18] If/when the kernel supports it in the future, it will work automatically.[0m
+[15:49:18] For more information: https://postmarketos.org/firewall[0m
+[15:49:18] [0m
+[15:49:18] [94mNOTE:[0m chroot is still active (use 'pmbootstrap shutdown' as necessary)[0m
+[15:49:18] [92mDONE![0m[0m
