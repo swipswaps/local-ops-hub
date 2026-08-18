@@ -1,0 +1,144 @@
+============================================================================
+DUPLICATE SCRIPTS BY FUNCTIONALITY – 2026-08-18T23:52:58Z
+============================================================================
+
+--- boot (26 scripts) ---
+audit_repo.sh
+boot-pmos-auto.sh
+boot-pmos-auto-vnc.sh
+boot-pmos-auto-wait.sh
+boot-pmos-graphics-fix.sh
+boot-pmos-kernel-direct.sh
+boot_pmos.sh
+boot-pmos-spice.sh
+boot-pmos-text.sh
+boot-pmos-uefi-bootindex.sh
+boot-pmos-uefi-clean.sh
+boot-pmos-uefi-final.sh
+boot-pmos-uefi-now.sh
+boot-pmos-virtio.sh
+boot-pmos-virtio-tablet-fixed_0002.sh
+boot-pmos-virtio-tablet-fixed_0003.sh
+boot-pmos-virtio-tablet-fixed_0004.sh
+boot-pmos-virtio-tablet-fixed_0005.sh
+boot-pmos-virtio-tablet-fixed.sh
+boot-pmos-virtio-tablet.sh
+boot-pmos-vnc-fixed.sh
+boot-pmos-with-large-disk.sh
+diagnose-and-boot.sh
+fix_pmos_boot_robust.sh
+fix_pmos_boot.sh
+fix_pmos_boot_with_vnc_handling.sh
+
+  KEEP: one script that works best
+  REMOVE: all others after verification
+
+--- automation (5 scripts) ---
+deploy_and_verify.sh
+diagnose_pages.sh
+emit_deploy_integration_with_citations.sh
+fix-pmos-installer.sh
+patch_app_jsx.sh
+
+  KEEP: one script that works best
+  REMOVE: all others after verification
+
+--- repair (1 script) ---
+
+
+--- fix (19 scripts) ---
+boot-pmos-graphics-fix.sh
+boot-pmos-virtio-tablet-fixed_0002.sh
+boot-pmos-virtio-tablet-fixed_0003.sh
+boot-pmos-virtio-tablet-fixed_0004.sh
+boot-pmos-virtio-tablet-fixed_0005.sh
+boot-pmos-virtio-tablet-fixed.sh
+boot-pmos-vnc-fixed.sh
+deploy_generic_fixed.sh
+fix_and_diagnose.sh
+fix_and_run_patch.sh
+fix_and_run.sh
+fix_lockfile.sh
+fix_pmos_boot_robust.sh
+fix_pmos_boot.sh
+fix_pmos_boot_with_vnc_handling.sh
+fix-pmos-installer.sh
+fix_workflow_and_rerun.sh
+fix_workflow_master.sh
+inspect-environment.sh
+
+  KEEP: one script that works best
+  REMOVE: all others after verification
+
+--- build (2 scripts) ---
+force_rebuild_and_verify.sh
+force_rebuild_now.sh
+
+  KEEP: one script that works best
+  REMOVE: all others after verification
+
+--- deploy (18 scripts) ---
+capture_and_push_diagnostic.sh
+deploy_and_verify_generic.sh
+deploy_and_verify_realtime.sh
+deploy_and_verify.sh
+deploy_and_verify_v3.sh
+deploy_corrected.sh
+deploy_generic_fixed.sh
+deploy_generic.sh
+deploy_verify.sh
+emit_deploy_integration_with_citations.sh
+force_deploy_pages.sh
+force_rebuild_and_verify.sh
+force_redeploy_and_clear_cache.sh
+push_evidence.sh
+push_text_change.sh
+run_deploy.sh
+simple_deploy.sh
+verify_and_force_deploy.sh
+
+  KEEP: one script that works best
+  REMOVE: all others after verification
+
+--- diagnostic (11 scripts) ---
+auto_wait_and_diagnose.sh
+capture_and_push_diagnostic.sh
+capture_and_validate.sh
+capture_full_raw_json.sh
+capture_full_raw_json_verbose.sh
+capture_full_raw.sh
+capture_raw_json.sh
+diagnose_pages_v2.sh
+fix_and_diagnose.sh
+raw_api_diagnostic.sh
+raw_diagnostic.sh
+
+  KEEP: one script that works best
+  REMOVE: all others after verification
+
+--- unknown (21 scripts) ---
+check_live_bundle.sh
+collect-installer-logs.sh
+connect-vnc.sh
+fetch_failed_logs.sh
+final_correct_run.sh
+fix_and_run_patch.sh
+fix_and_run.sh
+fix_lockfile.sh
+fix_workflow_and_rerun.sh
+fix_workflow_master.sh
+force_rebuild_now.sh
+patch_and_run_final.sh
+patch_correct.sh
+poll_until_live.sh
+propagate_correct.sh
+raw_api_diagnostic.sh
+raw_diagnostic.sh
+resolve-branch-divergence.sh
+show_workflow_logs.sh
+trigger_correct_commit.sh
+wait_and_check.sh
+
+  KEEP: one script that works best
+  REMOVE: all others after verification
+

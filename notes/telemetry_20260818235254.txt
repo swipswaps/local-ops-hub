@@ -1,0 +1,118 @@
+[2026-08-18T23:52:54Z] [TELEMETRY] preflight 1/4 25%
+[2026-08-18T23:52:54Z] [TELEMETRY] preflight complete (elapsed: 00:00)
+[2026-08-18T23:52:54Z] [TELEMETRY] cataloging 1/4 25%
+[2026-08-18T23:52:54Z] [TELEMETRY] cataloging: boot-pmos-auto-wait.sh 5/77 6%
+[2026-08-18T23:52:54Z] [TELEMETRY] cataloging: boot-pmos-text.sh 10/77 12%
+[2026-08-18T23:52:54Z] [TELEMETRY] cataloging: boot-pmos-virtio.sh 15/77 19%
+[2026-08-18T23:52:54Z] [TELEMETRY] cataloging: boot-pmos-virtio-tablet-fixed.sh 20/77 25%
+[2026-08-18T23:52:54Z] [TELEMETRY] cataloging: capture_and_validate.sh 25/77 32%
+[2026-08-18T23:52:55Z] [TELEMETRY] cataloging: check_live_bundle.sh 30/77 38%
+[2026-08-18T23:52:55Z] [TELEMETRY] cataloging: deploy_and_verify.sh 35/77 45%
+[2026-08-18T23:52:55Z] [TELEMETRY] cataloging: deploy_verify.sh 40/77 51%
+[2026-08-18T23:52:55Z] [TELEMETRY] cataloging: fetch_failed_logs.sh 45/77 58%
+[2026-08-18T23:52:55Z] [TELEMETRY] cataloging: fix_lockfile.sh 50/77 64%
+[2026-08-18T23:52:56Z] [TELEMETRY] cataloging: fix_workflow_and_rerun.sh 55/77 71%
+[2026-08-18T23:52:56Z] [TELEMETRY] cataloging: force_redeploy_and_clear_cache.sh 60/77 77%
+[2026-08-18T23:52:56Z] [TELEMETRY] cataloging: poll_until_live.sh 65/77 84%
+[2026-08-18T23:52:56Z] [TELEMETRY] cataloging: raw_diagnostic.sh 70/77 90%
+[2026-08-18T23:52:56Z] [TELEMETRY] cataloging: trigger_correct_commit.sh 75/77 97%
+[2026-08-18T23:52:56Z] [TELEMETRY] cataloging: wait_and_check.sh 77/77 100%
+[2026-08-18T23:52:56Z] [TELEMETRY] cataloging (77 scripts) complete (elapsed: 00:02)
+[2026-08-18T23:52:56Z] [TELEMETRY] testing: audit_repo.sh 1/77 1%
+[2026-08-18T23:52:56Z] [TELEMETRY] testing: auto_wait_and_diagnose.sh 2/77 2%
+[2026-08-18T23:52:56Z] [TELEMETRY] testing: boot-pmos-auto.sh 3/77 3%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: boot-pmos-auto-vnc.sh 4/77 5%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: boot-pmos-auto-wait.sh 5/77 6%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: boot-pmos-graphics-fix.sh 6/77 7%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: boot-pmos-kernel-direct.sh 7/77 9%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: boot_pmos.sh 8/77 10%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: boot-pmos-spice.sh 9/77 11%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: boot-pmos-text.sh 10/77 12%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: boot-pmos-uefi-bootindex.sh 11/77 14%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: boot-pmos-uefi-clean.sh 12/77 15%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: boot-pmos-uefi-final.sh 13/77 16%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: boot-pmos-uefi-now.sh 14/77 18%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: boot-pmos-virtio.sh 15/77 19%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: boot-pmos-virtio-tablet-fixed_0002.sh 16/77 20%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: boot-pmos-virtio-tablet-fixed_0003.sh 17/77 22%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: boot-pmos-virtio-tablet-fixed_0004.sh 18/77 23%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: boot-pmos-virtio-tablet-fixed_0005.sh 19/77 24%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: boot-pmos-virtio-tablet-fixed.sh 20/77 25%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: boot-pmos-virtio-tablet.sh 21/77 27%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: boot-pmos-vnc-fixed.sh 22/77 28%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: boot-pmos-with-large-disk.sh 23/77 29%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: capture_and_push_diagnostic.sh 24/77 31%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: capture_and_validate.sh 25/77 32%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: capture_full_raw_json.sh 26/77 33%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: capture_full_raw_json_verbose.sh 27/77 35%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: capture_full_raw.sh 28/77 36%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: capture_raw_json.sh 29/77 37%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: check_live_bundle.sh 30/77 38%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: collect-installer-logs.sh 31/77 40%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: connect-vnc.sh 32/77 41%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: deploy_and_verify_generic.sh 33/77 42%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: deploy_and_verify_realtime.sh 34/77 44%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: deploy_and_verify.sh 35/77 45%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: deploy_and_verify_v3.sh 36/77 46%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: deploy_corrected.sh 37/77 48%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: deploy_generic_fixed.sh 38/77 49%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: deploy_generic.sh 39/77 50%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: deploy_verify.sh 40/77 51%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: diagnose-and-boot.sh 41/77 53%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: diagnose_pages.sh 42/77 54%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: diagnose_pages_v2.sh 43/77 55%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: emit_deploy_integration_with_citations.sh 44/77 57%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: fetch_failed_logs.sh 45/77 58%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: final_correct_run.sh 46/77 59%
+[2026-08-18T23:52:57Z] [TELEMETRY] testing: fix_and_diagnose.sh 47/77 61%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: fix_and_run_patch.sh 48/77 62%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: fix_and_run.sh 49/77 63%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: fix_lockfile.sh 50/77 64%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: fix_pmos_boot_robust.sh 51/77 66%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: fix_pmos_boot.sh 52/77 67%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: fix_pmos_boot_with_vnc_handling.sh 53/77 68%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: fix-pmos-installer.sh 54/77 70%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: fix_workflow_and_rerun.sh 55/77 71%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: fix_workflow_master.sh 56/77 72%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: force_deploy_pages.sh 57/77 74%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: force_rebuild_and_verify.sh 58/77 75%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: force_rebuild_now.sh 59/77 76%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: force_redeploy_and_clear_cache.sh 60/77 77%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: inspect-environment.sh 61/77 79%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: patch_and_run_final.sh 62/77 80%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: patch_app_jsx.sh 63/77 81%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: patch_correct.sh 64/77 83%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: poll_until_live.sh 65/77 84%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: propagate_correct.sh 66/77 85%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: push_evidence.sh 67/77 87%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: push_text_change.sh 68/77 88%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: raw_api_diagnostic.sh 69/77 89%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: raw_diagnostic.sh 70/77 90%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: resolve-branch-divergence.sh 71/77 92%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: run_deploy.sh 72/77 93%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: show_workflow_logs.sh 73/77 94%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: simple_deploy.sh 74/77 96%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: trigger_correct_commit.sh 75/77 97%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: verify_and_force_deploy.sh 76/77 98%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing: wait_and_check.sh 77/77 100%
+[2026-08-18T23:52:58Z] [TELEMETRY] testing (77 scripts) complete (elapsed: 00:04)
+[2026-08-18T23:52:58Z] [TELEMETRY] deduplicating 1/1 100%
+[2026-08-18T23:52:58Z] [TELEMETRY] deduplicating: boot (26 scripts) 1/7 14%
+[2026-08-18T23:52:58Z] [TELEMETRY] deduplicating: automation (5 scripts) 2/7 28%
+[2026-08-18T23:52:58Z] [TELEMETRY] deduplicating: repair (1 scripts) 3/7 42%
+[2026-08-18T23:52:58Z] [TELEMETRY] deduplicating: fix (19 scripts) 4/7 57%
+[2026-08-18T23:52:58Z] [TELEMETRY] deduplicating: build (2 scripts) 5/7 71%
+[2026-08-18T23:52:58Z] [TELEMETRY] deduplicating: deploy (18 scripts) 6/7 85%
+[2026-08-18T23:52:58Z] [TELEMETRY] deduplicating: diagnostic (11 scripts) 7/7 100%
+[2026-08-18T23:52:58Z] [TELEMETRY] deduplicating: unknown (21 scripts) 8/7 114%
+[2026-08-18T23:52:58Z] [TELEMETRY] deduplicating complete (elapsed: 00:04)
+[2026-08-18T23:52:58Z] [TELEMETRY] planning 1/1 100%
+[2026-08-18T23:52:58Z] [TELEMETRY] planning complete (elapsed: 00:04)
+[2026-08-18T23:52:58Z] [TELEMETRY] pushing 1/3 33%
+[2026-08-18T23:52:58Z] [TELEMETRY] verifying: audit_20260818235254.txt 1/7 14%
+[2026-08-18T23:52:58Z] [TELEMETRY] verifying: components_20260818235254.txt 2/7 28%
+[2026-08-18T23:52:58Z] [TELEMETRY] verifying: working_20260818235254.txt 3/7 42%
+[2026-08-18T23:52:59Z] [TELEMETRY] verifying: failed_20260818235254.txt 4/7 57%
+[2026-08-18T23:52:59Z] [TELEMETRY] verifying: duplicates_20260818235254.txt 5/7 71%
+[2026-08-18T23:52:59Z] [TELEMETRY] verifying: consolidation_plan_20260818235254.txt 6/7 85%
+[2026-08-18T23:52:59Z] [TELEMETRY] verifying: telemetry_20260818235254.txt 7/7 100%

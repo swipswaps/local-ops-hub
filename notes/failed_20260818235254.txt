@@ -1,0 +1,10 @@
+============================================================================
+FAILED/SKIPPED SCRIPTS – 2026-08-18T23:52:56Z
+============================================================================
+
+⏭️  audit_repo.sh – SKIPPED (self-test)
+⚠️  force_deploy_pages.sh – SKIPPED (potentially destructive)
+⚠️  force_rebuild_and_verify.sh – SKIPPED (potentially destructive)
+⚠️  force_rebuild_now.sh – SKIPPED (potentially destructive)
+⚠️  force_redeploy_and_clear_cache.sh – SKIPPED (potentially destructive)
+⚠️  verify_and_force_deploy.sh – SKIPPED (potentially destructive)

@@ -1,0 +1,148 @@
+============================================================================
+WORKING SCRIPTS – 2026-08-18T23:52:56Z
+============================================================================
+
+Criteria: script passes syntax check and --help test (5s timeout)
+
+✅ auto_wait_and_diagnose.sh – PASSED (syntax check only)
+
+✅ boot-pmos-auto.sh – PASSED (syntax check only)
+
+✅ boot-pmos-auto-vnc.sh – PASSED (syntax check only)
+
+✅ boot-pmos-auto-wait.sh – PASSED (syntax check only)
+
+✅ boot-pmos-graphics-fix.sh – PASSED (syntax check only)
+
+✅ boot-pmos-kernel-direct.sh – PASSED (syntax check only)
+
+✅ boot_pmos.sh – PASSED (syntax check only)
+
+✅ boot-pmos-spice.sh – PASSED (syntax check only)
+
+✅ boot-pmos-text.sh – PASSED (syntax check only)
+
+✅ boot-pmos-uefi-bootindex.sh – PASSED (syntax check only)
+
+✅ boot-pmos-uefi-clean.sh – PASSED (syntax check only)
+
+✅ boot-pmos-uefi-final.sh – PASSED (syntax check only)
+
+✅ boot-pmos-uefi-now.sh – PASSED (syntax check only)
+
+✅ boot-pmos-virtio.sh – PASSED (syntax check only)
+
+✅ boot-pmos-virtio-tablet-fixed_0002.sh – PASSED (syntax check only)
+
+✅ boot-pmos-virtio-tablet-fixed_0003.sh – PASSED (syntax check only)
+
+✅ boot-pmos-virtio-tablet-fixed_0004.sh – PASSED (syntax check only)
+
+✅ boot-pmos-virtio-tablet-fixed_0005.sh – PASSED (syntax check only)
+
+✅ boot-pmos-virtio-tablet-fixed.sh – PASSED (syntax check only)
+
+✅ boot-pmos-virtio-tablet.sh – PASSED (syntax check only)
+
+✅ boot-pmos-vnc-fixed.sh – PASSED (syntax check only)
+
+✅ boot-pmos-with-large-disk.sh – PASSED (syntax check only)
+
+✅ capture_and_push_diagnostic.sh – PASSED (syntax check only)
+
+✅ capture_and_validate.sh – PASSED (syntax check only)
+
+✅ capture_full_raw_json.sh – PASSED (syntax check only)
+
+✅ capture_full_raw_json_verbose.sh – PASSED (syntax check only)
+
+✅ capture_full_raw.sh – PASSED (syntax check only)
+
+✅ capture_raw_json.sh – PASSED (syntax check only)
+
+✅ check_live_bundle.sh – PASSED (syntax check only)
+
+✅ collect-installer-logs.sh – PASSED (syntax check only)
+
+✅ connect-vnc.sh – PASSED (syntax check only)
+
+✅ deploy_and_verify_generic.sh – PASSED (syntax check only)
+
+✅ deploy_and_verify_realtime.sh – PASSED (syntax check only)
+
+✅ deploy_and_verify.sh – PASSED (syntax check only)
+
+✅ deploy_and_verify_v3.sh – PASSED (syntax check only)
+
+✅ deploy_corrected.sh – PASSED (syntax check only)
+
+✅ deploy_generic_fixed.sh – PASSED (syntax check only)
+
+✅ deploy_generic.sh – PASSED (syntax check only)
+
+✅ deploy_verify.sh – PASSED (syntax check only)
+
+✅ diagnose-and-boot.sh – PASSED (syntax check only)
+
+✅ diagnose_pages.sh – PASSED (syntax check only)
+
+✅ diagnose_pages_v2.sh – PASSED (syntax check only)
+
+✅ emit_deploy_integration_with_citations.sh – PASSED (syntax check only)
+
+✅ fetch_failed_logs.sh – PASSED (syntax check only)
+
+✅ final_correct_run.sh – PASSED (syntax check only)
+
+✅ fix_and_diagnose.sh – PASSED (syntax check only)
+
+✅ fix_and_run_patch.sh – PASSED (syntax check only)
+
+✅ fix_and_run.sh – PASSED (syntax check only)
+
+✅ fix_lockfile.sh – PASSED (syntax check only)
+
+✅ fix_pmos_boot_robust.sh – PASSED (syntax check only)
+
+✅ fix_pmos_boot.sh – PASSED (syntax check only)
+
+✅ fix_pmos_boot_with_vnc_handling.sh – PASSED (syntax check only)
+
+✅ fix-pmos-installer.sh – PASSED (syntax check only)
+
+✅ fix_workflow_and_rerun.sh – PASSED (syntax check only)
+
+✅ fix_workflow_master.sh – PASSED (syntax check only)
+
+✅ inspect-environment.sh – PASSED (syntax check only)
+
+✅ patch_and_run_final.sh – PASSED (syntax check only)
+
+✅ patch_app_jsx.sh – PASSED (syntax check only)
+
+✅ patch_correct.sh – PASSED (syntax check only)
+
+✅ poll_until_live.sh – PASSED (syntax check only)
+
+✅ propagate_correct.sh – PASSED (syntax check only)
+
+✅ push_evidence.sh – PASSED (syntax check only)
+
+✅ push_text_change.sh – PASSED (syntax check only)
+
+✅ raw_api_diagnostic.sh – PASSED (syntax check only)
+
+✅ raw_diagnostic.sh – PASSED (syntax check only)
+
+✅ resolve-branch-divergence.sh – PASSED (syntax check only)
+
+✅ run_deploy.sh – PASSED (syntax check only)
+
+✅ show_workflow_logs.sh – PASSED (syntax check only)
+
+✅ simple_deploy.sh – PASSED (syntax check only)
+
+✅ trigger_correct_commit.sh – PASSED (syntax check only)
+
+✅ wait_and_check.sh – PASSED (syntax check only)
+

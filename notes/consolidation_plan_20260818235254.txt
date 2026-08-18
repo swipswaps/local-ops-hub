@@ -1,0 +1,134 @@
+============================================================================
+CONSOLIDATION PLAN – 2026-08-18T23:52:58Z
+============================================================================
+
+PRINCIPLES:
+  1. One canonical boot script (boot-pmos.sh)
+  2. One canonical fix script (fix-pmos-installer.sh)
+  3. One canonical diagnostic script (inspect-environment.sh)
+  4. All evidence goes to notes/
+  5. All scripts are committed, versioned, and raw-link-validated
+
+RECOMMENDED ACTIONS:
+
+  boot (26 scripts):
+    audit_repo.sh
+boot-pmos-auto.sh
+boot-pmos-auto-vnc.sh
+boot-pmos-auto-wait.sh
+boot-pmos-graphics-fix.sh
+boot-pmos-kernel-direct.sh
+boot_pmos.sh
+boot-pmos-spice.sh
+boot-pmos-text.sh
+boot-pmos-uefi-bootindex.sh
+boot-pmos-uefi-clean.sh
+boot-pmos-uefi-final.sh
+boot-pmos-uefi-now.sh
+boot-pmos-virtio.sh
+boot-pmos-virtio-tablet-fixed_0002.sh
+boot-pmos-virtio-tablet-fixed_0003.sh
+boot-pmos-virtio-tablet-fixed_0004.sh
+boot-pmos-virtio-tablet-fixed_0005.sh
+boot-pmos-virtio-tablet-fixed.sh
+boot-pmos-virtio-tablet.sh
+boot-pmos-vnc-fixed.sh
+boot-pmos-with-large-disk.sh
+diagnose-and-boot.sh
+fix_pmos_boot_robust.sh
+fix_pmos_boot.sh
+fix_pmos_boot_with_vnc_handling.sh
+    → Keep: audit_repo.sh
+    → Remove: boot-pmos-auto.sh boot-pmos-auto-vnc.sh boot-pmos-auto-wait.sh boot-pmos-graphics-fix.sh boot-pmos-kernel-direct.sh boot_pmos.sh boot-pmos-spice.sh boot-pmos-text.sh boot-pmos-uefi-bootindex.sh boot-pmos-uefi-clean.sh boot-pmos-uefi-final.sh boot-pmos-uefi-now.sh boot-pmos-virtio.sh boot-pmos-virtio-tablet-fixed_0002.sh boot-pmos-virtio-tablet-fixed_0003.sh boot-pmos-virtio-tablet-fixed_0004.sh boot-pmos-virtio-tablet-fixed_0005.sh boot-pmos-virtio-tablet-fixed.sh boot-pmos-virtio-tablet.sh boot-pmos-vnc-fixed.sh boot-pmos-with-large-disk.sh diagnose-and-boot.sh fix_pmos_boot_robust.sh fix_pmos_boot.sh fix_pmos_boot_with_vnc_handling.sh 
+
+  automation (5 scripts):
+    deploy_and_verify.sh
+diagnose_pages.sh
+emit_deploy_integration_with_citations.sh
+fix-pmos-installer.sh
+patch_app_jsx.sh
+    → Keep: deploy_and_verify.sh
+    → Remove: diagnose_pages.sh emit_deploy_integration_with_citations.sh fix-pmos-installer.sh patch_app_jsx.sh 
+
+  fix (19 scripts):
+    boot-pmos-graphics-fix.sh
+boot-pmos-virtio-tablet-fixed_0002.sh
+boot-pmos-virtio-tablet-fixed_0003.sh
+boot-pmos-virtio-tablet-fixed_0004.sh
+boot-pmos-virtio-tablet-fixed_0005.sh
+boot-pmos-virtio-tablet-fixed.sh
+boot-pmos-vnc-fixed.sh
+deploy_generic_fixed.sh
+fix_and_diagnose.sh
+fix_and_run_patch.sh
+fix_and_run.sh
+fix_lockfile.sh
+fix_pmos_boot_robust.sh
+fix_pmos_boot.sh
+fix_pmos_boot_with_vnc_handling.sh
+fix-pmos-installer.sh
+fix_workflow_and_rerun.sh
+fix_workflow_master.sh
+inspect-environment.sh
+    → Keep: boot-pmos-graphics-fix.sh
+    → Remove: boot-pmos-virtio-tablet-fixed_0002.sh boot-pmos-virtio-tablet-fixed_0003.sh boot-pmos-virtio-tablet-fixed_0004.sh boot-pmos-virtio-tablet-fixed_0005.sh boot-pmos-virtio-tablet-fixed.sh boot-pmos-vnc-fixed.sh deploy_generic_fixed.sh fix_and_diagnose.sh fix_and_run_patch.sh fix_and_run.sh fix_lockfile.sh fix_pmos_boot_robust.sh fix_pmos_boot.sh fix_pmos_boot_with_vnc_handling.sh fix-pmos-installer.sh fix_workflow_and_rerun.sh fix_workflow_master.sh inspect-environment.sh 
+
+  build (2 scripts):
+    force_rebuild_and_verify.sh
+force_rebuild_now.sh
+    → Keep: force_rebuild_and_verify.sh
+    → Remove: force_rebuild_now.sh 
+
+  deploy (18 scripts):
+    capture_and_push_diagnostic.sh
+deploy_and_verify_generic.sh
+deploy_and_verify_realtime.sh
+deploy_and_verify.sh
+deploy_and_verify_v3.sh
+deploy_corrected.sh
+deploy_generic_fixed.sh
+deploy_generic.sh
+deploy_verify.sh
+emit_deploy_integration_with_citations.sh
+force_deploy_pages.sh
+force_rebuild_and_verify.sh
+force_redeploy_and_clear_cache.sh
+push_evidence.sh
+push_text_change.sh
+run_deploy.sh
+simple_deploy.sh
+verify_and_force_deploy.sh
+    → Keep: capture_and_push_diagnostic.sh
+    → Remove: deploy_and_verify_generic.sh deploy_and_verify_realtime.sh deploy_and_verify.sh deploy_and_verify_v3.sh deploy_corrected.sh deploy_generic_fixed.sh deploy_generic.sh deploy_verify.sh emit_deploy_integration_with_citations.sh force_deploy_pages.sh force_rebuild_and_verify.sh force_redeploy_and_clear_cache.sh push_evidence.sh push_text_change.sh run_deploy.sh simple_deploy.sh verify_and_force_deploy.sh 
+
+  diagnostic (11 scripts):
+    auto_wait_and_diagnose.sh
+capture_and_push_diagnostic.sh
+capture_and_validate.sh
+capture_full_raw_json.sh
+capture_full_raw_json_verbose.sh
+capture_full_raw.sh
+capture_raw_json.sh
+diagnose_pages_v2.sh
+fix_and_diagnose.sh
+raw_api_diagnostic.sh
+raw_diagnostic.sh
+    → Keep: auto_wait_and_diagnose.sh
+    → Remove: capture_and_push_diagnostic.sh capture_and_validate.sh capture_full_raw_json.sh capture_full_raw_json_verbose.sh capture_full_raw.sh capture_raw_json.sh diagnose_pages_v2.sh fix_and_diagnose.sh raw_api_diagnostic.sh raw_diagnostic.sh 
+
+GENERAL CLEANUP:
+  - Remove all boot-pmos-*.sh variants except boot-pmos.sh
+  - Remove all fix_pmos_boot*.sh variants except fix-pmos-installer.sh
+  - Remove all deploy_and_verify*.sh variants except deploy_and_verify.sh
+  - Remove all capture_* scripts and consolidate into diagnostic.sh
+  - Commit all remaining scripts to git
+
+RAW LINKS (after push):
+  https://raw.githubusercontent.com/swipswaps/local-ops-hub/master/notes/audit_20260818235254.txt
+  https://raw.githubusercontent.com/swipswaps/local-ops-hub/master/notes/components_20260818235254.txt
+  https://raw.githubusercontent.com/swipswaps/local-ops-hub/master/notes/working_20260818235254.txt
+  https://raw.githubusercontent.com/swipswaps/local-ops-hub/master/notes/failed_20260818235254.txt
+  https://raw.githubusercontent.com/swipswaps/local-ops-hub/master/notes/duplicates_20260818235254.txt
+  https://raw.githubusercontent.com/swipswaps/local-ops-hub/master/notes/consolidation_plan_20260818235254.txt
+  https://raw.githubusercontent.com/swipswaps/local-ops-hub/master/notes/telemetry_20260818235254.txt
+
