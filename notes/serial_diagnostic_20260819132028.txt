@@ -1,0 +1,75 @@
+[2026-08-19T13:20:28Z] [SUCCESS] preflight: QEMU PID: 707743
+[2026-08-19T13:20:29Z] [SUCCESS] preflight: PTY: not found
+=== SERIAL DIAGNOSTIC ===
+Timestamp: 2026-08-19T13:20:29Z
+QEMU PID: 707743
+PTY: 
+Serial log: notes/e2e_serial_20260819025033.txt
+
+=== PROCESS STATUS ===
+owner     707736  0.0  0.0 232160  3928 pts/4    S    Aug18   0:00 bash /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/boot-pmos-virtio-tablet-fixed_0005.sh
+owner     707743 19.9  9.2 4650692 548528 pts/4  Sl   Aug18 125:49 qemu-system-x86_64 -machine pc,accel=kvm -boot d -cpu host -m 4G -drive file=/home/owner/Downloads/20260814-1439-postmarketOS-edge-os-installer-10-generic-x86_64-lts.img,if=virtio,format=raw -drive file=/home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/pmos-install-disk.qcow2,if=virtio,format=qcow2 -kernel /home/owner/Downloads/vmlinuz-pmos -initrd /home/owner/Downloads/initramfs-pmos -append root=/dev/vda2 rootwait console=ttyS0 -usb -device usb-tablet -vnc :0 -serial stdio -vga virtio
+
+=== LAST 30 LINES OF SERIAL LOG ===
+[    1.965666]   No soundcards found.
+[    1.970970] Freeing unused kernel image (initmem) memory: 3340K
+[    1.972726] Write protecting the kernel read-only data: 32768k
+[    1.974450] Freeing unused kernel image (text/rodata gap) memory: 68K
+[    1.977704] Freeing unused kernel image (rodata/data gap) memory: 1916K
+[    2.028852] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    2.030520] x86/mm: Checking user space page tables
+[    2.078593] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    2.080507] Run /init as init process
+[    2.112776] syslogd started: BusyBox v1.38.0
+[    2.118526] [pmOS-rd]:   ❬❬ PMOS STAGE 1 ❭❭
+[    2.121449] [pmOS-rd]: initramfs version: 3.12.2-r0
+[    2.123732] [pmOS-rd]:   ❬❬ PMOS STAGE 2 ❭❭
+[    2.131464] usb 1-1: new full-speed USB device number 2 using uhci_hcd
+[    2.300987] usb 1-1: New USB device found, idVendor=0627, idProduct=0001, bcdDevice= 0.00
+[    2.303127] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=10
+[    2.304980] usb 1-1: Product: QEMU USB Tablet
+[    2.306315] usb 1-1: Manufacturer: QEMU
+[    2.307599] usb 1-1: SerialNumber: 28754-0000:00:01.2-1
+[    2.317458] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input3
+[    2.624539] input: QEMU QEMU USB Tablet as /devices/pci0000:00/0000:00:01.2/usb1/1-1/1-1:1.0/0003:0627:0001.0001/input/input4
+[    2.632061] hid-generic 0003:0627:0001.0001: input,hidraw0: USB HID v0.01 Mouse [QEMU QEMU USB Tablet] on usb-0000:00:01.2-1/input0
+[    3.723341] [pmOS-rd]: Trying to mount subpartitions for 10 seconds...
+[    3.832702] [pmOS-rd]: Unable to resize root partition: failed to find qualifying partition
+[    3.845393] [pmOS-rd]: Auto-repair and check 'ext' filesystem (/dev/vda2)
+[    3.967184] [pmOS-rd]: pmOS_root contains a file system with errors, check forced.
+[    4.987073] [pmOS-rd]: pmOS_root: Inode 22753 has an invalid extent
+[    4.989109] [pmOS-rd]: 	(logical block 0, invalid physical block 934592, len 57)
+[    4.991212] [pmOS-rd]: pmOS_root: UNEXPECTED INCONSISTENCY; RUN fsck MANUALLY.
+[    4.993250] [pmOS-rd]: 	(i.e., without -a or -p options)
+
+=== FD LIST ===
+total 0
+dr-x------ 2 owner owner 26 Aug 18 22:55 .
+dr-xr-xr-x 9 owner owner  0 Aug 18 22:50 ..
+lr-x------ 1 owner owner 64 Aug 18 22:55 0 -> /dev/null
+l-wx------ 1 owner owner 64 Aug 18 22:55 1 -> pipe:[1347493]
+lrwx------ 1 owner owner 64 Aug 18 22:55 10 -> /dev/kvm
+lrwx------ 1 owner owner 64 Aug 18 22:55 11 -> /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/pmos-install-disk.qcow2
+lrwx------ 1 owner owner 64 Aug 18 22:55 12 -> anon_inode:kvm-vm
+lrwx------ 1 owner owner 64 Aug 18 22:55 13 -> /memfd:displaysurface (deleted)
+lrwx------ 1 owner owner 64 Aug 18 22:55 14 -> anon_inode:kvm-vcpu:0
+lr-x------ 1 owner owner 64 Aug 18 22:55 15 -> anon_inode:kvm-vcpu-stats:0
+lrwx------ 1 owner owner 64 Aug 18 22:55 16 -> /memfd:displaysurface (deleted)
+lrwx------ 1 owner owner 64 Aug 18 22:55 17 -> /home/owner/Downloads/20260814-1439-postmarketOS-edge-os-installer-10-generic-x86_64-lts.img
+lrwx------ 1 owner owner 64 Aug 18 22:55 18 -> socket:[1349950]
+lrwx------ 1 owner owner 64 Aug 18 22:55 19 -> socket:[1349951]
+l-wx------ 1 owner owner 64 Aug 18 22:55 2 -> pipe:[1347493]
+lrwx------ 1 owner owner 64 Aug 18 22:55 20 -> anon_inode:[eventfd]
+lrwx------ 1 owner owner 64 Aug 18 22:55 21 -> anon_inode:[eventfd]
+lrwx------ 1 owner owner 64 Aug 18 22:55 22 -> anon_inode:[eventfd]
+lrwx------ 1 owner owner 64 Aug 18 22:55 23 -> anon_inode:[eventfd]
+lrwx------ 1 owner owner 64 Aug 18 22:55 24 -> anon_inode:[eventfd]
+lrwx------ 1 owner owner 64 Aug 18 22:55 27 -> /memfd:displaysurface (deleted)
+lrwx------ 1 owner owner 64 Aug 18 22:55 3 -> socket:[1349882]
+lrwx------ 1 owner owner 64 Aug 18 22:55 4 -> /memfd:displaysurface (deleted)
+lrwx------ 1 owner owner 64 Aug 18 22:55 5 -> anon_inode:[eventfd]
+lrwx------ 1 owner owner 64 Aug 18 22:55 6 -> anon_inode:[signalfd]
+lrwx------ 1 owner owner 64 Aug 18 22:55 7 -> anon_inode:[eventfd]
+lrwx------ 1 owner owner 64 Aug 18 22:55 8 -> anon_inode:[eventfd]
+lrwx------ 1 owner owner 64 Aug 18 22:55 9 -> anon_inode:[eventfd]
+[2026-08-19T13:20:29Z] [SUCCESS] diagnostic: diagnostic saved to /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/notes/serial_diagnostic_20260819132028.txt
