@@ -1,0 +1,17 @@
+=== boot-pmos-virtio-tablet-fixed_0005.sh ===
+Lines: 24
+Features present: 7
+  - QEMU command
+  - Kernel flag
+  - Initrd flag
+  - VNC flag
+  - USB tablet
+  - Serial console
+  - VGA
+
+QEMU command:
+7:pkill -f "qemu-system-x86_64.*$IMG" 2>/dev/null || true
+
+Append string:
+19:  -append "root=/dev/vda2 rootwait console=ttyS0" \
+

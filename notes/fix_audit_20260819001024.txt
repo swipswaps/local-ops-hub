@@ -1,0 +1,14 @@
+=== fix-pmos-installer.sh ===
+Lines: 283
+Features present: 6
+  - log_result
+  - hard_gate
+  - Polkit bypass
+  - Symlink fix
+  - Tmpfs mount
+  - VM environment detection
+
+Key functions:
+10:log_result() {
+18:hard_gate() {
+

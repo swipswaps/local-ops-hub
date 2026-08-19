@@ -1,0 +1,53 @@
+[2026-08-19T00:10:24Z] [SUCCESS] phase1: auditing canonical boot script
+[2026-08-19T00:10:24Z] [SUCCESS] boot_audit: syntax check passed
+[2026-08-19T00:10:24Z] [SUCCESS] boot_audit: conflict detection not present (expected)
+[2026-08-19T00:10:24Z] [SUCCESS] boot_audit: audited boot script
+[2026-08-19T00:10:24Z] [SUCCESS] phase2: auditing canonical fix script
+[2026-08-19T00:10:24Z] [SUCCESS] fix_audit: syntax check passed
+[2026-08-19T00:10:24Z] [SUCCESS] fix_audit: audited fix script
+[2026-08-19T00:10:24Z] [SUCCESS] phase3: creating foundational baseline test suite
+[2026-08-19T00:10:24Z] [SUCCESS] phase3: baseline test suite created at /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/scripts/test_baseline.sh
+[2026-08-19T00:10:24Z] [SUCCESS] phase4: running baseline test suite
+
+============================================================================
+FOUNDATIONAL BASELINE TEST SUITE – 2026-08-19T00:10:24Z
+============================================================================
+
+Repository: /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo
+Test log: /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/notes/baseline_test_20260819001024.txt
+
+Test 1: Canonical boot script
+[2026-08-19T00:10:24Z] [PASS] boot_script_exists: /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/boot-pmos-virtio-tablet-fixed_0005.sh is present and executable
+  ✅ Boot script present and executable
+
+Test 2: Canonical fix script
+[2026-08-19T00:10:24Z] [PASS] fix_script_exists: /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/fix-pmos-installer.sh is present and executable
+  ✅ Fix script present and executable
+
+Test 3: Syntax check
+[2026-08-19T00:10:24Z] [PASS] boot_syntax: boot script syntax OK
+  ✅ Boot script syntax OK
+[2026-08-19T00:10:24Z] [PASS] fix_syntax: fix script syntax OK
+  ✅ Fix script syntax OK
+
+Test 4: Boot script QEMU features
+  ✅ QEMU command present
+  ✅ Kernel flag present
+  ✅ Initrd flag present
+  ✅ VNC flag present
+  ✅ Serial console present
+  ✅ VGA present
+[2026-08-19T00:10:24Z] [PASS] boot_features: all 6 features present
+  ✅ All boot script features validated
+
+Test 5: Fix script features
+  ✅ log_result() present
+  ✅ hard_gate() present
+  ✅ Polkit bypass present
+  ✅ Symlink fix present
+  ✅ Tmpfs mount present
+  ❌ Password setting missing
+[2026-08-19T00:10:24Z] [FAIL] fix_features: only 5/6 features present
+  ❌ Not all fix script features present
+[2026-08-19T00:10:24Z] [FAILURE] phase4: baseline tests failed (exit 1)
+[2026-08-19T00:10:24Z] [FAILURE] hard_gate: blocked: baseline tests failed
