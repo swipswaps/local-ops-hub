@@ -6,3 +6,4 @@
 [2026-08-19T14:16:09Z] [SUCCESS] phase3: checking VNC
 [2026-08-19T14:16:09Z] [SUCCESS] phase3: VNC port 5900 is open
 [2026-08-19T14:16:09Z] [SUCCESS] phase4: pushing verification evidence
+[2026-08-19T14:16:10Z] [FAILURE] phase4: raw link HTTP 404
