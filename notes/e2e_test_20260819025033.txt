@@ -1,0 +1,18 @@
+[2026-08-19T02:50:33Z] [SUCCESS] phase1: preflight check
+[2026-08-19T02:50:33Z] [SUCCESS] preflight: boot script found: /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/boot-pmos-virtio-tablet-fixed_0005.sh
+[2026-08-19T02:50:33Z] [SUCCESS] preflight: fix script found: /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/fix-pmos-installer.sh
+[2026-08-19T02:50:33Z] [SUCCESS] preflight: found tool: qemu-system-x86_64
+[2026-08-19T02:50:33Z] [SUCCESS] preflight: found tool: curl
+[2026-08-19T02:50:33Z] [SUCCESS] phase1: preflight check complete
+[2026-08-19T02:50:33Z] [SUCCESS] phase2: booting VM with canonical boot script
+[2026-08-19T02:50:33Z] [SUCCESS] phase2: killing stale QEMU processes
+[2026-08-19T02:50:35Z] [SUCCESS] phase2: starting QEMU with serial log: /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/notes/e2e_serial_20260819025033.txt
+[2026-08-19T02:50:35Z] [SUCCESS] phase2: QEMU started (PID: 707726)
+[2026-08-19T02:50:40Z] [SUCCESS] phase2: VM boot detected after 5s
+[2026-08-19T02:50:40Z] [SUCCESS] phase3: verifying VM is running
+[2026-08-19T02:50:40Z] [SUCCESS] phase3: VNC port 5900 is open
+[2026-08-19T02:50:40Z] [SUCCESS] phase3: serial log has 408 lines
+[2026-08-19T02:50:40Z] [SUCCESS] phase3: VM verification complete
+[2026-08-19T02:50:40Z] [SUCCESS] phase4: pushing end-to-end test evidence
+[2026-08-19T02:50:40Z] [SUCCESS] phase4: copied serial log
+[2026-08-19T02:50:40Z] [SUCCESS] phase4: copied test log
