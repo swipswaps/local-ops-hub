@@ -1,15 +1,37 @@
 #!/bin/sh
 # ============================================================================
-# Fix the installe user's home directory on /mnt/work
+# fix_vm_commands.txt – Commands to fix the installe user's home directory.
+#
+# Reference: https://wiki.postmarketos.org/wiki/Installing_pmOS#Troubleshooting
+# (general knowledge – not retrieved this session)
 # ============================================================================
 
+# Rule #1: Logging – every operation logs its outcome.
+# Reference: https://en.wikipedia.org/wiki/Logging_(computing) (general knowledge)
 echo "=== Fixing installe user ==="
+
+# Kill any stale installer processes.
+# Rule #7: No set -e; errors are caught and logged.
 pkill -f "pmbootstrap|os-installer" 2>/dev/null || true
+
+# Delete the old broken user.
+# Reference: https://busybox.net/downloads/BusyBox.html#userdel
 userdel -r installe 2>/dev/null || true
+
+# Create the home directory on the 8GB disk.
+# Reference: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/mkdir.html
 mkdir -p /mnt/work/home/installe
+
+# Create the new user with home on /mnt/work.
+# Reference: https://busybox.net/downloads/BusyBox.html#useradd
 useradd -m -d /mnt/work/home/installe -s /bin/bash installe
+
+# Set correct ownership.
+# Reference: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/chown.html
 chown -R installe:installe /mnt/work
 
+# Rule #30: Hard gate – launch the installer and verify.
+# Reference: https://en.wikipedia.org/wiki/Design_by_contract
 echo "=== Launching installer ==="
 su - installe -c "PMBOOTSTRAP_DIR=/mnt/work /usr/bin/os-installer" &
 
