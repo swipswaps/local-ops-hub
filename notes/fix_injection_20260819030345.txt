@@ -1,0 +1,8 @@
+
+📤 Sending fix script to VM...
+spawn cat > /proc//fd/0
+couldn't open "": no such file or directory
+    while executing
+"open $fix_file r"
+    invoked from within
+"set fd [open $fix_file r]"
