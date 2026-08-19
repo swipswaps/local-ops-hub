@@ -1,0 +1,16 @@
+#!/bin/sh
+# ============================================================================
+# Fix the installe user's home directory on /mnt/work
+# ============================================================================
+
+echo "=== Fixing installe user ==="
+pkill -f "pmbootstrap|os-installer" 2>/dev/null || true
+userdel -r installe 2>/dev/null || true
+mkdir -p /mnt/work/home/installe
+useradd -m -d /mnt/work/home/installe -s /bin/bash installe
+chown -R installe:installe /mnt/work
+
+echo "=== Launching installer ==="
+su - installe -c "PMBOOTSTRAP_DIR=/mnt/work /usr/bin/os-installer" &
+
+echo "=== Fix complete ==="

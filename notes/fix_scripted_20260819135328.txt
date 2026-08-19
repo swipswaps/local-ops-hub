@@ -1,0 +1,13 @@
+[2026-08-19T13:53:28Z] [SUCCESS] phase1: preflight: checking VM
+[2026-08-19T13:53:28Z] [SUCCESS] preflight: VM PID: 790844
+[2026-08-19T13:53:28Z] [SUCCESS] phase2: finding serial PTY
+[2026-08-19T13:53:28Z] [SUCCESS] phase2: PTY: /dev/pts/4
+[2026-08-19T13:53:28Z] [SUCCESS] phase3: creating fix script
+[2026-08-19T13:53:28Z] [SUCCESS] phase3: fix script created: /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/fix_vm_commands.txt
+[2026-08-19T13:53:28Z] [SUCCESS] phase4: sending fix script to VM
+[2026-08-19T13:53:28Z] [SUCCESS] phase4: fix script sent to /dev/pts/4
+[2026-08-19T13:53:28Z] [SUCCESS] phase5: waiting for installer to start
+[2026-08-19T13:53:58Z] [SUCCESS] phase5: installer detected in serial log
+[2026-08-19T13:53:58Z] [SUCCESS] phase6: pushing evidence
+[2026-08-19T13:53:58Z] [SUCCESS] evidence: /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/notes/fix_scripted_20260819135328.txt verified (11 lines)
+[2026-08-19T13:53:58Z] [SUCCESS] evidence: /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/fix_vm_commands.txt verified (16 lines)
