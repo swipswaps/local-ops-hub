@@ -1,0 +1,3 @@
+[2026-08-19T03:02:31Z] [SUCCESS] preflight: fix script found
+[2026-08-19T03:02:31Z] [SUCCESS] preflight: QEMU process found (PID: 707743)
+[2026-08-19T03:02:31Z] [SUCCESS] preflight: can write to QEMU stdin
