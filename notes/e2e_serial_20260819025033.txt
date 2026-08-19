@@ -406,3 +406,8 @@
 [    3.832702] [pmOS-rd]: Unable to resize root partition: failed to find qualifying partition
 [    3.845393] [pmOS-rd]: Auto-repair and check 'ext' filesystem (/dev/vda2)
 [    3.967184] [pmOS-rd]: pmOS_root contains a file system with errors, check forced.
+[    4.987073] [pmOS-rd]: pmOS_root: Inode 22753 has an invalid extent
+[    4.989109] [pmOS-rd]: 	(logical block 0, invalid physical block 934592, len 57)
+[    4.991212] [pmOS-rd]: pmOS_root: UNEXPECTED INCONSISTENCY; RUN fsck MANUALLY.
+[    4.993250] [pmOS-rd]: 	(i.e., without -a or -p options)
+qemu-system-x86_64: terminating on signal 15 from pid 786780 (pkill)

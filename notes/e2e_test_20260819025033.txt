@@ -16,3 +16,6 @@
 [2026-08-19T02:50:40Z] [SUCCESS] phase4: pushing end-to-end test evidence
 [2026-08-19T02:50:40Z] [SUCCESS] phase4: copied serial log
 [2026-08-19T02:50:40Z] [SUCCESS] phase4: copied test log
+[2026-08-19T02:50:42Z] [SUCCESS] phase5: cleaning up
+[2026-08-19T02:50:44Z] [SUCCESS] phase5: killed QEMU (PID: 707726)
+[2026-08-19T02:50:44Z] [SUCCESS] phase5: removed temporary files

@@ -1,0 +1,2 @@
+[2026-08-19T13:00:52Z] [SUCCESS] preflight: checking gh authentication
+[2026-08-19T13:00:52Z] [FAILURE] preflight: gh not authenticated

@@ -1,0 +1,5 @@
+[2026-08-19T13:02:37Z] [SUCCESS] preflight: checking environment
+[2026-08-19T13:02:37Z] [SUCCESS] preflight: running as user owner
+[2026-08-19T13:02:37Z] [SUCCESS] preflight: checking gh authentication
+[2026-08-19T13:02:37Z] [SUCCESS] preflight: gh authenticated as owner
+[2026-08-19T13:03:37Z] [FAILURE] wait: shell prompt not detected after 60s

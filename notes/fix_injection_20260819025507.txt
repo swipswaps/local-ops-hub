@@ -1,0 +1,7 @@
+[2026-08-19T02:55:07Z] [SUCCESS] preflight: fix script found: /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/fix-pmos-installer.sh
+[2026-08-19T02:55:07Z] [SUCCESS] preflight: QEMU process found (PID: 707743)
+
+❌ Could not find serial console PTY
+   Try connecting manually: screen /dev/pts/X 115200
+   Or use: socat - UNIX-CONNECT:/tmp/qemu-serial.sock
+[2026-08-19T02:55:07Z] [FAILURE] apply_fix: fix script application failed (exit: 1)

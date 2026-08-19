@@ -1,0 +1,4 @@
+[2026-08-19T13:47:27Z] [FAILURE] preflight: VM not running – starting it
+[2026-08-19T13:47:42Z] [SUCCESS] preflight: VM PID: 790844
+[2026-08-19T13:47:42Z] [SUCCESS] preflight: PTY: /dev/pts/4
+[2026-08-19T13:47:42Z] [SUCCESS] send: fix script sent to VM via /dev/pts/4
