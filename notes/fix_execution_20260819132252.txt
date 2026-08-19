@@ -1,0 +1,6 @@
+[2026-08-19T13:22:52Z] [SUCCESS] step1: killing stale installer processes
+[2026-08-19T13:22:52Z] [SUCCESS] step2: recreating installe user
+[2026-08-19T13:22:56Z] [SUCCESS] step3: verifying installe user
+[2026-08-19T13:22:56Z] [SUCCESS] step4: launching installer
+[2026-08-19T13:22:56Z] [SUCCESS] step4: installer PID: 787065
+[2026-08-19T13:23:06Z] [FAILURE] step5: installer crashed immediately
