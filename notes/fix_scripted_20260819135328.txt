@@ -11,3 +11,5 @@
 [2026-08-19T13:53:58Z] [SUCCESS] phase6: pushing evidence
 [2026-08-19T13:53:58Z] [SUCCESS] evidence: /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/notes/fix_scripted_20260819135328.txt verified (11 lines)
 [2026-08-19T13:53:58Z] [SUCCESS] evidence: /home/owner/Documents/19fec7a3-8212-81f8-8000-0986b63a411e/repo/fix_vm_commands.txt verified (16 lines)
+[2026-08-19T13:53:59Z] [FAILURE] phase6: raw link HTTP 404
+[2026-08-19T13:53:59Z] [FAILURE] hard_gate: blocked: raw link not reachable (HTTP 404)
